@@ -1,0 +1,91 @@
+<html>
+<head>
+<script type="text/javascript" src="js/processing.js"></script>
+</head>
+
+<body>
+
+<script type="text/processing">
+
+//Breathing Loop Algorithm
+
+color bg = #f1f1f1; 
+int r=255; 
+int g= 0; 
+int b=0; 
+
+void setup(){
+ size (771, 1080);//A4 is 1:1.4
+ frameRate (60);
+ smooth(); 
+}
+
+void draw(){
+   background (#f2f2f2);
+    noCursor();
+    strokeWeight(0.5); 
+    
+    if (r==255&&g==0){ 
+ b =b+3; 
+}
+
+//R=255, G=0, B=255. 
+
+if (b==255&&r>0){ 
+  b=255; 
+  r=r-3; 
+}
+
+//R=0; G=0; B=255.
+
+if (r==0&&b==255){
+  g=g+3; 
+}
+
+//R=0, G=255, B=255.
+
+if (g==255&&r==0){
+  b=b-3; 
+}
+
+//R=0; G=255; B=0. 
+
+if (b==0&&g==255){
+  r=r+3; 
+}
+//R=255, G=255, B=0.
+
+if (r==255&&g>0&&b==0){
+  r=255;
+  g=g-3; 
+}
+
+noStroke(); 
+  fill (0); 
+  ellipse(mouseX, mouseY, 46, 46); 
+    
+
+    for (float a=0; a<width; a=a+7){
+     stroke (r, g, b); 
+   line (a, 0, mouseX, mouseY); 
+  line (a, height, mouseX,mouseY); 
+      }
+    
+for (float c=0; c<height; c=c+7){
+   line (0, c, mouseX, mouseY); 
+   line (width, c, mouseX, mouseY); 
+
+}
+
+noStroke(); 
+  fill (0); 
+  ellipse(mouseX, mouseY, 46, 46); 
+  
+}
+
+
+</script>
+<canvas id = "sketch" style = "border: 1px solid black; "></canvas>
+
+</body>
+</html>
