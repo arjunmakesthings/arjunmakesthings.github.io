@@ -1,0 +1,42 @@
+<html>
+<head>
+<script type="text/javascript" src="jsjs/processingz.js"></script>
+</head>
+
+<body>
+
+<script type="text/processing">
+
+float i = 0; 
+
+void setup(){
+ size (1000, 1000);
+}
+
+void draw(){
+  
+ background (#f1f1f1);  
+
+ strokeWeight (mouseX/5);
+ noFill(); 
+  bezier(300, 200, 700, 135-mouseY/2, 700, 400, 700,400); 
+ bezier (700, 400, 700, 400, 700, 800, 700, 800); 
+ bezier (300, 600, 300, 412-mouseY/2, 700, 400, 700, 400); 
+ bezier (300, 600, 300, 912+mouseY/2, 700, 800, 700, 800);
+
+
+
+}
+
+void mouseClicked(){
+noLoop(); 
+}
+
+
+
+
+</script>
+<canvas id = "sketch" style = "border: 1px solid black; "></canvas>
+
+</body>
+</html>
