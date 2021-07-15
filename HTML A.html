@@ -1,0 +1,63 @@
+<html>
+<head>
+<script type="text/javascript" src="js/processing.js"></script>
+</head>
+
+<body>
+
+<script type="text/processing">
+
+//A Variable
+
+int v = 1; 
+int size = 50; 
+
+void setup(){
+ size (1000, 1000);
+ smooth(); 
+}
+
+void draw(){
+  if (v==1||v==3||v==5||v==7||v==9){
+    loop (); 
+  }
+  
+  if (v==2||v==4||v==6||v==8||v==10){
+    noLoop(); 
+  }
+  
+  if (v==11){
+    v=1; 
+  }
+  
+ background (#f1f1f1);  
+ strokeWeight (mouseX/5);
+ noFill(); 
+ 
+  bezier(300, 200, 700, 135-mouseY/2, 700, 400, 700,400); 
+ bezier (700, 400, 700, 400, 700, 800, 700, 800); 
+ bezier (300, 600, 300, 412-mouseY/2, 700, 400, 700, 400); 
+ bezier (300, 600, 300, 912+mouseY/2, 700, 800, 700, 800);
+ 
+
+ noCursor(); 
+ strokeWeight(0); 
+  fill (#0313EE); 
+ ellipse (mouseX, mouseY, size, size); 
+ 
+ 
+}
+
+void mouseClicked() {
+  
+  size =0; 
+ v = v+1; 
+ 
+}
+
+
+</script>
+<canvas id = "sketch" style = "border: 1px solid black; "></canvas>
+
+</body>
+</html>
