@@ -10,14 +10,14 @@
 float min = 12; 
 float max = 20; 
 
-//PFont myFont; 
-//PFont myFont2; 
+PFont myFont; 
+PFont myFont2; 
 
 void setup() {
   size (1000, 1000);  
   frameRate (12); 
- // myFont = createFont("SourceCodePro-Regular.ttf", 14); 
-  //myFont2 = createFont ("SourceCodePro-Bold.ttf", 11);
+ myFont = createFont("SourceCodePro-Regular.ttf", 14); 
+ myFont2 = createFont ("SourceCodePro-Bold.ttf", 11);
 }
 
 void draw() {
@@ -30,12 +30,12 @@ void draw() {
 
 
   fill (210); 
- // textFont (myFont); 
+textFont (myFont); 
   textSize (16); 
   textAlign (CENTER); 
   text ( "WHAT IF THE C0MPUTER HAD C0NTROL?", 500, 870); 
   textSize (10); 
- // textFont (myFont2); 
+textFont (myFont2); 
   fill (#c4df47); 
   text ("Computer Controlled Letterforms", 500, 960); 
   text ("Experiment 01 // Arjun, 2021.", 500, 974); 
