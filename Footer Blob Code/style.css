@@ -14,7 +14,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    fill: #0313EE;
+    fill: #010979;
     width: 50vmax;
     z-index: -1;
     animation: move 10s ease-in-out infinite;
