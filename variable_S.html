@@ -1,0 +1,72 @@
+<html>
+<head>
+<script type="text/javascript" src="js/processing.js"></script>
+</head>
+
+<body>
+
+<script type="text/processing">
+
+//Variable S coded on 10th August 2021
+
+//PFont myFont; 
+//PFont myFont2; 
+
+float a = 0; 
+
+void setup() {
+  size (1000, 1000);
+  //myFont = createFont ( "SourceCodePro-SemiBold.ttf", 14); 
+  //myFont2 = createFont ("SourceCodePro-Regular.ttf", 12); 
+  smooth (); 
+}
+
+void draw() {
+  background (#E3E3E3); 
+  noCursor(); 
+  fill (#464646); 
+  //textFont (myFont); 
+  textSize (16); 
+  text ("Customisable Typeface", 730, 951); 
+  fill (#717171); 
+  //textFont (myFont2); 
+  text ("Experiment 02 | Arjun 2021", 731, 968); 
+  noFill(); 
+  
+
+
+float mX = mouseX/7; 
+  //Bezier S
+stroke (#1030C6); 
+  
+  strokeWeight (mouseX/7); 
+  
+  bezier (300+a, 250-a, 500+a, 250-mouseY, 700+mX, 250-a, 700+mX, 250-a); 
+  bezier (300, 250, 300+mouseY/2, 350, 300, 450, 300, 450); 
+  bezier (300+a, 450+a, 400, 450+mouseY, 500, 450, 500, 450); 
+  bezier (500, 450, 600, 450-mouseY, 700-a, 450-a, 700-a, 450-a); 
+  bezier (700, 450, 700-mouseY/2, 600, 700, 750, 700, 750); 
+  bezier (700-a, 750+a, 500-a, 750+mouseY, 300-mX, 750+a, 300-mX, 750+a); 
+  
+  
+    stroke (#464646); 
+  strokeWeight (20); 
+  point (mouseX, mouseY); 
+  
+}
+void keyPressed(){
+  if (key =='d'){
+    a=a+10; 
+}
+if (key =='a'){
+ a=a-10;  
+}
+}
+
+
+
+</script>
+<canvas id = "sketch" style = "border: 1px solid black; "></canvas>
+
+</body>
+</html>
