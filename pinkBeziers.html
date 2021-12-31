@@ -1,0 +1,68 @@
+<html>
+<head>
+<script type="text/javascript" src="js/processing.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/processing">
+
+float v = 1;
+boolean strokeMode = false; 
+int num = 0; 
+
+void setup(){
+  size (1000, 1000, P2D); 
+  smooth(); 
+}
+
+void draw(){
+  background (#eaf1f0); 
+  
+    blendMode (NORMAL); 
+  fill (#989798); 
+  text ("PRESS S TO TOGGLE STROKE MODE", 30, 970); 
+  
+
+fill (#da4a86, 50); 
+noStroke(); 
+
+if (strokeMode == true){
+  noFill (); 
+  stroke (#da4a86, 95); 
+  strokeWeight (2); 
+  blendMode (DARKEST); 
+}
+
+
+translate (width/2, height/2); 
+for (int x =0; x<30; x++){
+rotate (PI/v); 
+  beginShape (POLYGON); 
+  vertex (0, 0);  
+  bezierVertex (mouseY, mouseX, -mouseX, -mouseY, 0, 0); 
+  endShape(); 
+  }
+v = v+0.0001; 
+
+}
+
+
+void mousePressed(){
+ if (mousePressed){
+   record=true; 
+   saveFrame ("pattern####.jpg"); 
+ }
+}
+
+void keyPressed(){
+if (key=='s' || key=='S'){
+  strokeMode = !strokeMode; 
+}
+}
+</script>
+<canvas id = "sketch" style = "border: 0px solid black; "></canvas>
+
+</body>
+</html>
