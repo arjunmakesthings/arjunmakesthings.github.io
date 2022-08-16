@@ -29,7 +29,7 @@ function draw() {
 
     if (redrawToggle==true){
    clear();
-   background (10)
+   //background (10)
    t=0;
    redrawToggle=false;
   }
