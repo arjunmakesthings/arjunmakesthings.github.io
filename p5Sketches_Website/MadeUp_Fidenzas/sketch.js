@@ -68,3 +68,7 @@ function autoTog (){
     toggle = false;
   }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
