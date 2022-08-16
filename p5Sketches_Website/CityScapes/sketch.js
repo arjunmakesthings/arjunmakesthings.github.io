@@ -8,10 +8,13 @@ let yoff =-2 ;
 
 function setup() {
   createCanvas(900, 900);
-  background (10);
+  //background (10);
 }
 
 function draw() {
+
+  t++;
+
   xoff = xoff + 0.008;
    yoff = yoff + 0.008;
 
@@ -27,10 +30,17 @@ function draw() {
     if (redrawToggle==true){
    clear();
    background (10)
+   t=0;
+   redrawToggle=false;
+  }
+
+  if (t>=540){
+    redrawToggle=true;
   }
 
 }
 
+/*
 function mousePressed(){
  if (mousePressed){
   redrawToggle=!redrawToggle;
@@ -40,9 +50,12 @@ function mousePressed(){
 function mouseReleased(){
  redrawToggle=false;
 }
+*/
 
+/*
 function keyPressed(){
  if (key==='s'){
   save ('CityScapes.jpg');
  }
 }
+*/
