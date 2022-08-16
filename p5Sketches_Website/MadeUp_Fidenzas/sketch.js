@@ -6,7 +6,7 @@ let t =0;
 let toggle = false;
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(800, 800);
           background('#dedfd3');
 
   resetSketch();
