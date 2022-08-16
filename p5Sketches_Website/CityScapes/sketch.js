@@ -7,7 +7,7 @@ let xoff = 0.05;
 let yoff =-2 ;
 
 function setup() {
-  createCanvas(900, 900);
+  createCanvas(980, 540);
   //background (10);
 }
 
@@ -19,7 +19,7 @@ function draw() {
    yoff = yoff + 0.008;
 
   let x = noise(xoff) * width;
-  let y= noise(yoff) *height;
+  let y= noise(yoff) *height-50;
 
   stroke (200);
   for (var i = 0; i<width; i++){
@@ -46,7 +46,6 @@ function mousePressed(){
   redrawToggle=!redrawToggle;
  }
 }
-
 function mouseReleased(){
  redrawToggle=false;
 }
