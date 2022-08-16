@@ -7,7 +7,7 @@ let xoff = 0.05;
 let yoff =-2 ;
 
 function setup() {
-  createCanvas(980, 540);
+  createCanvas(490, 680);
   //background (10);
 }
 
