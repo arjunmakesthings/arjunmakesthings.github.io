@@ -1,0 +1,630 @@
+ /*-----------------FONT PRELOADS-----------------*/
+
+    /*Atkinson Regular*/
+    @font-face {
+        font-family:'AtkinsonHyperlegible'; 
+        font-style: normal;
+        font-weight: 400;
+        src: url('/fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.woff2') format('woff2');
+    }
+    
+    @font-face {
+    font-family:'AtkinsonHyperlegible';
+    font-weight: bold;
+    font-weight: 700;
+    src: url(fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.woff2) format('woff2'); 
+    }
+    
+    /*h1*/
+    @font-face{
+        font-family: 'VictorMono';
+        font-style: italic;
+        font-weight: 300;
+        src: url('/fonts/VictorMono/victormono-italic-webfont.woff2') format('woff2'),
+        url('/fonts/VictorMono/victormono-italic-webfont.woff') format('woff');
+        font-display: swap;
+    }
+    
+    /*700*/
+    @font-face{
+        font-family: 'VictorMono';
+        font-style: normal;
+        font-weight: 700;
+        src: url('/fonts/VictorMono/victormono-bold-webfont.woff2') format('woff2');
+        src: url('/fonts/VictorMono/victormono-bold-webfont.woff') format('woff');
+    }
+    
+    /* SemiBold*/
+    @font-face{
+        font-family: 'VictorMono';
+        font-style: normal;
+        font-weight: 600;
+        src: url('/fonts/VictorMono/victormono-semibold-webfont.woff2') format('woff2');
+        src: url('/fonts/VictorMono/victormono-semibold-webfont.woff') format('woff');
+    }
+    
+    /*Regular H6*/
+    
+    @font-face{
+        font-family: 'VictorMono';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/fonts/VictorMono/victormono-regular-webfont.woff2') format('woff2');
+        src: url('/fonts/VictorMono/victormono-regular-webfont.woff') format('woff');
+    }
+    
+    @font-face{
+        font-family: "SourceSerif"; 
+        font-style: normal; 
+        font-weight: 400; 
+        src: url(/fonts/SourceSerif/SourceSerif4-Regular.otf.woff2) format('woff2');
+    }
+  
+  html{
+    background-color: black;
+  }
+  html, body {
+      margin: 0%;
+      padding: 0;
+    }
+
+    /*-----------------All Typography-----------------*/
+    p{
+        font-family: "AtkinsonHyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 400;
+
+        font-size: 1rem;
+font-size:clamp(1rem, 0.51vw + 0.88rem, 1.3rem);
+line-height:180%;
+
+        color: white;
+    }
+
+    .alternate-p{
+        font-family: "AtkinsonHyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-style: normal;
+        font-weight: 400;
+
+        font-size: 1rem;
+        font-size:clamp(1rem, 0.51vw + 0.88rem, 1.3rem);
+
+        line-height:140%;
+        color: grey;
+            }
+
+            .caption-p{
+                font-family: 'Atkinson Hyperlegible';
+                font-style: normal;
+                font-weight: 400;
+
+                font-size: 0.8rem;
+                font-size: clamp(0.8rem, 0.33vw + 0.72rem, 1.13rem);
+        
+                line-height:140%;
+                color: grey;
+
+            }
+
+    h1{
+            font-family: 'Victor Mono';
+            font-style: italic;
+            font-weight: 300;
+
+            font-size: 4.74rem;
+            font-size: clamp(2.44rem, 2.35vw + 1.91rem, 4.74rem);
+
+            color: white;
+    }
+
+    h2{
+        color: white;
+        font-family: 'Victor Mono';
+        font-style: normal;
+        font-weight: 700;
+
+        font-size: 3.55rem;
+        font-size: clamp(1.95rem, 1.64vw + 1.58rem, 3.55rem);
+    }
+
+    h3{
+        font-family: 'Victor Mono';
+        font-style: normal;
+        font-weight: 700;
+
+        font-size: 2.27rem;
+        font-size: clamp(1.56rem, 1.13vw + 1.31rem, 2.27rem);
+
+        line-height: 31px;
+        color: white; 
+    }
+
+    h4{
+        font-family: 'Victor Mono';
+        font-style: normal;
+        font-weight: 600;
+
+        font-size: 1.25rem;
+        font-size: clamp(1.25rem, 0.77vw + 1.08rem, 2rem);
+
+        line-height: 120%;
+        color: white;
+    }
+
+    h5{
+        font-family: 'Victor Mono';
+font-style: normal;
+font-weight: 600;
+
+font-size: 0.4rem;
+font-size: clamp(0.4rem, 0.33vw + 0.72rem, 0.8rem);
+
+line-height: 14px;
+margin-right: 5%;
+padding: 3%;
+border-radius: 15px;
+
+color: black;
+background-color: white;
+    }
+
+    h6{
+font-family: 'Victor Mono';
+text-transform: uppercase;
+font-weight: 400;
+
+font-size: 2rem;
+font-size: clamp(1.25rem, 0.77vw + 1.08rem, 2rem);
+
+color: white;
+    }
+
+     /*-----------------INDEX-----------------*/
+
+  canvas {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .buttonGrid{
+    display:flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+
+        height: 100vh;
+        margin: 0% 0%;
+
+        justify-content: center;
+        align-content: center;
+
+        overflow: hidden;
+        }
+
+  button{
+    background-color: #00000000;
+border: 1px solid #FFFFFF;
+border-radius: 100px;
+color: white;
+font-size: 20px;
+font-family: 'VictorMono';
+font-weight: 400;
+/*text-transform: uppercase;*/
+width: 25%; 
+height: 80px;
+
+margin: 13vh 5%;
+  }
+
+  button:hover{
+background: #FFFFFF; 
+color: #000000;
+cursor: pointer;
+  }
+
+
+    @media all and (max-width: 900px ) {
+    button{
+        width: 75%;
+        margin: 6vh 0%
+    }
+    }
+
+         /*-----------------WORK PAGE-----------------*/
+         .cards-container{
+            margin: 8%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .card{
+            border: 1px solid #FFFFFF;
+            border-radius: 20px;
+            width: 281px;
+            height: 416px;
+            padding: 19px;
+            background-color: black;
+            color: white;
+            margin: 4%;
+
+            justify-content: center;
+        }
+    
+        .work-covers{
+            width: 281px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: -8%;
+        }
+
+        .work-covers img{
+            width: 100%;
+            height: 100%;
+        }
+    
+        .tag-row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+justify-content: left;
+max-height: fit-content;
+margin-top: -5%;
+        }
+    
+        .card:hover{
+            background-color: white;
+            border: 0px;
+            color: black;
+            cursor: pointer;
+            transform: rotate(-2deg);
+        }
+
+        .card:hover h4{
+            color: black;
+        }
+
+        /*-----------------CASE STUDY PAGE-----------------*/
+        
+        .caseStudy-cover{
+
+            display: flex;
+    
+            margin: 0%;
+            overflow: hidden; 
+            object-fit: fill; 
+            max-height: 600px;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .cs-cover-image{
+            align-items: center;
+            opacity: 20%;
+            width: 100%;
+        }
+    
+        .central-question{
+            position: absolute;
+            display: block;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0% 5%;
+
+            text-align: center;
+        }
+    
+        .deets-container{
+            display: flex;
+            flex-direction: row;
+    
+            margin: 5%;
+            justify-content: center;
+        }
+    
+    
+        @media all and (max-width: 700px) {
+            .caseStudy-cover{
+                max-height: 1000px;
+                margin-bottom: 10%;
+            }
+
+            .cs-cover-image{
+                align-items: center;
+                opacity: 20%;
+                width: 100%;
+                max-height: 700px; 
+                object-fit: cover;
+            }
+          }
+    
+    
+        .details{
+            margin: 0% 5%;
+            width: 33%;
+        }
+    
+        .role{
+            margin: 0% 5%;
+            width: 33%;
+        }
+    
+        .people{
+            width: 33%;
+            margin: 0% 5%;
+        }
+    
+        hr{
+            border-top: 2px solid #2d2d2d;
+            opacity: 50%;
+            margin: 5% 0%;
+        }
+    
+        .section-header{
+    
+            display: flex;
+            margin: 3rem 5lvw;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transform: rotate(-2deg); 
+            max-width: fit-content;
+            height: 70px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .section-header h2{
+            color: black;
+        }
+    
+        .body-container{
+            display:block;
+            block-size: auto;
+
+            justify-content: center;
+            align-items: center;
+
+            margin: 0 12lvw;
+        }
+
+        .caption-container{
+            display: flex;
+            margin: 0 12lvw 1.5rem 12lvw; 
+            justify-content: left;
+            align-content: center;
+            overflow: hidden;
+            width: fit-content;
+            max-width: 76lvw;
+        }
+    
+        .br{
+            margin: 0 500px;
+        }
+    
+        .inline-img-container{
+            display: flex;
+            margin: 1.75rem 12lvw 0 12lvw; 
+            justify-content: left;
+            align-content: center;
+            overflow: hidden;
+            width: fit-content;
+            max-width: 76lvw;
+        }
+
+            
+        .full-img-container{
+            display: flex;
+            margin: 1.75rem 0 0 0; 
+            justify-content: left;
+            align-content: center;
+            overflow: hidden;
+            max-width: 100lvw;
+        }
+
+        .sketch-holder{
+            justify-content: center;
+            margin: 0%;
+            border: white;
+            border-width: 2px;
+        }
+
+        a{
+            color: inherit;
+        }
+        a:hover{
+            background-color: white;
+            color: black
+        }
+
+        /*-----------------HEADER + FOOTER-----------------*/
+        .header{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: 0%;
+            overflow: hidden; 
+        }
+
+        .header button{
+            width: 100%;
+            height: fit-content;
+            margin: 1% 0%;
+            border-radius: 0px;
+            border-width: 0px;
+        }
+
+        .footer{
+            margin-top: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            justify-content: center;
+            align-content: center; 
+        }
+
+        .footer-liner{
+            margin-top: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            overflow: hidden;
+
+            justify-content: center;
+            align-content: center; 
+
+            height: 75px; 
+            padding: 0;
+            font-size: 16px;
+
+        }
+
+
+        .footer-websiteLinks{
+            margin-top: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            justify-content: center;
+            align-content: center; 
+
+        }
+
+        .footer-websiteLinks p{
+            font-size: 12px;
+        }
+
+        /*-----------------THOUGHTS-----------------*/
+        .blog-container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            justify-content: left;
+            align-content: left;
+
+            margin: 3% 10% 3% 3%; 
+
+            row-gap: 3%;
+            max-width: 50%;
+
+        }
+
+        .blog-explainer-container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            position: absolute;
+            right: 3%;
+            left: 50%; 
+
+            margin-left: 3%;
+
+            justify-content: left;
+            align-content: left;
+
+            max-width: 50%;
+            height: 100%;
+
+
+            padding-left: 5%;
+
+        }
+
+        .post-container{
+            border: 1px solid #FFFFFF;
+            padding: 0% 2%;
+            border-radius: 20px;
+
+            margin-bottom: 2%;
+            max-height: fit-content;
+        }
+
+        .blog-tag-row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+justify-content: left;
+        }
+
+        .blog-body{
+            display: none;
+        }
+
+        .post-container:hover{
+            cursor: pointer;
+
+            .blog-body{
+                display: flex;
+                color: white;
+            }
+
+        }
+
+        .blog-body .p{
+margin-bottom: 20%;
+        }
+
+        #birthday{
+            background-color: rgba(255, 192, 203, 0.3);
+            color: pink;
+        }
+
+        /*-----------------STORY-----------------*/
+        .textPage-container{
+display: flex; 
+flex-direction: row;
+flex-wrap: nowrap;
+
+background-color: yellow;
+        }
+
+        .story-img-container{
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+
+            margin-bottom: 6rem;
+        }
+
+        .img-caption{
+                    /*font-family: 'Atkinson Hyperlegible';*/
+
+         font-family: "AtkinsonHyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 1.35;
+         color: grey;
+         margin-bottom: 0%;
+        }
+        
+        /*
+        .caption-container{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            justify-content: left;
+            margin: 0% 20% 0% 20%;
+            padding-left: 1%;
+        }
+        */
+
+        .quote{
+            margin: 0 3lvw; 
+            justify-content: center;
+            align-content: center;
+        }
+        
+
+
+    

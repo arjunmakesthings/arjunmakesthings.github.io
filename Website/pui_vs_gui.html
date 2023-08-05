@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> ![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PUI vs GUI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="master-fluid.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header">
+            <button onclick="window.location.href = 'work.html';">
+              Back to Projects
+            </button>
+          </div>
+
+        <div class="caseStudy-cover">
+            <img src="/work_Images/pui_cover.gif" class = "cs-cover-image" alt="">
+
+        <div class = "central-question">
+            <h1>How much better is a perceptual interface?</h1>
+        </div>
+    </div>
+
+    <div class = "deets-container"> 
+        <div class = "details">
+            <h3>Details</h3>
+            <p class="alternate-p">Work behind the paper: <a href = "https://drive.google.com/file/d/1bfvgvVqmbg8IemoulmboANkNjfwWNAXD/view">Quantitative Comparison Between A Traditional User Interface (GUI) and A Perceptual User Interface (PUI)</a></p>
+        </div>
+        <div class = "role">
+            <h3>Role</h3>
+            <p class="alternate-p">Individual research project at IIAD, Delhi</p>
+        </div>
+        <div class = "people">
+            <h3>Mentor</h3>
+            <p class="alternate-p"><a href="https://www.linkedin.com/in/suman-bhandary?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAh6rwABYmMtrIAY84KB2PoBLYh577ofKq4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B3xX%2BraAlR4qbnqx0%2FuG6eA%3D%3D">Suman Bhandary</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="body-container">
+        <p>This article is an update to the <a href = "https://arjunmakesthings.medium.com/how-much-better-could-a-perceptual-user-interface-pui-be-d260f3c6371">original article</a> that I had published on Medium in 2021.</p>
+</div>
+    <hr>
+
+    <div class="section-header">
+    <h2>Thought</h2>
+    </div>
+
+    <div class="body-container">
+        <p>During an academic project in my third year at IIAD, <a href = "https://www.linkedin.com/in/shyam-attreya-aa077950?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAArKzdgBHyRlWAivvKMnjBxMzLIPOADKr-A&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1PV4dYQqQZuNYVFi5pwtrA%3D%3D"> Shyam Attreya</a> discussed how metropolitan cities in India such as New Delhi witness long queues at places like hospitals & airports. This is primarily because certain processes, for example checking in at an airport, are conducted by a limited number of personnel for a crowd much larger than what they can efficiently handle.</p>
+</div>
+<br>
+<div class="inline-img-container">
+    <img src = "/caseStudyImages/PUI_vs_GUI/crowd.jpeg" alt="" width= 100%>
+</div>
+
+<div class = "caption-container">
+    <p class = "caption-p">Source: <a href="https://www.indiatoday.in/coronavirus-outbreak/story/day-2-of-covid-vaccination-drive-elderly-queue-outside-delhi-hospitals-for-vaccine-1774936-2021-03-03">India Today.</a></p>
+</div>
+
+<div class="body-container">
+    <p>A similar case that I observed was at Max Hospital, Delhi. Upon entering the OPD, people would rush to the reception desk in panic to ask questions that resulted in repetitive answers by the hospital staff.<br><br>
+        I wondered whether these repetitive communication patterns could possibly be automated to increase efficiency. For example, during COVID-19, healthcare workers asked questions with binary answer possibilities to ascertain whether the individual is safe or at risk.</p>
+</div>
+<br>
+<div class="inline-img-container">
+    <img src = "/caseStudyImages/PUI_vs_GUI/Sample Question.png" alt="" width= 100%>
+</div>
+
+<div class = "caption-container">
+    <p class = "caption-p">A question from the <a href="https://www.osha.gov/sites/default/files/publications/OSHA4132.pdf">OSHA Sample Employee COVID-19 Health Screening Questionnaire.</a></p>
+</div>
+<br>
+<div class="body-container">
+    <p>It struck me that processes such as the one above, that attempt to get user-response to close-ended questions, could be processed much faster with a simple digital intervention.</p>
+</div>
+<br>
+<hr>
+<div class="section-header">
+    <h2>Deciding The Ideal Interface</h2>
+    </div>
+
+    <div class="body-container">
+        <p>In order to maximise efficiency with minimal contact, I decided to break away from the traditional desktop paradigm (of a display interacted via a keyboard & mouse). A visual interface that could be interacted via gestural inputs seemed to be quite desirable.</p><br><br>
+        <p>At the time, I had no knowledge of creating a gesture recognition program. However, I had been exploring the capabilities of the webcam on my personal computer by making tiny experiments on Processing.</p>
+</div>
+<br>
+<div class="inline-img-container">
+    <img src = "/caseStudyImages/PUI_vs_GUI/BlobTracker_GIF.gif" alt="" width= 100%>
+</div>
+
+<div class = "caption-container">
+    <p class = "caption-p">An experiment that leverages Daniel Shiffman's blob-tracking algorithm. This was later converted into an object-driven EBook reader.</a></p>
+</div>
+<br>
+<div class="body-container">
+    <p>It struck me that for an interface that needs input for binary answer possibilities, I don’t necessarily require a gesture recognition program. A simple interface that allows a person to communicate their choice between Option A & Option B is enough. To achieve this, I decided to use the head as a replacement for the mouse, with answer possibilities placed on either side of the screen. A simple head tilt was enough to input the desired answer.</p>
+</div>
+
+            <hr>
+
+        <script src="" async defer></script>
+    </body>
+</html>̣̉̉̉̉̉
