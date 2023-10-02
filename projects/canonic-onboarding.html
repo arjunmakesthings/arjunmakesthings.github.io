@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> ![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Canonic Onboarding Redesign</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header">
+            <button onclick="window.location.href = '../work.html';">
+              Back to Projects
+            </button>
+          </div>
+
+        <div class="caseStudy-cover">
+            <img src="/assets/work_Images/CanonicCover.webp" class = "cs-cover-image" alt="A number of interconnected vertices moving on the screen.">
+
+        <div class = "central-question">
+            <h1>How can I improve an onboarding experience?</h1>
+        </div>
+    </div>
+
+    <div class = "deets-container"> 
+        <div class = "details">
+            <h3>Details</h3>
+            <p class="alternate-p">End-to-end redesign of the onboarding experience for <a href = "https://canonic.dev/">Canonic</a></p>
+        </div>
+        <div class = "role">
+            <h3>Role</h3>
+            <p class="alternate-p">Sole-designer</p>
+        </div>
+        <div class = "people">
+            <h3>People</h3>
+            <p class="alternate-p">Mentors: <a href = "https://www.linkedin.com/in/aditi-jain-001b766b/">Aditi Jain</a> & <a href = "https://www.linkedin.com/in/iamsimranjot/">Simranjot Singh</a><br><br> Developer: <a href = "https://www.linkedin.com/in/pagrawl3/">Pratham Agrawal</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section-header">
+    <h2>Context</h2>
+    </div>
+
+    <div class="body-container">
+        <p>Over the summer of 2021, I worked as a product design intern at Canonic, a low code backend development platform. The digital product (at the time, a web application) allowed people to create entire backend systems from scratch by using a graphical interface. The platform could create databases, allow for the management of a CMS and use APIs to deliver data on the frontend.</p>
+</div>
+<br>
+
+<div class="inline-img-container">
+    <img src = "/assets/caseStudyImages/CanonicOnboarding/platform.png" alt="" width= 100%>
+</div>
+
+<div class = "caption-container">
+    <p class = "caption-p">A screenshot of the platform in action while creating a database of books, similar to that of <a href = "https://www.goodreads.com/">Goodreads</a>.</p>
+</div>
+
+<div class="body-container">
+    <p>While I worked on other smaller design projects over the course of my 2-month long internship, redesigning the poorly performing onboarding experience was my primary task. The retention rates after onboarding rose from 17% to 47% after the redesign.</p>
+</div>
+<hr>
+<div class="section-header">
+    <h2>Problem Identification</h2>
+    </div>
+    <div class="body-container">
+        <p>I used a combination of quantitative data from the platform, along with moderated user interviews (primarily with new users) to understand the problems at play. Important ones are listed below:</p>
+    </div>
+    <br>
+
+    <div class = "pointer-container">
+    <p><strong>Poor User Retention After First Interaction</strong><br>There was a mere 25% retention rate after the completion of the first out of three stages in the onboarding process.</p><br>
+    <p><strong>High Cognitive Load</strong>
+        <br>The onboarding prompts had often irrelevant lengthy explanations and took more time than intended to comprehend (as shown below).</p><br>
+        <img src = "/assets/caseStudyImages/CanonicOnboarding/problem 1.webp" alt="" width= 90%><br><br><br>
+        <p><strong>Low Number of Onboarding Projects</strong><br>
+        The total number of projects available to the users were few, meaning that people skipped onboarding altogether if they couldn't find a relevant project that was in line with what they wanted to build later.</p><br>
+        <p><strong>Generic Projects</strong><br>
+        There were no specific onboarding projects from start to end, but rather the same project given to everyone irrespective of the development experience that they had.</p><br>
+        <p><strong>No Intimation About Errors</strong><br>
+        People who tried onboarding for the first time often felt stuck at certain parts of the journey, as they may have performed a wrong action very early on in the process, that they were never notified of. This led to them not being able to progress to the next step as their input was not what the onboarding algorithm expected (as shown below). 
+        </p><br>
+        <img src = "/assets/caseStudyImages/CanonicOnboarding/ErrorGIF.gif" alt="" width= 90%><br><br><br>
+</div><br>
+
+    <div class="body-container">
+        <p>Apart from the ones listed above, other problems such as the onboarding not feeling developer-friendly, the large amount of copy to be read overall and the absence of a reusable component system were also taken into consideration while designing the new onboarding experience.</p>
+    </div>
+    <hr>
+    <div class="section-header">
+        <h2>Outcomes</h2>
+        </div>
+        <div class="body-container">
+            <p>The first outcome was to redesign the architecture of the entire onboarding experience. By analysing the earlier used architecture, I understood that there were many dead-ends and irreversible steps in it.</p>
+        </div>
+        <br>
+        <div class="inline-img-container">
+            <img src = "/assets/caseStudyImages/CanonicOnboarding/earlierFlow.webp" alt="" width= 100%>
+        </div>
+        
+        <div class = "caption-container">
+            <p class = "caption-p">A zoomed-in screenshot of a map that I made, highlighting each dead-end and problem in red with the existing architecture.</p>
+        </div>
+        <div class="body-container">
+            <p>When I viewed the architecture at large, it was hard to miss the fact that most projects on the platform followed the same general structure. You would start by defining the database schema, in Canonic's case, the 'graph view'. Then, you would add entries into the CMS and proceed with creating APIs to fetch data for your frontend to display.</p><br>
+            <p>In order to achieve the goal of creating a flexible system that adapts to any kind of project that the user wants to select for their onboarding, I worked with the team to create an adaptable information architecture.</p>
+        </div>
+        <br>
+        <div class="inline-img-container">
+            <img src = "/assets/caseStudyImages/CanonicOnboarding/IA.webp" alt="" width= 100%>
+        </div>
+        <div class = "caption-container">
+            <p class = "caption-p">A zoomed in screenshot of the final information architecture, made on <a href= "https://whimsical.com/">Whimsical</a>, that highlights the usage of variables & constants for the architecture to adapt to any Canonic project and turn it into an onboarding project.</p>
+        </div>
+        <br>
+        <div class="body-container">
+            <p>Each project then became a guided onboarding experience with different prompts that guided users. The prompts were made as part of a design system, that highlighted the usage scope of each type of prompt.</p>
+        </div>
+        <br>
+               <div class="inline-img-container">
+            <img src = "/assets/caseStudyImages/CanonicOnboarding/Components.webp" alt="" width= 100%>
+        </div>
+        <div class = "caption-container">
+            <p class = "caption-p">A small snippet from the larger design system; this section being for 'text prompts'.</p>
+        </div>
+        <div class="body-container">
+            <p>The proposed redesign was then handed off to Pratham who worked his developer magic to get the redesign working before Canonic publicly went out of beta on <a href= "https://www.producthunt.com/products/canonic/launches">ProductHunt</a>.</p>
+        </div>
+        <br>
+        <div class="inline-img-container">
+            <img src = "/assets/caseStudyImages/CanonicOnboarding/PH_Feedback.png" alt="" width= 100%>
+        </div>
+        <div class = "caption-container">
+            <p class = "caption-p">A comment by someone on ProductHunt that specifically talked about the onboarding.</p>
+        </div>
+
+        <div class="body-container">
+            <p>I then led the user-testing for the new onboarding, after the ProductHunt launch. We tested with around 15 people, who had varying levels of programming expertise, and a set of recommendations were handed off to the team.</p><br>
+            <p>This project was also personally very important to me, as it was the first ever digital product that I shipped. A reflective article that discusses my learnings can be found on <a href= "https://arjunmakesthings.medium.com/what-lies-beyond-making-digital-experiences-53382e2c28dc">Medium</a>.</p>
+        </div>
+        <br>
+        <div class="inline-img-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-bn1hhMej7M?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class = "caption-container">
+            <p class = "caption-p">A 3-minute walkthrough of the new onboarding experience, right after it went live on ProductHunt. If the video doesn't load, you can access it <a href="https://www.youtube.com/embed/-bn1hhMej7M">here.</a></p>
+        </div>
+        <hr>
+        <script src="" async defer></script>
+    </body>
+</html>̣̉̉̉̉̉

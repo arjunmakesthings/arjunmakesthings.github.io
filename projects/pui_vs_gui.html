@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> ![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PUI vs GUI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="header">
+        <button onclick="window.location.href = '../work.html';">
+            Back to Projects
+        </button>
+    </div>
+
+    <div class="caseStudy-cover">
+        <img src="/assets/work_Images/pui_cover.gif" class="cs-cover-image" alt="">
+
+        <div class="central-question">
+            <h1>How much better is a perceptual interface?</h1>
+        </div>
+    </div>
+
+    <div class="deets-container">
+        <div class="details">
+            <h3>Details</h3>
+            <p class="alternate-p">Work behind the paper: <a
+                    href="https://drive.google.com/file/d/1bfvgvVqmbg8IemoulmboANkNjfwWNAXD/view">Quantitative
+                    Comparison Between A Traditional User Interface (GUI) and A Perceptual User Interface (PUI)</a></p>
+        </div>
+        <div class="role">
+            <h3>Role</h3>
+            <p class="alternate-p">Self-directed research project at IIAD, Delhi</p>
+        </div>
+        <div class="people">
+            <h3>Mentor</h3>
+            <p class="alternate-p"><a
+                    href="https://www.linkedin.com/in/suman-bhandary?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAh6rwABYmMtrIAY84KB2PoBLYh577ofKq4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B3xX%2BraAlR4qbnqx0%2FuG6eA%3D%3D">Suman
+                    Bhandary</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="body-container">
+        <p>This article is an update to the <a
+                href="https://arjunmakesthings.medium.com/how-much-better-could-a-perceptual-user-interface-pui-be-d260f3c6371">original
+                article</a> that I had published on Medium in 2021.</p>
+    </div>
+    <hr>
+
+    <div class="section-header">
+        <h2>Thought</h2>
+    </div>
+
+    <div class="body-container">
+        <p>During an academic project in my third year at IIAD, <a
+                href="https://www.linkedin.com/in/shyam-attreya-aa077950?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAArKzdgBHyRlWAivvKMnjBxMzLIPOADKr-A&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1PV4dYQqQZuNYVFi5pwtrA%3D%3D">
+                Shyam Attreya</a> discussed how metropolitan cities in India such as New Delhi witness long queues at
+            places like hospitals & airports. This is primarily because certain processes, for example checking in at an
+            airport, are conducted by a limited number of personnel for a crowd much larger than what they can
+            efficiently handle.</p>
+    </div>
+    <br>
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/crowd.jpeg" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">Image source: <a
+                href="https://www.indiatoday.in/coronavirus-outbreak/story/day-2-of-covid-vaccination-drive-elderly-queue-outside-delhi-hospitals-for-vaccine-1774936-2021-03-03">India
+                Today.</a></p>
+    </div>
+
+    <div class="body-container">
+        <p>A similar case that I observed was at Max Hospital, Delhi. Upon entering the OPD, people would rush to the
+            reception desk in panic to ask questions that resulted in repetitive answers by the hospital staff.<br><br>
+            I wondered whether these repetitive communication patterns could possibly be automated to increase
+            efficiency. For example, during COVID-19, healthcare workers asked questions with binary answer
+            possibilities to ascertain whether the individual is safe or at risk.</p>
+    </div>
+    <br>
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/Sample Question.png" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">A question from the <a
+                href="https://www.osha.gov/sites/default/files/publications/OSHA4132.pdf">OSHA Sample Employee COVID-19
+                Health Screening Questionnaire.</a></p>
+    </div>
+    <br>
+    <div class="body-container">
+        <p>It struck me that processes such as the one above, that attempt to get user-response to close-ended
+            questions, could be processed much faster with a simple digital intervention.</p>
+    </div>
+    <br>
+    <hr>
+    <div class="section-header">
+        <h2>Deciding The Ideal Interface</h2>
+    </div>
+
+    <div class="body-container">
+        <p>In order to maximise efficiency with minimal contact, I decided to break away from the traditional desktop
+            paradigm (of a display interacted via a keyboard & mouse). A visual interface that could be interacted via
+            gestural inputs seemed to be quite desirable.</p><br>
+        <p>At the time, I had no knowledge of creating a gesture recognition program. However, I had been exploring the
+            capabilities of the webcam on my personal computer by making tiny experiments on Processing.</p>
+    </div>
+    <br>
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/BlobTracker_GIF.gif" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">An experiment that leverages Daniel Shiffman's blob-tracking algorithm. This was later
+            converted into an object-driven EBook reader.</p>
+    </div>
+    <br>
+
+    <div class="body-container">
+        <p>It struck me that for an interface that needs input for binary answer possibilities, I don’t necessarily
+            require a gesture recognition program. A simple interface that allows a person to communicate their choice
+            between Option A & Option B is enough. To achieve this, I decided to use the head as a replacement for the
+            mouse, with answer possibilities placed on either side of the screen. A simple head tilt was enough to input
+            the desired answer.</p>
+    </div>
+    <br>
+
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/HeadGIF.gif" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">A small demonstration of the interface explained above. Programmed on Processing.</p>
+    </div>
+    <br>
+
+    <div class="body-container">
+        <p>I then refined the design of the interface a little bit. This was done to improve readability and
+            distinguishability. No other additional gimmicks that could enhance usability were considered, to keep the
+            comparison restricted to the efficiency of input modalities. To compare this interface with a traditional
+            one (GUI), I used a Google Forms form which contained the same COVID-screening questions as in the
+            perceptual interface, sourced from <a
+                href="https://www.osha.gov/sites/default/files/publications/OSHA4132.pdf">OSHA.</a>
+        </p>
+    </div>
+    <br>
+
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/Interface_MockScreen.png" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">The final interface.</p>
+    </div>
+
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/IntefaceElements-02.jpg" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">A breakdown of the elements of the head-tracked interface.</p>
+    </div>
+
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/IntefaceElements-03.jpg" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">In comparison, this is a breakdown of the Google Forms interface for the said test.</p>
+    </div>
+    <br>
+    <hr>
+    <div class="section-header">
+        <h2>Testing Design</h2>
+    </div>
+
+    <div class="body-container">
+        <p>During my literature review on the development & testing of perceptual interfaces, I found it fascinating
+            that there was no quantitative data on how much better a perceptual interface could be, when compared to a
+            graphical one. However, the general consensus in the world seemed to be that perceptual interfaces are
+            better, faster & easier to use. But by how much?</p> <br><br>
+        <p>I decided to put both interfaces against each other and to compare them to ascertain the time taken to
+            perform a task (in this case, to answer some of the OSHA COVID screening questions). To record data, I
+            adapted the GOMS Keystroke Level model found in The Humane Interface, by Jef Raskin. The model suggests that
+            the total time taken to complete a task on a computer system is the sum of elementary gestures that the task
+            comprises (Raskin). This made it simple to break down interaction on an interface into an equation of time
+            based on a simple mnemonic system (shown below). </p>
+    </div>
+    <br>
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/Mnemonics.jpg" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">Source: The Humane Interface, by Jef Raskin.</p>
+    </div>
+
+    <div class="body-container">
+        <p>I made certain adjustments to the model to suit the nature of human-computer interaction with a perceptual
+            modality. I then proceeded to conduct one-on-one tests in a moderated environment. The test had two phases.
+            In the first, participants were asked to enter their answers using the head-tracked interface and in the
+            second, they filled out a Google Forms form with a trackpad.</p>
+    </div>
+    <br>
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/PUI_vs_GUI/pui_difference.gif" alt="" width=100%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">An interaction comparison of the same action (Entering input + scrolling/entering to
+            neutral state for the next question).</p>
+    </div>
+    <hr>
+    <div class="section-header">
+        <h2>Findings</h2>
+    </div>
+
+    <div class="body-container">
+        <p>For the analysis, I broke down actions for Question 1 and Question 3 for all participants. Here is what I
+            found:</p>
+</div><br>
+
+<div class = "pointer-container">
+    <p><strong>Decrease In Input Time</strong><br>
+    There was a ~0.5s decrease in input time, post comprehension of the question shown, in favour of the head-tracked interface. Participants shaved off a little more than half a second to enter their answer for a single question, meaning that in scenarios where time to complete a task is an essential factor (such as screening in a long queue), perceptual interfaces are more efficient.</p><br>
+    <p><strong>Less User Effort</strong><br>
+    On average, a user performed ~1.625 lesser steps on the head-tracked interface. These 'steps' could include the removal of their fingers from the trackpad after scrolling and other trackpad gestures that arise before reading the next question on the Google Forms form. The amount of user effort / energy expended was impossible to measure for me.</p><br>
+    <p><strong>Ease of Use</strong><br>
+    By using follow up questions, it was found that 100% of the participants found the head-tracked interface easier to use. However, as pointed out by Atreyo & Alina (two of the participants), using the trackpad felt more natural to them as they were used to/accustomed to using trackpads on a daily basis. This presents an interesting hypothesis for the future: how much of an impact does digital literacy have in
+    the interface effectiveness of a perceptual and traditional interface?
+    </p>
+
+</div>
+<br>
+
+<div class="body-container">
+    <p>With these three findings, it can be empirically concluded as to how much better a perceptual user interface is when compared to a traditional one in a specific setting. However, in this experiment, the error rate was 0% which is definitely not realistic for a computer vision based interface operating in a complex social environment. A follow-up to this research could be to look at a similar testing model in complex social environments, with different kinds of people using the interface.</p>
+    </div>
+    <hr>
+
+
+    <div class="section-header">
+        <h2>Reflections</h2>
+    </div>
+
+    <div class="body-container">
+        <p>My major reflection through this project is better articulated by Neri Oxman in her essay, Age of
+            Entanglement. As interface and experience designers, we often tend to differentiate between domains of
+            engineering and design forgetting that the confluence of them can be so much more powerful. Working in
+            isolation to push technology on one side and design on the other is, in my opinion, a delimiter of potential
+            power.</p>
+        <br>
+        <p>Through the activity of writing a 4000-word paper, I found great confidence in the taught ability to
+            assimilate large amounts of information, analyse and critically dissect patterns which can then be
+            articulated through specific mediums. The ingraining of the Double-Diamond model, first introduced in my
+            first year, has found its way into everything I do and it was the same for this project as well. I observed
+            peers get lost in the sea of information and when they asked me for help, my solutions often revolved around
+            instructing them to use some form of the double-diamond model (adapted to their specific context).</p>
+        <br>
+        <p>The most important reflection for other students is this one. If you’re someone who is cultivating ideas with
+            passion that is not quite reciprocated in your immediate environment, I know how it feels. During parts of
+            my project, I felt at a loss of directed guidance as no one in my college shared a similar passion for HCI
+            whereas typical areas of graphic design and “UI/UX” were discussed all the time. However, every single
+            person I interacted with, even if they were not remotely interested in my field of study, contributed to my
+            project. Yes, you might not get exactly what you’re looking for but there’s something everybody can offer
+            using their own experiences, knowledge and passion. Knowledge exists around you in forms that you sometimes
+            hesitate to accept. Embracing this acceptance can make you feel not-so-lost. And hey, you have books and the
+            wonderful internet bringing you to a level playing field with everyone else in the world. So, don’t
+            hesitate. Ideate and make fearlessly, but with passion.</p>
+    </div>
+    <hr>
+    <div class="section-header">
+        <h2>Acknowledgements</h2>
+    </div>
+
+    <div class="body-container">
+        <p>I acknowledge the efforts of my mentors: Prachi Mittal & Suman Bhandary; as well as my peers: Nikhil Shankar,
+            Pratishtha Purwar, Muskan Gupta, Alina Khatri, Atreyo Roy, Kriti Agarwal, Navya Baranwal, Harshvardhan
+            Srivastava in helping me shape the contents of my argument. The librarians, Natesh & Paramjit, were also
+            instrumental in helping me find suitable resources to write my paper.</p>
+        <br>
+        <p>I’d also like to acknowledge the sessions with Shyam Attreya during his final year at IIAD without which I
+            probably wouldn’t have had the starting thought in the first place.</p>
+        <br>
+        <p>The last bit of gratitude goes out to the efforts of Daniel Shiffman, the Processing team and Peter Abeles
+            for their respective contributions to open-source software and the propagation of related knowledge without
+            which all of this would have remained an untestable hypothesis.</p>
+    </div>
+    <hr>
+    <script src="" async defer></script>
+</body>
+
+</html>̣̉̉̉̉̉
