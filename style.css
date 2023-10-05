@@ -162,24 +162,25 @@
  }
 
  .experiment-tag {
-     color: green;
-     background-color: rgba(0, 128, 0, 0.225);
+     color: rgb(0, 180, 0); 
+     background-color: rgba(0, 180, 0, 0.125);
      border: 0px;
  }
 
  .p5-tag {
-     color: rgb(238, 29, 92);
-     background-color: rgba(238, 29, 92, 0.225);
+     color: rgb(244, 52, 109);
+     background-color: rgba(244, 52, 109, 0.125);
  }
 
  .processing-tag {
-     color: rgb(24, 50, 194);
-     background-color: rgba(24, 50, 194, 0.225);
+     color: rgb(52, 97, 253);
+     background-color: rgba(52, 97, 253, 0.125);
  }
 
  .project-tag {
-     color: rgb(133, 23, 206);
-     background-color: rgba(133, 23, 206, 0.225);
+     /*color: rgb(133, 23, 206);*/
+     color: rgb(144, 144, 232); 
+     background-color: rgba(144, 144, 232, 0.125);
  }
 
  .interactive-tag {
