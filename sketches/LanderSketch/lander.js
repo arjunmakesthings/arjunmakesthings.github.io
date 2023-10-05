@@ -91,7 +91,7 @@ window.onresize = function() {
 }
 
 function draw() {
-  background(0);
+  background(20);
 
   for (let i = 0; i < tiles.length; i++) {
     tiles[i].display();

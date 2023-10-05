@@ -53,7 +53,7 @@
  }
 
  html {
-     background-color: black;
+     background-color: rgb(20, 20, 20);
  }
 
  html,
@@ -71,7 +71,7 @@
      font-size: clamp(1rem, 0.51vw + 0.88rem, 1.3rem);
      line-height: 180%;
 
-     color: rgb(255, 255, 245);
+     color: rgb(241, 241, 241);
  }
 
  .alternate-p {
@@ -83,7 +83,7 @@
      font-size: clamp(1rem, 0.51vw + 0.88rem, 1.3rem);
 
      line-height: 1.4rem;
-     color: grey;
+     color: rgb(118,118,118);
  }
 
  .caption-p {
@@ -95,7 +95,7 @@
      font-size: clamp(0.8rem, 0.33vw + 0.72rem, 1.13rem);
 
      line-height: 140%;
-     color: grey;
+     color: rgb(118,118,118);
 
  }
 
@@ -157,13 +157,8 @@
 
      border-radius: 20px;
 
-     /*
-
-border: 1px solid rgb(150, 150, 150);
-*/
-
      color: rgb(150, 150, 150);
-     background-color: rgba(150, 150, 150, 0.225);
+     background-color: rgba(150, 150, 150, 0.115);
  }
 
  .experiment-tag {
@@ -309,7 +304,7 @@ border: 1px solid rgb(150, 150, 150);
      width: 281px;
      height: 416px;
      padding: 19px;
-     background-color: black;
+     background-color: rgb(20, 20, 20);
      color: white;
      margin: 4vw;
      justify-content: center;
@@ -478,7 +473,7 @@ border: 1px solid rgb(150, 150, 150);
      margin: 0 12lvw;
      padding: 1.5rem;
 
-     background-color: rgb(50, 50, 50);
+     background-color: rgb(40, 40, 40);
 
      border-radius: 10px;
 
@@ -495,7 +490,7 @@ border: 1px solid rgb(150, 150, 150);
      font-size: clamp(0.7rem, 0.51vw + 0.88rem, 1rem);
 
      line-height: 1.4rem;
-     color: rgb(213, 213, 213);
+     color: rgb(150,150,150);
  }
 
  .code-snippet {
@@ -510,6 +505,7 @@ border: 1px solid rgb(150, 150, 150);
 
  .code-snippet h5 {
      padding: 1rem;
+     color: rgb(118,118,118);
      
  }
 
