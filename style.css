@@ -188,6 +188,11 @@
      background-color: rgba(192, 135, 13, 0.225);
  }
 
+ .wip-tag {
+    color: rgb(198, 9, 9);
+    background-color: rgba(198, 9, 9, 0.225);
+}
+
  .interactive-button{
     color: rgb(192, 135, 13);
     background-color: black; 
@@ -279,7 +284,7 @@
  @media all and (max-width: 900px) {
 
      .buttonGrid {
-         margin: 2vw 0%;
+         margin: 1vw 0%;
          height: 100vh;
      }
 
