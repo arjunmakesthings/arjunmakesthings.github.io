@@ -570,6 +570,10 @@
      text-decoration: none;
  }
 
+ .card a{
+    text-decoration: none;
+ }
+
  /*-----------------HEADER + FOOTER-----------------*/
  .header {
      display: flex;
