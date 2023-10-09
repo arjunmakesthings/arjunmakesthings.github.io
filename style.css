@@ -434,7 +434,7 @@
  }
 
  hr {
-     border-top: 2px solid #2d2d2d;
+     border: 2px solid #7c7c7c;
      opacity: 50%;
      margin: 5% 0%;
  }
@@ -529,6 +529,11 @@
      margin: 0 500px;
  }
 
+ .inline-img-container img{
+    max-width: fit-content;
+ }
+
+
  .inline-img-container {
      display: flex;
      margin: 1.75rem 12lvw 0 12lvw;
@@ -536,9 +541,14 @@
      align-content: center;
      overflow: hidden;
      width: fit-content;
-     max-width: 76lvw;
+     max-width: 50lvw;
  }
 
+ @media only screen and (max-width: 700px) {
+    .inline-img-container{
+        max-width: 100lvw;
+    }
+}
 
  .full-img-container {
      display: flex;
@@ -622,6 +632,21 @@
     color: grey;
  }
 
+ .fotter-liner button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0%;
+    overflow: hidden;
+
+    border: 0px;
+    width: 100%;
+    height: fit-content;
+    margin: 1% 0%;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
  .buttonGrid-footer {
      display: flex;
      flex-direction: row;
@@ -634,107 +659,7 @@
      overflow: hidden;
      row-gap: 0px;
  }
-
- .button-footer {
-     background-color: #cb0f0f00;
-     border: 1px solid #FFFFFF;
-     border-radius: 100px;
-     color: white;
-     font-size: 20px;
-     font-family: 'VictorMono';
-     font-weight: 400;
-     /*text-transform: uppercase;*/
-     max-width: 1lw;
-     height: 80px;
- }
-
- /*-----------------THOUGHTS-----------------*/
- .blog-container {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-content: left;
-     margin: 3vw;
-     row-gap: 3vw;
-     max-width: 50vw;
- }
-
-
- .post-container {
-     border: 1px solid #FFFFFF;
-     padding: 0.5rem 1vw;
-     border-radius: 20px;
- }
-
- @media only screen and (max-width: 700px) {
-     .blog-container {
-         max-width: 100vw;
-         row-gap: 5vw;
-     }
-
-     .post-container {
-         padding: 2vw;
-     }
- }
-
- /*
-
-        .blog-explainer-container{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-
-            position: absolute;
-            right: 3%;
-            left: 50%; 
-
-            margin-left: 3%;
-
-            justify-content: left;
-            align-content: left;
-
-            max-width: 50vw;
-            height: 100%;
-
-
-            padding-left: 5%;
-
-        }
-        */
-
- .blog-tag-row {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: left;
-     margin-bottom: 2vw;
- }
-
- .blog-body {
-     display: none;
- }
-
- .post-container:hover,
- .post-container:active {
-     cursor: pointer;
-
-     .blog-body {
-         display: flex;
-         color: white;
-     }
-
- }
-
- .blog-body .p {
-     margin-bottom: 20%;
- }
-
- #birthday {
-     background-color: rgba(255, 192, 203, 0.3);
-     color: pink;
- }
-
+ 
  /*-----------------STORY-----------------*/
  .textPage-container {
      display: flex;
