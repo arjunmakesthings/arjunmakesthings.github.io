@@ -60,6 +60,7 @@
  body {
      margin: 0%;
      padding: 0;
+     overflow-x: hidden;
  }
 
  /*-----------------All Typography-----------------*/
@@ -730,6 +731,16 @@
      height: auto;
  }
 
+ .full-image-gallery li iframe {
+    padding-bottom: 56.25%;
+    padding-right: 56.25%; /* 16:9 */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
  /*
           .full-image-gallery::after {
             content: "";
@@ -741,8 +752,3 @@
             margin-bottom: 0;
          }
 
-         iframe{
-            width: 100lvw; 
-            height: 75lvh; 
-            overflow: hidden;
-         }
