@@ -740,3 +740,9 @@
          .body-container h3{
             margin-bottom: 0;
          }
+
+         iframe{
+            width: 100lvw; 
+            height: 75lvh; 
+            overflow: hidden;
+         }
