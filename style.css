@@ -73,6 +73,9 @@
      line-height: 180%;
 
      color: rgb(241, 241, 241);
+
+     /*Experimental try on 28 Oct*/
+     text-wrap: pretty;
  }
 
  .alternate-p {
