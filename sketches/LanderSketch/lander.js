@@ -44,7 +44,7 @@ function setup() {
   //DrawTheText
   vc.textFont(headFont);
   vc.textSize(84.17);
-  vc.fill(255);
+  vc.fill(206, 205, 195); 
   vc.noStroke();
   vc.textAlign(CENTER, CENTER);
   vc.text("arjun's", vc.width / 2, vc.height / 2);
