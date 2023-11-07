@@ -756,3 +756,7 @@
          .contactWrapper a{
             text-decoration: none;
          }
+
+         .contactWrapper h5{
+            line-height: 150%;
+         }
