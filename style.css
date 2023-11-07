@@ -720,12 +720,6 @@
     height: 100%;
 }
 
- /*
-          .full-image-gallery::after {
-            content: "";
-          }
-          */
-
          /* EXPERIENCE*/
          .body-container h3{
             margin-bottom: 0;
@@ -742,3 +736,23 @@
             pointer-events: none;
          }
 
+         .contactWrapper{
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            align-items: center;
+            justify-content: center;
+            height: 75lvh;
+            margin: 0 12lvw;
+         }
+
+         .contactWrapper button{
+            border-radius: 50px;
+            height: 100%;
+            width: 100%;
+            padding: 3%;
+         }
+
+         .contactWrapper a{
+            text-decoration: none;
+         }
