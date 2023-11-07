@@ -86,7 +86,7 @@
      font-size: 1.125rem;
      font-size: clamp(0.875rem, 0.7337rem + 0.5797vw, 1.125rem);
 
-     line-height: 180%;
+     line-height: 140%;
      color: rgb(118,118,118);
  }
 
@@ -385,7 +385,7 @@
 
  .cs-cover-image {
      align-items: center;
-     opacity: 20%;
+     opacity: 10%;
      width: 100%;
  }
 
@@ -418,7 +418,7 @@
 
      .cs-cover-image {
          align-items: center;
-         opacity: 20%;
+         opacity: 10%;
          width: 100%;
          max-height: 700px;
          object-fit: cover;
@@ -695,9 +695,12 @@
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
+     align-items: center;
+     overflow: hidden;
      justify-content: center;
      gap: 1vw;
-     margin: 0%;
+     margin: 1.75rem;
+     max-width: 100lvw;
  }
 
  .full-image-gallery li {
