@@ -86,7 +86,7 @@
      font-size: 1.125rem;
      font-size: clamp(0.875rem, 0.7337rem + 0.5797vw, 1.125rem);
 
-     line-height: 140%;
+     line-height: 180%;
      color: rgb(118,118,118);
  }
 
@@ -385,7 +385,7 @@
 
  .cs-cover-image {
      align-items: center;
-     opacity: 10%;
+     opacity: 20%;
      width: 100%;
  }
 
@@ -418,7 +418,7 @@
 
      .cs-cover-image {
          align-items: center;
-         opacity: 10%;
+         opacity: 20%;
          width: 100%;
          max-height: 700px;
          object-fit: cover;
@@ -695,12 +695,9 @@
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
-     align-items: center;
-     overflow: hidden;
      justify-content: center;
      gap: 1vw;
-     margin: 1.75rem;
-     max-width: 100lvw;
+     margin: 0%;
  }
 
  .full-image-gallery li {
@@ -732,5 +729,16 @@
          /* EXPERIENCE*/
          .body-container h3{
             margin-bottom: 0;
+         }
+
+         .landerVid-container{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100lvw;
+            height: 100lvh;
+            overflow: hidden;
+            opacity: 10%;
+            pointer-events: none;
          }
 
