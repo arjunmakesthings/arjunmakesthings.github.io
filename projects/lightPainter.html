@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> ![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Light Painter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="header">
+        <button onclick="window.location.href = '../work.html';">
+            Back to Projects
+        </button>
+    </div>
+
+    <div class="caseStudy-cover">
+        <img src="/assets/work_Images/LightPaintCover_2.gif" class="cs-cover-image" alt="">
+
+        <div class="central-question">
+            <h1>Can we actually paint with light?</h1>
+        </div>
+    </div>
+
+    <div class="deets-container">
+        <div class="details">
+            <h3>Details</h3>
+            <p class="alternate-p">Tools to help people paint with light over the web</p>
+        </div>
+        <div class="role">
+            <h3>Role</h3>
+            <p class="alternate-p">Self-directed</p>
+        </div>
+        <div class="people">
+            <h3>Tools</h3>
+            <p class="alternate-p">p5.js</p>
+        </div>
+    </div>
+    <hr>
+    <div class="section-header">
+        <h2>Thought</h2>
+    </div>
+
+    <div class="body-container">
+        <p>There are abundant images on the Internet of people attempting to paint with light, often with the use of long exposure photographs.</p>
+    </div>
+    <br>
+
+    <div class="inline-img-container">
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/2/29/Light_painting_example.jpeg?20090811094921" alt="" width= 100%>
+    </div>
+    
+    <div class = "caption-container">
+        <p class = "caption-p">Image source: Wikimedia Commons.</p>
+    </div>
+
+    <div class="body-container">
+        <p>I wondered what it would look like, if people were able to paint in real-time with light on a computer screen. To do this, I created a set of computer programs that track the brightest point on a webcam video feed and drop particles to follow its trail, making the movement similar to that of a paintbrush dropping paint.</p>
+    </div>
+    <hr>
+    <div class="section-header">
+        <h2>Outcomes</h2>
+    </div>
+
+    <div class="inline-img-container">
+        <video preload="yes" width="100%" muted autoplay nocontrols loop playsinline>
+            <source src="/assets/caseStudyImages/Light_Painting/Demo1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="caption-container">
+        <p class="caption-p">First program that captures the brightest point in a dark environment, here a lightbulb, and draws a trail of yellow circles.</p>
+    </div>
+
+    <div class="inline-img-container">
+        <video preload="yes" width="100%" muted autoplay nocontrols loop playsinline>
+            <source src="/assets/caseStudyImages/Light_Painting/Demo2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="caption-container">
+        <p class="caption-p">Second program where I used an LED bulb, powered by a coin battery that I could then turn on & off to give the desired lines and breaks.</p>
+    </div>
+    <hr>
+
+    <div class="section-header">
+        <h2>Code</h2>
+    </div>
+
+    <div class="body-container">
+        <p>The program, as mentioned before, tracks the brightest point of a webcam video feed. This is primarily done by going through all pixels on the screen, analysing the RGB values and returning the point with the highest values in that frame (that will be the brightest).</p>
+    </div>
+    <br>
+
+    <div class="code-snippet">
+        <code>
+                <h5><br>
+                    function findBrightest(video) {<br><br>
+                        var brightestValue = 0;<br>
+                        var brightestPosition = createVector(0, 0);<br>
+                        var pixels = video.pixels;<br>
+                        var i = 0;<br><br>
+                        for (var y = 0; y < h; y++) {<br>
+                          for (var x = 0; x < w; x++) {<br>
+                            var r = pixels[i++];<br>
+                            var g = pixels[i++];<br>
+                            var b = pixels[i++];<br>
+                            i++; // ignore a <br><br>
+                            var brightness = r + g + b;<br>
+                            if (brightness > brightestValue) {<br>
+                              brightestValue = brightness;<br>
+                              brightestPosition.set(x, y);<br>
+                            }<br>
+                          }<br>
+                        }<br><br>
+                        return brightestPosition;<br>
+                      }
+                      
+                    <br><br>
+</h5>
+        </code>
+    </div>
+    <br>
+
+    <div class="body-container">
+        <p>Then, all the computer has to do is place an object at the brightest point (which has an x & y coordinate).</p>
+    </div>
+    <br>
+
+    <div class="code-snippet">
+        <code>
+                <h5><br>
+                    capture.loadPixels();<br><br>
+                    if (capture.pixels.length > 0) {<br>
+                      var brightest = findBrightest(capture);<br>
+                    }<br><br>
+                      this.x = brightest.x;<br>
+                      this.y = brightest.y;<br><br>
+                      //using 'this' identifier as an object is created.
+                    <br><br>
+</h5>
+        </code>
+    </div>
+    <hr>
+                  <!--Footer for Case Study-->
+  <div class="footer-liner">
+    <div class="header">
+        <button onclick="window.location.href = '../work.html';">
+            Back to Projects
+        </button><br>
+    </div>
+
+    <p>Designed & developed by Arjun. Code <a href = "https://github.com/arjuncreates/arjuncreates.github.io">here</a>, design intent <a href = "https://arjuncreates.github.io/projects/design-intent.html">here</a>.</p>
+    <p>Bugs, ideas and conversations are welcome at arjunmakesthings@gmail.com</p>
+  </div>
+  <!--Footer-->
+    
+    <script src="" async defer></script>
+</body>
+
+</html>̣̉̉̉̉̉
