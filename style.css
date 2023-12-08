@@ -205,6 +205,7 @@
     font-size: 0.8rem;
     font-size: clamp(0.8rem, 0.51vw + 0.88rem, 1.2rem);
     line-height: 130%;
+    padding: 2%; 
  }
 
  .interactive-button a{
