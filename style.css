@@ -192,8 +192,11 @@
 
  .wip-tag {
     color: rgb(198, 9, 9);
-    background-color: rgba(198, 9, 9, 0.225);
 }
+
+.film-tag{
+    color: rgb(58, 169, 159);
+ }
 
  .interactive-button{
     color: rgb(192, 135, 13);
