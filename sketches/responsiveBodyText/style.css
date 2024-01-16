@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.header {
+  display: flex;
+  margin: 2%;
+  overflow: hidden;
+}
+

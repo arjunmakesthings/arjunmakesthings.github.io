@@ -540,7 +540,7 @@
      align-content: center;
      overflow: hidden;
      width: fit-content;
-     max-width: 1000px;
+     max-width: 50lvw;
  }
 
  .br {

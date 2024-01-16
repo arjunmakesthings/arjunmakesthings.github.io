@@ -9,7 +9,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Distance-Responsive Digital Typography</title>
-    <meta name="description" content="A tool to get colours from the webcam, useful for creating colour palettes from real-life objects | Arjun's Archive">
+    <meta name="description"
+        content="A tool to get colours from the webcam, useful for creating colour palettes from real-life objects | Arjun's Archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -38,7 +39,7 @@
     <div class="deets-container">
         <div class="details">
             <h3>Details</h3>
-            <p class="alternate-p">Ongoing experiments to make visual content respond to the distance that it is being viewed from</p>
+            <p class="alternate-p">Ongoing experiments to make reactive typography</p>
         </div>
         <div class="role">
             <h3>Role</h3>
@@ -51,31 +52,140 @@
     </div>
     <hr>
     <div class="section-header">
-        <h2>Context</h2>
+        <h2>Thought</h2>
     </div>
 
     <div class="body-container">
-        <p>Been wondering about how typography is essentially 'stuck' on a screen.</p>
-            </div>
-            <hr>
-            <div class="section-header">
-                <h2>Experiment 1 – Body Text + Distance</h2>
-            </div>
+        <p>A lot of graphic design outcomes, for me, remain trapped in a power structure between the designer & the
+            viewer – the same 16-point sized paragraph is viewed from a range of distances, resulting in varying
+            experiences. Go too far, or too near, and the paragraph will no longer be legible.</p>
+    </div>
     <br>
-    <hr>
-                  <!--Footer for Case Study-->
-  <div class="footer-liner">
-    <div class="header">
-        <button onclick="window.location.href = '../work.html';">
-            Back to Work
-        </button><br>
+
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/distance-responsive-digital-typography/squinter.webp" alt="" width=100%>
     </div>
 
-    <p>Designed & developed by Arjun. Code <a href = "https://github.com/arjunmakesthings/arjunmakesthings.github.io">here</a>, design intent <a href = "https://arjunmakesthings.github.io/projects/design-intent.html">here</a>.</p>
-    <p>Bugs, ideas and conversations are welcome at arjunmakesthings@gmail.com</p>
-  </div>
-  <!--Footer-->
-    
+    <div class="caption-container">
+        <p class="caption-p">A classic example of this is squinting at your phone screen because the font size is too
+            small from the distance you're viewing it from. Image credits: <a
+                href="https://www.nvisioncenters.com/eye-health/squinting-not-bad-for-your-eyes/">Nvision</a>.</p>
+    </div>
+
+    <div class="body-container">
+        <p>In a world where experiences are largely becoming responsive – user flows react to user-inputted data,
+            websites fit content based on the size of the viewport, and components of buildings react to the way they are being perceived (see <a href="https://resenv.media.mit.edu/">Responsive Environments at the MIT Media Lab</a>), I wondered whether typography on a digital screen could do the same. <br><br>
+            While many perceptual factors come into action when attempting to comprehend a piece of a text on a screen,
+            I decided to play around first with the simplest one – distance.
+        </p>
+    </div>
+    <hr>
+
+    <div class="section-header">
+        <h2>Outcome</h2>
+    </div>
+    <div class="inline-img-container">
+        <video preload="yes" width="80%" muted playsinline autoplay loop>
+            <source src="/assets/caseStudyImages/distance-responsive-digital-typography/distResponsive_Video.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="caption-container">
+        <p class="caption-p">A video of the tool in use.</p>
+    </div>
+
+    <div class="body-container">
+        <a href="/sketches/responsiveBodyText/index.html">
+            <h5 class="interactive-button">You can play around with the tool by clicking here.</h5>
+        </a>
+
+    </div>
+    <hr>
+    <div class="section-header">
+        <h2>Logic & Code</h2>
+    </div>
+    <div class="body-container">
+        <p>What’s interesting in terms of the logic of the program is that webcams cannot typically sense depth – how
+            far has the eye moved from the camera? However, what it <em>can</em> do with the use of <a
+                href="https://blog.tensorflow.org/2018/05/real-time-human-pose-estimation-in.html">TensorFlow’s
+                PoseNet</a> is to continuously track the position of the eyeball on a 2D plane.</p>
+    </div><br>
+
+    <div class="inline-img-container">
+        <img src="/assets/caseStudyImages/distance-responsive-digital-typography/notebook.webp" alt="" width=80%>
+    </div>
+
+    <div class="caption-container">
+        <p class="caption-p">A snippet from my notebook where I first discovered that distance could be tracked simply
+            as the horizontal distance between the pupils.</p>
+    </div>
+    <div class="body-container">
+        <p>The logic used is then simple: the further the eyes go, the smaller the distance between the pupils, and the
+            closer the eyes come, the greater the distance between the pupils.<br><br>
+            The font-size was, therefore, tied into a relationship with the distance between the two pupils. However, to
+            prevent the font-size from constantly changing every frame, I used the concept of breakpoints – go beyond a
+            certain threshold and the font size changes.
+        </p>
+    </div><br>
+
+    <div class="code-snippet">
+        <code>
+                <h5><br>
+                    //Assigning the distance between pupils to a variable<br><br>
+                        d = int(dist(pose.leftEye.x, pose.leftEye.y, pose.rightEye.x, pose.rightEye.y));<br><br>
+                        //Changing size of the font <br><br>
+                        function tChange() {<br><br>
+                            fontSize = lerp(fontSize, newFontSize, 0.05); <br><br>
+                            if (distance is less than minimum){ <br>
+                                newFontSize = 56; <br>
+                            }<br><br>
+                            if (distance is more than minimum and less than maximum){ <br>
+                                newFontSize = 16; <br>
+                            } <br><br>
+                            if (distance is more than maximum){ <br>
+                                newFontSize = 8; <br>
+                            }<br><br>
+                        }
+
+                    <br><br>
+</h5>
+        </code>
+    </div>
+    <br>
+
+    <div class="body-container">
+        <p>All the actual code can be found <a
+                href="https://github.com/arjunmakesthings/distance-responsive-text">here</a>.</p>
+    </div>
+    <hr>
+
+    <div class="section-header">
+        <h2>What Next</h2>
+    </div>
+
+    <div class="body-container">
+        <p>I’m currently playing around with adding more complexity – how can a group of text boxes (such as in a
+            poster) respond to various factors (not just distance but perhaps eye movement among others)?</p>
+    </div><br>
+
+    <br>
+    <hr>
+    <!--Footer for Case Study-->
+    <div class="footer-liner">
+        <div class="header">
+            <button onclick="window.location.href = '../work.html';">
+                Back to Work
+            </button><br>
+        </div>
+
+        <p>Designed & developed by Arjun. Code <a
+                href="https://github.com/arjunmakesthings/arjunmakesthings.github.io">here</a>, design intent <a
+                href="https://arjunmakesthings.github.io/projects/design-intent.html">here</a>.</p>
+        <p>Bugs, ideas and conversations are welcome at arjunmakesthings@gmail.com</p>
+    </div>
+    <!--Footer-->
+
     <script src="" async defer></script>
 </body>
 
