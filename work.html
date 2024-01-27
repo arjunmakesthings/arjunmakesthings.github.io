@@ -34,11 +34,18 @@
   </div>
   <!--HEADER ENDS-->
 
+  <div class = "taggers">
+    <h5 class = "all-tog" onclick = "showAll()">All</h5>
+    <h5 class = "projects-tog" onclick = "showOnlyProjects()">Projects</h5>
+    <h5 class = "experiments-tog" onclick = "showOnlyExperiments()">Experiments</h5>
+    <h5 class = "films-tog" onclick = "showOnlyFilms()">Films</h5>
+  </div>
+
   <div class="cards-container">
     <!--All Cards Begin-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/in-between-life-and-death.html'>
+    <div class="card" id = "project"><a href='/projects/in-between-life-and-death.html'>
         <img src="/assets/work_Images/IBLD_Cover2.webp" class="work-covers"
           alt="A number of interconnected vertices moving on the screen.n" />
         <h4>Can we make young adults question human needs?</h4>
@@ -53,7 +60,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/computer-painter.html'>
+    <div class="card" id = "experiment"><a href='/projects/computer-painter.html'>
         <img src="/assets/work_Images/compPainter.webp" class="work-covers" alt="" />
         <h4>Can computers paint like abstract expressionists?</h4>
 
@@ -67,7 +74,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/expressive-typography-experiments.html'>
+    <div class="card" id = "experiment"><a href='/projects/expressive-typography-experiments.html'>
         <img src="/assets/work_Images/expressiveType_Cover.gif" class="work-covers" alt="" />
         <h4>Can the display of words express more?</h4>
 
@@ -81,7 +88,7 @@
     <!--Card Ends Above-->
 
                 <!--Card Starts Below-->
-                <div class="card"><a href='/projects/distance-responsive-digital-typography.html'>
+                <div class="card" id = "experiment"><a href='/projects/distance-responsive-digital-typography.html'>
                   <img src="/assets/work_Images/distance-responsive-text-cover.gif" class="work-covers" alt="" />
                   <h4>Can digital typography respond to distance?</h4>
           
@@ -95,7 +102,7 @@
               <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/earth-2052.html'>
+    <div class="card" id = "project"><a href='/projects/earth-2052.html'>
         <img src="/assets/work_Images/e2052_cover.gif" class="work-covers"
           alt="A number of interconnected vertices moving on the screen.n" />
         <h4>What might the Earth look like in 2052?</h4>
@@ -109,7 +116,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"> <a href='/projects/pui_vs_gui.html'>
+    <div class="card" id = "project"> <a href='/projects/pui_vs_gui.html'>
         <img src="/assets/work_Images/pui_cover.gif" class="work-covers" alt="" />
         <h4>How much better is a perceptual interface?</h4>
 
@@ -123,7 +130,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"> <a href='/projects/find-colour-palette-through-webcam.html'>
+    <div class="card" id = "experiment"> <a href='/projects/find-colour-palette-through-webcam.html'>
         <img src="/assets/work_Images/colour-palette.gif" class="work-covers" alt="" />
         <h4>Can we generate colour palettes from live video?</h4>
 
@@ -138,7 +145,7 @@
     <!--Card Ends Above-->
 
         <!--Card Starts Below-->
-        <div class="card"><a href='/projects/object-reader.html'>
+        <div class="card" id = "experiment"><a href='/projects/object-reader.html'>
           <img src="/assets/work_Images/ReaderGIF.gif" class="work-covers" alt="" />
           <h4>Can you control a PDF with real-world objects?</h4>
   
@@ -152,7 +159,7 @@
       <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/n=4.html'>
+    <div class="card" id = "experiment"><a href='/projects/n=4.html'>
         <img src="/assets/work_Images/n=4_cover.gif" class="work-covers"
           alt="A number of interconnected vertices moving on the screen.n" />
         <h4>Can letters exist as a set of rules?</h4>
@@ -167,7 +174,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"> <a href='/projects/phone-painting.html'>
+    <div class="card" id = "experiment"> <a href='/projects/phone-painting.html'>
         <img src="/assets/work_Images/phone-draw.gif" class="work-covers"
           alt="A rotating phone, held in the hand draws on the computer screen" />
         <h4>What if you could paint with your phone?</h4>
@@ -182,7 +189,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"> <a href='/projects/lightPainter.html'>
+    <div class="card" id = "experiment"> <a href='/projects/lightPainter.html'>
         <img src="/assets/work_Images/LightPaintCover_2.gif" class="work-covers" alt="" />
         <h4>Can we actually paint with light?</h4>
 
@@ -196,7 +203,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/disintegratingType.html'>
+    <div class="card" id = "experiment"><a href='/projects/disintegratingType.html'>
         <img src="/assets/work_Images/disintegrateType-cover.gif" class="work-covers" alt="" />
         <h4>What if letters could digitally disintegrate?</h4>
 
@@ -210,7 +217,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/contagion-simulator.html'>
+    <div class="card" id = "experiment"><a href='/projects/contagion-simulator.html'>
         <img src="/assets/work_Images/contagion-cover.webp" class="work-covers" alt="" />
         <h4>What does a contagion spread look like?</h4>
 
@@ -225,7 +232,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"> <a href='/projects/canonic-onboarding.html'>
+    <div class="card" id = "project"> <a href='/projects/canonic-onboarding.html'>
         <img src="/assets/work_Images/CanonicCover.webp" class="work-covers" alt="" />
         <h4>How can I improve an onboarding experience?</h4>
 
@@ -239,7 +246,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"> <a href='/projects/organisational-complexity.html'>
+    <div class="card" id = "project"> <a href='/projects/organisational-complexity.html'>
         <img src="/assets/work_Images/orgComplexity.webp" class="work-covers" alt="" />
         <h4>How can we show organisational complexity?</h4>
 
@@ -254,7 +261,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href="projects/dear-delhi.html">
+    <div class="card" id = "project"><a href="projects/dear-delhi.html">
         <img src="/assets/work_Images/DearDelhi.webp" class="work-covers" alt="" />
         <h4>How can we use typography to encourage social reflection?</h4>
 
@@ -268,7 +275,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/polygon-generator.html'>
+    <div class="card" id = "experiment"><a href='/projects/polygon-generator.html'>
         <img src="/assets/work_Images/PolygonGeneratorCover.gif" class="work-covers"
           alt="A number of interconnected vertices moving on the screen.n" />
         <h4>Can you create an infinite repository of polygons?</h4>
@@ -284,7 +291,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/36-dot-2023.html'>
+    <div class="card" id = "project"><a href='/projects/36-dot-2023.html'>
         <img src="/assets/work_Images/36DOT_Cover.webp" class="work-covers" alt="" />
         <h4>Can letters be seen as shapes?</h4>
 
@@ -317,7 +324,7 @@
 
 
     <!--Card Starts Below-->
-    <div class="card"> <a href='/projects/why-do-people-climb.html'>
+    <div class="card" id = "film"> <a href='/projects/why-do-people-climb.html'>
         <img src="/assets/work_Images/hands_climbing.jpg" class="work-covers" alt="" />
         <h4>Why do people climb?</h4>
 
@@ -330,7 +337,7 @@
     <!--Card Ends Above-->
 
     <!--Card Starts Below-->
-    <div class="card"><a
+    <div class="card" id = "film"><a
         href='https://arjunmakesthings.medium.com/what-i-learnt-from-recording-every-day-of-my-life-for-a-year-1341f2029d2'>
         <img src="/assets/work_Images/2022-in-films-cover.webp" class="work-covers" alt="" />
         <h4>What happens if I record myself for a year?</h4>
@@ -345,7 +352,7 @@
 
 
     <!--Card Starts Below-->
-    <div class="card"><a href='/projects/design-intent.html'>
+    <div class="card" id = "project"><a href='/projects/design-intent.html'>
         <img src="/assets/work_Images/designIntent-cover.webp" class="work-covers" alt="" />
         <h4>How do I digitally archive myself?</h4>
 
@@ -369,7 +376,7 @@
   </div>
   <!--Footer-->
 
-  <script src="" async defer></script>
+  <script src="tagSelect.js" async defer></script>
 </body>
 
 </html>
