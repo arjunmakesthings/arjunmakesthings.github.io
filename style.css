@@ -831,7 +831,7 @@ a:hover {
 /*Adjustment for How Do I Spend My Days*/
 @media all and (max-width: 800px) {
 
-    #sketch-holder {
+    #sketch-holder-hispmd {
         display: none; 
     }
 
