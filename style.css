@@ -828,4 +828,34 @@ a:hover {
    cursor: pointer;
 }
 
+/*Adjustment for How Do I Spend My Days*/
+@media all and (max-width: 800px) {
+
+    #sketch-holder {
+        display: none; 
+    }
+
+    .full-img-container-hispmd{
+        display: flex !important; 
+    }
+
+ }
+
+ .big-question-hdispmd{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 8lvw; 
+ }
+
+ .full-img-container-hispmd {
+    display: none;
+    margin: 1.75rem 0 0 0;
+    justify-content: left;
+    align-content: center;
+    overflow: hidden;
+    max-width: 100lvw;
+}
+
 
