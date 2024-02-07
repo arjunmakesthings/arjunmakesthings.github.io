@@ -24,7 +24,7 @@ var centerX;
 var centerY;
 
 function preload() {
-  headFont = loadFont("fonts/Piazzolla/Piazzolla-SemiBoldItalic.ttf");
+  headFont = loadFont("../fonts/Piazzolla/Piazzolla-SemiBoldItalic.ttf");
 }
 
 function setup() {
