@@ -83,12 +83,14 @@ function windowResized() {
   centerY = windowHeight / 2 - vc.height / 2;
 }
 
+/*
 window.onresize = function() {
   // assigns new values for width and height variables
   windowWidth = window.innerWidth;
   windowHeight = window.innerHeight;  
   canvas.size(windowWidth,windowHeight);
 }
+*/
 
 function draw() {
   background(20);
