@@ -68,6 +68,28 @@
             align-content: center;
         }
 
+        #credit {
+            position: absolute;
+            bottom: 20px;
+
+            right: 2%;
+            line-height: 120%;
+
+            color: rgb(206, 205, 195);
+            opacity: 75%;
+            font-family: "Anonymous Pro", monospace;
+            font-size: 12px;
+            font-weight: 100;
+            /* Semi-transparent color */
+        }
+
+        a{
+            color: rgba(206, 205, 195, 0.7);
+        }
+        a:hover{
+            color: rgba(18, 217, 228, 0.7);
+        }
+
         #input-line {
             margin-top: 10px;
             /* Adjusted margin-top */
@@ -77,16 +99,20 @@
         /* Responsive adjustments */
         @media only screen and (max-width: 600px) {
             body {
-                padding: 10px; /* Adjusted padding for better spacing on smaller screens */
+                padding: 10px;
+                /* Adjusted padding for better spacing on smaller screens */
             }
 
             #input {
-                font-size: 14px; /* Adjusted font size for better readability on smaller screens */
-                width: 100%; /* Adjusted width for better fit on mobile screens */
+                font-size: 14px;
+                /* Adjusted font size for better readability on smaller screens */
+                width: 100%;
+                /* Adjusted width for better fit on mobile screens */
             }
 
             #poetry {
-                font-size: 16px; /* Adjusted font size for better readability on smaller screens */
+                font-size: 16px;
+                /* Adjusted font size for better readability on smaller screens */
             }
         }
     </style>
@@ -100,6 +126,9 @@
         </div>
     </div>
     <div id="poetry"></div>
+
+    <div id="credit">Using the <a href="https://github.com/dulldesk/words-api">words-api by dulldesk</a>, built using
+        HTML by <a href="https://arjunmakesthings.github.io">Arjun</a>.</div>
 
     <script>
         const terminal = document.getElementById('terminal');
