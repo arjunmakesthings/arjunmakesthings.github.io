@@ -251,11 +251,13 @@ strong {
 
 /*-----------------INDEX-----------------*/
 
+/*
 canvas {
     display: flex;
     align-items: center;
     overflow: hidden;
 }
+*/
 
 .buttonGrid {
     display: flex;
