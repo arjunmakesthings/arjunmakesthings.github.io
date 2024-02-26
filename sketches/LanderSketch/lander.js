@@ -37,8 +37,8 @@ function setup() {
 
   vc = createGraphics(vcWidth, vcHeight);
   
-  centerX = windowWidth / 2 - vc.width / 2;
-  centerY = windowHeight / 2 - vc.height / 2;
+  centerX = (windowWidth - vcWidth) / 2;
+  centerY = (windowHeight - vcHeight) / 2;
 
   //DrawTheText
   vc.textFont(headFont);
@@ -76,20 +76,16 @@ function setup() {
   }
 }
 
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  centerX = windowWidth / 2 - vc.width / 2;
-  centerY = windowHeight / 2 - vc.height / 2;
+  clear(); // Clear the canvas
+  tiles = []; // Clear the tiles array
+  imgSquares = []; // Clear the imgSquares array
+  mouseXhistory = [];
+  mouseYhistory = [];
+  setup(); // Redraw the sketch
 }
-
-/*
-window.onresize = function() {
-  // assigns new values for width and height variables
-  windowWidth = window.innerWidth;
-  windowHeight = window.innerHeight;  
-  canvas.size(windowWidth,windowHeight);
-}
-*/
 
 function draw() {
   background(20);
