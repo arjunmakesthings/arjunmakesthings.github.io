@@ -861,4 +861,25 @@ a:hover {
     max-width: 100lvw;
 }
 
+/*Adjustment end*/
+
+/*CV List styling*/
+.pointer-container li{
+    list-style-type: square;
+    font-family: "VictorMono";
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.51vw + 0.88rem, 1rem);
+
+    line-height: 1.5rem;
+    color: rgb(135, 133, 128);
+
+    margin-bottom: 1.2rem;
+    margin-right: 5%;
+
+}
+/*List Styling End */
+
 
