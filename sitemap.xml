@@ -33,12 +33,17 @@
 	<url>
 		<loc>https://www.arjunmakesthings.github.io/work.html</loc>
 		<priority>0.67</priority>
-		<lastmod>2024-02-26</lastmod>
+		<lastmod>2024-08-22</lastmod>
 	</url>
 	<url>
 		<loc>https://www.arjunmakesthings.github.io/writing.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-01-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.arjunmakesthings.github.io/projects/bgms-chatbot-2022.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-08-22</lastmod>
 	</url>
 	<url>
 		<loc>https://www.arjunmakesthings.github.io/filtered-pages/only-projects.html</loc>
