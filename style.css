@@ -250,7 +250,8 @@ height: 40vh;
 }
 @media (max-width: 1000px) and (orientation: portrait) {
 .lander{
-height: 16vh;
+height: 25vh;
+/*earlier at 16vh*/
 }
 }
 
@@ -303,7 +304,7 @@ width: calc((92vw / var(--noOfItems)) - (var(--gapGallery) / (var(--noOfItems) -
 }
 @media (max-width: 1000px) and (orientation: portrait) {
 :root{
---noOfItems: 6; 
+--noOfItems: 4; 
 }
 }
 
