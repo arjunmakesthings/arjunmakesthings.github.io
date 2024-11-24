@@ -1,0 +1,445 @@
+/*COLOR VARIABLES*/
+
+
+/*OG*/
+:root{
+    --grey: #939393;
+    --greyOpacityReduced: #9393932f;
+    --black: #000000; 
+    --white: #FFFFFF; 
+    --flexWidth: 12.3vw; 
+    --gapGallery: 2.5vw; 
+    }
+
+@media (max-width: 1000px) and (orientation: portrait) {
+    :root{
+        --flexWidth: 17.3vw; 
+    }
+}
+
+
+/*FLEXOKI*/
+/*
+:root{
+    --grey: #878580; 
+    --black: #1d1b1b; 
+    --white: #f9f8f5; 
+    --flexWidth: 15vw; 
+    }
+*/
+
+/*FONT LOADING*/
+/*type scale: https://utopia.fyi/type/calculator/?c=375,10,1.414,1440,18,1.333,1,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+@font-face {
+    font-family: "Alegreya";
+    font-style: normal;
+    font-weight: 400; 
+    src: url("/fonts/Alegreya-Regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Alegreya";
+    font-style: italic;
+    font-weight: 400; 
+    src: url("/fonts/Alegreya-Italic.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Alegreya";
+    font-style: normal;
+    font-weight: 700; 
+    src: url("/fonts/Alegreya-Bold.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Alegreya";
+    font-style: normal;
+    font-weight: 600; 
+    src: url("/fonts/Alegreya-SemiBold.woff") format("woff"); 
+}
+
+/*FONT SIZE DECLARATIONS*/
+/*14px*/
+#caption{
+    font-family: "Alegreya";
+    font-style: italic;
+    font-weight: 400;
+
+    font-size: clamp(0.442rem, 0.3005rem + 0.6039vw, 0.844rem);
+    color: var(--grey);
+    margin: 0;
+    text-wrap: pretty;
+
+}
+h3{
+    font-family: "Alegreya";
+    font-style: normal;
+    font-weight: 400;
+    color: var(--black);
+
+    font-size: clamp(0.442rem, 0.3005rem + 0.6039vw, 0.844rem);
+}
+
+/*24px*/
+h1{
+    font-family: "Alegreya";
+    font-style: normal;
+    font-weight: 700;
+
+    color: var(--black);
+
+    font-size: clamp(0.8838rem, 0.6669rem + 0.9253vw, 1.4996rem);
+}
+
+/*18px*/
+h2{
+    font-family: "Alegreya";
+    font-style: normal;
+    font-weight: 700;
+    color: var(--black);    
+
+    font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem);
+}
+p{
+    font-family: "Alegreya";
+    font-style: normal;
+    font-weight: 400;
+    color: var(--black);
+
+    font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem);
+    line-height: 1.5;
+    text-wrap: pretty;
+}
+b{
+font-weight: 600;
+}
+nav a{
+    font-family: "Alegreya";
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem);
+}
+
+/*MASTER SETTINGS*/
+html{
+    margin: 0; 
+    padding: 0;
+    background-color: var(--white); 
+}
+.in-margin-container{
+    margin: 0 5vw; 
+    }
+
+/*MASTER ITEMS*/
+
+/*DIVIDER LINE*/
+hr{
+    border: 1.3px solid var(--grey); 
+    opacity: 20%;
+    margin: 2vw 0;
+}
+
+/*BOX AROUND WHITE ITEMS*/
+ #white{
+    outline: 1.3px solid var(--greyOpacityReduced); 
+}
+
+/*HEADER*/
+nav{
+display: flex;
+justify-content: flex-start;
+margin-top: 2vw;
+margin-bottom: 4vw;
+}
+nav .right-items{
+    display: flex; 
+    margin-left: auto;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+nav a{
+    color: var(--grey);
+    text-decoration: underline;
+}
+nav a.active{
+        color: var(--black);
+        text-decoration: none;
+        }
+nav a:hover{
+    color: var(--black);
+    }
+nav :visited{
+color: var(--grey);
+}
+
+/*FOOTER*/
+.footer{
+display:block;
+}
+
+.footer h3{
+text-align: center;
+margin-bottom: 1vw;
+}
+    
+/*INDEX*/
+.lander{
+display:flex; 
+justify-content: center;
+gap: var(--gapGallery);
+align-items: center;
+height: 40vh;
+}
+@media (max-width: 1000px) and (orientation: portrait) {
+    .lander{
+        height: 15vh;
+    }
+}
+
+.lander .landingImg-container{
+display: flex;
+width: 11.5vw; 
+aspect-ratio: 1/1;
+}
+
+.landingImg-container img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.lander a{
+color: var(--grey);
+}
+.lander a:active{
+    color: var(--black);
+    text-decoration: none;
+    }
+.lander a:hover{
+    color: var(--black);
+    }
+
+/* INDEX GALLERY*/
+.idea-container{
+margin-bottom: 2vw;
+}
+
+.idea-textBox{
+width: 50%;
+}
+.idea-textBox h2{
+margin: 0;
+}
+.idea-textBox h3{
+    color: var(--grey);
+    margin: 0;
+    }
+
+.gallery{
+display: flex;        
+flex-wrap: wrap;
+margin-top: 1.2vw;
+row-gap: calc(var(--gapGallery)/1.5);
+column-gap: calc(var(--gapGallery));
+}
+
+.gallery-item{
+position: relative;
+}
+.gallery-item:hover{
+    text-decoration: underline;
+}
+.galleryImg-container{
+    width: var(--flexWidth); /* Adjusted for responsiveness based on viewport width */
+    aspect-ratio: 250 / 150; /* Set aspect ratio to match 251x148 dimensions */
+    overflow: hidden;
+}
+.galleryImg-container img{
+    /* Makes the image cover the container while keeping aspect ratio */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-item h3{
+display: flex;
+flex-wrap: wrap;
+
+max-width: var(--flexWidth);
+margin-bottom: 0;
+margin-top: 0.5vw;
+
+font-family: "Alegreya";
+font-style: normal;
+font-weight: 400;
+
+font-size: clamp(0.442rem, 0.3005rem + 0.6039vw, 0.844rem); 
+}
+.gallery-item a{
+color: inherit;
+text-decoration: none;
+}
+#date{
+    margin: 0;
+    color: var(--grey);
+    }
+
+.idea-container a:visited{
+    color: inherit;
+    }
+.overlay{
+    display: none; /* Initially hidden */
+    position: absolute; /* Takes up the entire screen on hover */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.gallery-item:hover .overlay {
+    display: block; /* Makes the overlay visible */
+    background-color: var(--grey);
+}
+#medium p{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+color: var(--white);
+}
+
+/*PROJECT PAGE*/
+.titler{
+    display: flex;
+    justify-content: left;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.titler h3{
+margin: 0;
+}
+
+.titler .left-items {
+    display: block;
+    width: 50%;
+    text-align: top;
+    justify-content: flex-start;
+    
+    gap: 2rem;
+}
+
+
+.titler .right-items {
+    display: block;
+    margin-left: auto;
+    text-align: left;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 0;
+}
+
+.full-width-media-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+.full-width-media-container video {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    max-height: calc(100vw * 9 / 16); 
+    object-fit: contain;
+}
+.full-width-media-container img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 2vw;
+}
+.full-width-media-container iframe {
+    margin: 0;
+    width: 100%;
+    height: calc(100vw * 9 / 16); 
+    object-fit: contain;
+    margin-bottom: 2vw;
+}
+
+.half-width-media-container {
+    display: flex;
+    gap: 2vw; 
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2vw;
+
+}
+.half-width-media-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    max-width: 50%;
+}
+
+.text-box-container{
+    width: 50%; 
+    margin: 4vw auto;
+}
+@media (max-width: 600px) and (orientation: portrait) {
+    .text-box-container {
+        width: 100%;  /* Full width for taller screens (portrait phones) */
+    }
+}
+
+.text-box-container h1{
+    margin: 0;
+}
+.text-box-container p{
+    margin: 0;
+    margin-bottom: 1.5vw; 
+}
+.text-box-container br{
+margin-bottom: 2vw;
+}
+.text-box-container a{
+color: var(--grey);
+}
+.text-box-container a:active{
+    color: var(--black);
+    text-decoration: none;
+    }
+.text-box-container a:hover{
+    color: var(--black);
+    }
+
+.code-box-container{
+    width: 100%; 
+    margin: auto;
+    margin-bottom: 1.5vw;
+    padding: 0;
+}
+@media (max-width: 600px) and (orientation: portrait) {
+    .code-box-container {
+        width: 100%;  /* Full width for taller screens (portrait phones) */
+    }
+}
+
+.inline-image-container{
+    width: 50%; 
+    margin: auto;
+    margin-bottom: 0.5vw;
+    padding: 0;
+}
+@media (max-width: 600px) and (orientation: portrait) {
+    .inline-image-container {
+        width: 100%;  /* Full width for taller screens (portrait phones) */
+    }
+}
+
+.inline-image-container img{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

@@ -1,183 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.arjunmakesthings.github.io</loc>
-		<priority>1.00</priority>
-		<lastmod>2024-04-15</lastmod>
+		<loc>https://localhost/assets/repeated-elements/footer</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/bgms-chatbot-2022.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-08-23</lastmod>
+		<loc>https://localhost/assets/repeated-elements/header-for-project-pages</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/writing.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-01-02</lastmod>
+		<loc>https://localhost/work/digital-painters/laser-lights/laser-lights</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/work.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-09-07</lastmod>
+		<loc>https://localhost/work/digital-painters/light+sand/light+sand</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/story.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-08-22</lastmod>
+		<loc>https://localhost/work/digital-painters/comp-finds-colour/comp-finds-colour</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/experience.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-08-23</lastmod>
+		<loc>https://localhost/work/digital-painters/pollock-painter/pollock-painter</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/contact.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-05</lastmod>
+		<loc>https://localhost/work/digital-painters/grafik/grafik</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/microblog.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-05</lastmod>
+		<loc>https://localhost/work/digital-painters/hashing/hashing</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/filtered-pages/work copy.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-12-13</lastmod>
+		<loc>https://localhost/work/digital-painters/light+sand-2/light+sand-2</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/how-do-i-spend-my-time</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-02-01</lastmod>
+		<loc>https://localhost/work/digital-painters/dark-pollocks/dark-pollocks</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/workshops/micro-tools.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-01-24</lastmod>
+		<loc>https://localhost/work/digital-painters/green-sand/green-sand</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/distance-responsive-digital-typography.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-01-16</lastmod>
+		<loc>https://localhost/work/data-visualisation/how-do-i-spend-my-days/how-do-i-spend-my-days</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/sketches/disintegratingType</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-10-09</lastmod>
+		<loc>https://localhost/work/data-visualisation/organisational-complexity-hp/organisational-complexity-hp</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/sketches/PolygonGenerator</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-08-26</lastmod>
+		<loc>https://localhost/work/webcam/shit-to-do/shit-to-do</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/sketches/GetColoursFrom_Camera_2023_08_23_08_38_16</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-08-26</lastmod>
+		<loc>https://localhost/work/webcam/photolapse/photolapse</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/why-do-people-climb.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/template</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/pui_vs_gui.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/webcam/light-painting/light-painting</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/polygon-generator.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-02-26</lastmod>
+		<loc>https://localhost/work/expressive-typography/im-so-messed-up/im-so-messed-up</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/phone-painting.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/dancing-in-the-dark/dancing-in-the-dark</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/organisational-complexity.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-01-31</lastmod>
+		<loc>https://localhost/work/expressive-typography/the-distance-between-us/the-distance-between-us</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/object-reader.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/gravity/gravity</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/n=4.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-01-16</lastmod>
+		<loc>https://localhost/work/expressive-typography/everything-is-about-u/everything-is-about-u</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/lightPainter.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/we-go-around-in-circles/we-go-around-in-circles</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/in-between-life-and-death.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-02-26</lastmod>
+		<loc>https://localhost/work/expressive-typography/washed-up-potential/washed-up-potential</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/find-colour-palette-through-webcam.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/love-me/love-me</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/expressive-typography-experiments.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-09-07</lastmod>
+		<loc>https://localhost</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/earth-2052.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/notes</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/disintegratingType.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/your-words-dont-escape-my-heart/your-words-dont-escape-my-heart</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/design-intent.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/its-just-a-wave/its-just-a-wave</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/dear-delhi.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/what-i-wish-to-say-is-lost-in-your-pixels/what-i-wish-to-say-is-lost-in-your-pixels</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/computer-painter.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-02-27</lastmod>
+		<loc>https://localhost/work/films/why-do-people-climb/why-do-people-climb</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/canonic-onboarding.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/work/expressive-typography/give+take/give+take</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/36-dot-2023.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-14</lastmod>
+		<loc>https://localhost/z_internal-notes_to-build/projectTemplate</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/contagion-simulator.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-06-15</lastmod>
+		<loc>https://localhost/work/design/in-between-life-and-death/in-between-life-and-death</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/filtered-pages/only-projects.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2023-12-13</lastmod>
+		<loc>https://localhost/work/design/earth-2052/earth-2052</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://www.arjunmakesthings.github.io/projects/what-living-in-bombay-felt-like.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-09-07</lastmod>
+		<loc>https://localhost/work/design/just-ask-chatbot/just-ask-chatbot</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/work/design/canonic-onboarding/canonic-onboarding</loc>
+		<lastmod>2024-11-24-T18:42:27+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
 	</url>
 </urlset>

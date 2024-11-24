@@ -1,67 +1,564 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> ![endif]-->
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Arjun's Archive</title>
-    <meta
-      name="google-site-verification"
-      content="5a-ggWbqfSVUCQxPv_CNWXHRfllQmPWMVJxDx74ZonM"
-    />
-    <meta
-      name="description"
-      content="Arjun's archive of projects, experiments and writing in the design, typography, creative coding and interaction design space."
-    />
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
-    <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
-    -->
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
 
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height initial-scale=1"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" /> 
-  </head>
-  
-  <body>
+<meta name="description" content="An archive of Arjun's work who is an Indian designer, design researcher & computational artist.">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="Arjun, designer, design researcher, computational artist, Indian artist, arjun designer, computational artist, generative artist, new media designer, artist">
 
-        <div class = "landerVid-container">
-            <video autoplay playsinline muted loop noControls width="100%" height="100%">
-                <source src="/assets/landerVid.mp4" type="video/mp4" id = "landerVid">
-              </video>
-        </div>
+<!--SEO END-->
 
-    <main>
-      <div class="buttonGrid">
-        <button onclick="window.location.href = 'work.html';">Work</button>
-        <button onclick="window.location.href = 'story.html';">Story</button>
-        <button onclick="window.location.href = 'writing.html';">
-          Writing
-        </button>
-        <button
-          onclick="window.open('https://arjunmakesthings.github.io/sketchbook-quartz/', '_blank')"
-        >
-          Code-Sketchbook
-        </button>
-        <button onclick="window.location.href = 'experience.html';">
-          Experience
-        </button>
-        <button onclick="window.location.href = 'contact.html';">
-          Contact
-        </button>
-      </div>
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="style.css">
 
-      <!--
-      <script async defer src="/sketches/LanderSketch/lander.js"></script>
-      <script async defer src="/sketches/LanderSketch/tiles.js"></script>
-      -->
+<!--FOOTER-->
+<script>
+// fetch footer.
+fetch("/assets/repeated-elements/footer.html")
+.then((response) => {
+if (!response.ok) {
+throw new Error("Failed to load footer: " + response.statusText);
+}
+return response.text();
+})
+.then((html) => {
+document.getElementById("footer").innerHTML = html;
+})
+.catch((error) => {
+console.error(error);
+document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+});
+</script>
 
-    </main>
-  </body>
+<title>arjun's archive</title>
+</head>
+<body>
+
+<div class="in-margin-container">
+
+<nav class = "header">
+<a href="index.html" class = "active">arjun's archive</a>
+<div class = "right-items">
+<a href="notes.html">notes</a>
+</div>
+</nav>
+
+<div class = "lander">
+<div class = "landingImg-container">
+<img src = "/assets/landing-page/landingImg.webp" alt="a distorted image of arjun's face">
+</div>
+<p>i live to make things.<br>
+sometimes <a href = "#design">people ask</a>,<br>
+often i wonder.</p>
+</div>
+
+<hr id = "work-start">
+
+<!--IDEA CONTAINER STARTS-->
+<div class = "idea-container" id = "digital-painters">
+<div class = "idea-textBox">
+
+<h2>Digital Painters, 2023 - Present</h2>
+<h3>experiments to ultimately arrive at an algorithm for abstract painting</h3>
+
+</div>
+<!--GALLERY STARTS-->
+<div class = "gallery">
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/green-sand/green-sand.html">
+<div class = "galleryImg-container" id = "white">
+<img src = "/work/digital-painters/green-sand/3.webp">
+</div>
+<h3>green sand</h3>
+<h3 id = "date">2024</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/dark-pollocks/dark-pollocks.html">
+<div class = "galleryImg-container" id = "white">
+<img src = "/work/digital-painters/dark-pollocks/1.webp">
+</div>
+<h3>dark pollocks</h3>
+<h3 id = "date">2024</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/light+sand-2/light+sand-2.html">
+<div class = "galleryImg-container" id = "white">
+<img src = "/work/digital-painters/light+sand-2/5.webp">
+</div>
+<h3>light+sand 2</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/light+sand/light+sand.html">
+<div class = "galleryImg-container">
+<img src = "/work/digital-painters/light+sand/light+sand_4.webp">
+</div>
+<h3>light+sand</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/hashing/hashing.html">
+<div class = "galleryImg-container">
+<img src = "/work/digital-painters/hashing/1.webp">
+</div>
+<h3>hashing</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/laser-lights/laser-lights.html">
+<div class = "galleryImg-container">
+<img src = "/work/digital-painters/laser-lights/laser-lights-1.webp">
+</div>
+<h3>laser lights</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/grafik/grafik.html">
+<div class = "galleryImg-container">
+<img src = "/work/digital-painters/grafik/grafik1.webp">
+</div>
+<h3>grafik</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/pollock-painter/pollock-painter.html">
+<div class = "galleryImg-container">
+<img src = "/work/digital-painters/pollock-painter/pollock1.webp">
+</div>
+<h3>pollock painter</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/digital-painters/comp-finds-colour/comp-finds-colour.html">
+<div class = "galleryImg-container">
+<img src = "/work/digital-painters/comp-finds-colour/frame (47).webp">
+</div>
+<h3>comp finds colour</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+</div>
+<!--GALLERY ENDS-->
+</div>
+<!--IDEA CONTAINER ENDS-->
+
+<hr>
+
+<!-------------------------------------------------------------->
+
+<!--IDEA CONTAINER STARTS-->
+<div class = "idea-container" id = "expressive-typography">
+<div class = "idea-textBox">
+
+<h2>Expressive Typography, 2023 - Present</h2>
+<h3>living typographic messages, made with code</h3>
+
+</div>
+<!--GALLERY STARTS-->
+<div class = "gallery">
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/washed-up-potential/washed-up-potential.html">
+<div class = "galleryImg-container">
+<img src = "/work/expressive-typography/washed-up-potential/1.webp">
+</div>
+<h3>washed up potential</h3>
+<h3 id = "date">2024</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/dancing-in-the-dark/dancing-in-the-dark.html">
+<div class = "galleryImg-container" id= "white">
+<img src = "/work/expressive-typography/dancing-in-the-dark/dancing-in-the-dark.webp">
+</div>
+<h3>dancing in the dark</h3>
+<h3 id = "date">2024</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/everything-is-about-u/everything-is-about-u.html">
+<div class = "galleryImg-container" id= "white">
+<img src = "/work/expressive-typography/everything-is-about-u/1.webp">
+</div>
+<h3>everything is about u</h3>
+<h3 id = "date">2024</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/its-just-a-wave/its-just-a-wave.html">
+<div class = "galleryImg-container">
+<img src = "/work/expressive-typography/its-just-a-wave/1.webp">
+</div>
+<h3>it's just a wave</h3>
+<h3 id = "date">2024</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/we-go-around-in-circles/we-go-around-in-circles.html">
+<div class = "galleryImg-container" id= "white">
+<img src = "/work/expressive-typography/we-go-around-in-circles/1.webp">
+</div>
+<h3>we go around in circles</h3>
+<h3 id = "date">2024</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/im-so-messed-up/im-so-messed-up.html">
+<div class = "galleryImg-container" id= "white">
+<img src = "/work/expressive-typography/im-so-messed-up/1.webp">
+</div>
+<h3>i'm so messed up</h3>
+<h3 id = "date">2024</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/love-me/love-me.html">
+<div class = "galleryImg-container">
+<img src = "/work/expressive-typography/love-me/1.webp">
+</div>
+<h3>love me</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/gravity/gravity.html">
+<div class = "galleryImg-container">
+<img src = "/work/expressive-typography/gravity/1.webp">
+</div>
+<h3>gravity</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/give+take/give+take.html">
+<div class = "galleryImg-container">
+<img src = "/work/expressive-typography/give+take/1.webp">
+</div>
+<h3>give + take</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/the-distance-between-us/the-distance-between-us.html">
+<div class = "galleryImg-container" id= "white">
+<img src = "/work/expressive-typography/the-distance-between-us/2.webp">
+</div>
+<h3>the distance between us</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/what-i-wish-to-say-is-lost-in-your-pixels/what-i-wish-to-say-is-lost-in-your-pixels.html">
+<div class = "galleryImg-container">
+<img src = "/work/expressive-typography/what-i-wish-to-say-is-lost-in-your-pixels/1.webp">
+</div>
+<h3>what i wish to say is lost in your pixels</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/expressive-typography/your-words-dont-escape-my-heart/your-words-dont-escape-my-heart.html">
+<div class = "galleryImg-container">
+<img src = "/work/expressive-typography/your-words-dont-escape-my-heart/1.webp">
+</div>
+<h3>your words don't escape my heart</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+</div>
+<!--GALLERY ENDS-->
+</div>
+<!--IDEA CONTAINER ENDS-->
+
+<!-------------------------------------------------------------->
+
+<hr>
+
+<!--IDEA CONTAINER STARTS-->
+<div class = "idea-container" id = "webcam">
+<div class = "idea-textBox">
+
+<h2>Webcam</h2>
+
+</div>
+<!--GALLERY STARTS-->
+<div class = "gallery">
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/webcam/light-painting/light-painting.html">
+<div class = "galleryImg-container">
+<img src = "/work/webcam/light-painting/1.webp">
+</div>
+<h3>light painting</h3>
+<h3 id = "date">2022</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/webcam/shit-to-do/shit-to-do.html">
+<div class = "galleryImg-container">
+<img src = "/work/webcam/shit-to-do/2.webp">
+</div>
+<h3>shit to do</h3>
+<h3 id = "date">2022</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/webcam/photolapse/photolapse.html">
+<div class = "galleryImg-container">
+<img src = "/work/webcam/photolapse/cover.webp">
+</div>
+<h3>photolapse</h3>
+<h3 id = "date">2021</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+</div>
+<!--GALLERY ENDS-->
+</div>
+<!--IDEA CONTAINER ENDS-->
+
+<!-------------------------------------------------------------->
+
+<hr id = "design">
+
+<!--IDEA CONTAINER STARTS-->
+<div class = "idea-container">
+<div class = "idea-textBox">
+
+<h2>Design</h2>
+<h3>work done in the service of others</h3>
+
+</div>
+<!--GALLERY STARTS-->
+<div class = "gallery">
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/design/in-between-life-and-death/in-between-life-and-death.html">
+<div class = "galleryImg-container">
+<img src = "/work/design/in-between-life-and-death/ibld_cover.webp">
+</div>
+<h3>in between life & death</h3>
+<h3 id = "date">2022</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/design/earth-2052/earth-2052.html">
+<div class = "galleryImg-container">
+<img src = "/work/design/earth-2052/e2052-cover.webp">
+</div>
+<h3>earth 2052: hot or not?</h3>
+<h3 id = "date">2022</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/design/just-ask-chatbot/just-ask-chatbot.html">
+<div class = "galleryImg-container">
+<img src = "/work/design/just-ask-chatbot/1.webp">
+</div>
+<h3>just ask chatbot</h3>
+<h3 id = "date">2022</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/design/canonic-onboarding/canonic-onboarding.html">
+<div class = "galleryImg-container">
+<img src = "/work/design/canonic-onboarding/CanonicCover.webp">
+</div>
+<h3>canonic onboarding</h3>
+<h3 id = "date">2021</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+</div>
+<!--GALLERY ENDS-->
+</div>
+<!--IDEA CONTAINER ENDS-->
+
+<hr>
+
+<!-------------------------------------------------------------->
+
+<!--IDEA CONTAINER STARTS-->
+<div class = "idea-container" id = "data-viz">
+<div class = "idea-textBox">
+
+<h2>Data Visualisation</h2>
+
+</div>
+<!--GALLERY STARTS-->
+<div class = "gallery">
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/data-visualisation/how-do-i-spend-my-days/how-do-i-spend-my-days.html">
+<div class = "galleryImg-container">
+<img src = "/work/data-visualisation/how-do-i-spend-my-days/viz.webp">
+</div>
+<h3>how do i spend my days</h3>
+<h3 id = "date">2023</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/data-visualisation/organisational-complexity-hp/organisational-complexity-hp.html">
+<div class = "galleryImg-container">
+<img src = "/work/data-visualisation/organisational-complexity-hp/2.webp">
+</div>
+<h3>organisational complexity</h3>
+<h3 id = "date">2022</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+</div>
+<!--GALLERY ENDS-->
+</div>
+<!--IDEA CONTAINER ENDS-->
+
+<hr>
+
+<!-------------------------------------------------------------->
+
+<!--IDEA CONTAINER STARTS-->
+<div class = "idea-container" id = "films">
+<div class = "idea-textBox">
+
+<h2>Films</h2>
+
+</div>
+<!--GALLERY STARTS-->
+<div class = "gallery">
+
+<!--ITEM STARTS-->
+<div class = "gallery-item" id = "medium">
+<a href="https://arjunmakesthings.medium.com/what-i-learnt-from-recording-every-day-of-my-life-for-a-year-1341f2029d2" target="_blank">
+<div class = "galleryImg-container">
+<img src = "/work/films/every-day-for-one-year/2022-in-films-cover.webp">
+</div>
+<h3>everyday, for one year</h3>
+<h3 id = "date">2022</h3>
+<div class = "overlay"><p id = "caption">redirect to medium</p></div>
+</a>
+
+</div>
+<!--ITEM ENDS-->
+
+<!--ITEM STARTS-->
+<div class = "gallery-item">
+<a href="/work/films/why-do-people-climb/why-do-people-climb.html">
+<div class = "galleryImg-container">
+<img src = "/work/films/why-do-people-climb/hands_climbing.webp">
+</div>
+<h3>why do people climb</h3>
+<h3 id = "date">2021</h3>
+</a>
+</div>
+<!--ITEM ENDS-->
+
+</div>
+<!--GALLERY ENDS-->
+</div>
+<!--IDEA CONTAINER ENDS-->
+
+<div id = "footer"></div>
+
+</div>
+</body>
 </html>

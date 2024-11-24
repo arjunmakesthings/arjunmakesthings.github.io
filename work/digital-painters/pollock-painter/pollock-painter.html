@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+
+
+<meta name="description" content="pollock painter experiment | Arjun's Archive">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="pollock painter, arjun, digital painters, arjun computational artist">
+
+<!--SEO END-->
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+
+<!--STYLING FOR CODE SNIPPETS-->
+<link rel="stylesheet" href="/prism.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+<!--HEADER & FOOTER-->
+<script>
+  // fetch header.
+  fetch("/assets/repeated-elements/header-for-project-pages.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("header").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+    });
+
+  // fetch footer.
+  fetch("/assets/repeated-elements/footer.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load footer: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+    });
+</script>
+
+<title>digital painters / pollock</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+<!--HEADER-->
+<div id = "header"></div>
+
+<!--NEWSPAPER TITLE-->
+<div class = "titler">
+<div class = "left-items">
+<h3>pollock painter</h3>
+<h3 id = "date">2023</h3>
+</div>
+<div class = "right-items">
+<h3>custom software</h3>
+</div>
+</div>
+
+<div class = "full-width-media-container">
+<img src = "/work/digital-painters/pollock-painter/progression.webp">
+</div>
+
+<div class = "full-width-media-container">
+<video preload="yes" muted playsinline autoplay controls loop>
+<source src="/work/digital-painters/pollock-painter/pollockVid.mp4" type="video/mp4">
+Your browser does not support videos. 
+</video>
+</div>
+
+<div class = "full-width-media-container">
+<img src = "/work/digital-painters/pollock-painter/pollock2.webp">
+</div>
+
+<!--Use for all text, including code-->
+<div class = "text-box-container">
+<h1>Thought</h1>
+<p>The original enquiry was to explore the rotation of a paintbrush, when put and dragged across a surface. Eventually, the generated outcomes resembled 'streaks' of paint as seen in the paintings of Jackson Pollock.</p>
+<h1>Logic</h1>
+<p>Each brush stroke begins at a random point in space with a randomly assigned colour from a pre-defined palette. The strokes have certain 'properties' such as movement & rotation speeds, stroke widths, destination locations and starting angles. As the strokes move forward in time, incremental transformations on their properties result in long, varying strokes that ultimately form the piece.</p>
+</div>
+
+<!--FOOTER-->
+<div id = "footer"></div>
+
+</div>
+</body>
+</html>
