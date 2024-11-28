@@ -296,15 +296,17 @@ display: flex;
 flex-wrap: wrap;
 margin-top: 1.2vw;
 column-gap: var(--gapGallery);
-row-gap: calc(var(--gapGallery)/2);
+row-gap: calc(var(--gapGallery) / 2);
 }
 .gallery-item{
-position: relative;
-width: calc((92vw / var(--noOfItems)) - (var(--gapGallery) / (var(--noOfItems) - 2)));
+width: calc((100% - (var(--noOfItems) - 1) * var(--gapGallery)) / var(--noOfItems));
 }
 @media (max-width: 1000px) and (orientation: portrait) {
 :root{
 --noOfItems: 4; 
+}
+.gallery{
+row-gap: var(--gapGallery);
 }
 }
 
@@ -313,7 +315,7 @@ text-decoration: underline;
 }
 .galleryImg-container{
 width: 100%;
-aspect-ratio: 1920 / 1080;
+aspect-ratio: 192 / 108;
 overflow: hidden;
 }
 .galleryImg-container img{
@@ -495,6 +497,13 @@ margin: 0;
 width: 100%;
 height: auto;
 object-fit: contain;
+}
+
+#p5-canvas{
+position: relative; 
+left: 0;
+
+max-width: 100%;
 }
 
 /*NOTES PAGE*/
