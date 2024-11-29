@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+
+<meta name="description" content="Tool to get colours (RGB values) from the webcam | Arjun's Archive">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="colours, webcam, arjun">
+
+<!--SEO END-->
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+
+<!--STYLING FOR CODE SNIPPETS-->
+<link rel="stylesheet" href="/prism.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+<!--LOAD P5-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.min.js"></script>
+
+<!--HEADER & FOOTER-->
+<script>
+  // fetch header.
+  fetch("/assets/repeated-elements/header-for-project-pages.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("header").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+    });
+
+  // fetch footer.
+  fetch("/assets/repeated-elements/footer.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load footer: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+    });
+</script>
+
+<title>internet tools / get colours from webcam</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+<!--HEADER-->
+<div id = "header"></div>
+
+<!--NEWSPAPER TITLE-->
+<div class = "titler">
+<div class = "left-items">
+<h3>get colours from webcam</h3>
+<h3 id = "date">2023</h3>
+</div>
+<div class = "right-items">
+<h3>custom software</h3>
+</div>
+</div>
+
+<div id = "canvas-container"></div>
+
+<script src="/work/internet-tools/get-colours-from-webcam/sketch.js" defer></script>
+<script src="/work/internet-tools/get-colours-from-webcam/dots.js" defer></script>
+
+<div class = "text-box-container">
+<h1>Thought</h1>
+<p>The thought for this experiment stemmed from my growing interest in the capabilities of the web-camera on a modern-day personal computing machine. Each pixel on a screen stores RGB values, ranging from 0-255, for a displayed image. I wondered whether, instead of browsing through different colour palettes online to fit a project, one could pick up an existing object in real life and derive colours from it.</p>
+<h1>Logic</h1>
+<p>The sketch takes input from your webcam and lets you select a pixel that you want the colour value for. This is done by creating an object whenever you press the mouse and storing three things: the x & y position of the click & the RGBA (colour) values of the pixel being clicked; by using the p5 function <a href = "https://p5js.org/reference/#/p5/get">get()</a>.</p>
+<div class = "code-box-container">
+<pre><code class = "language-javascript">
+if (tog ==true){
+  loadPixels ();
+  p = get (mouseX, mouseY);
+  m = createVector (mouseX, mouseY);
+
+    for (let i = 0; i<1; i++){
+    circs.push (new Dots (m.x, m.y, p));
+    }
+
+  tog = false;
+}
+
+</code></pre>
+</div><br>
+<p>Then, the program places a dot on that particular position, displaying the RGB value underneath.</p>
+<div class = "code-box-container">
+<pre><code class = "language-javascript">
+class Dots{
+
+  constructor (x, y, p){
+  this.x = x;
+  this.y = y;
+  this.c = p;
+  this.r = 40;
+  this.tS = 16;
+  }
+
+  display(){
+  fill (this.c);
+  strokeWeight (1);
+  stroke (0);
+
+  ellipse (this.x, this.y, this.r, this.r);
+
+  strokeWeight (0.8);
+  stroke (0);
+  fill (255);
+
+  textSize (this.tS);
+  textAlign (CENTER);
+  text ('r=' + this.c[0] + '; g=' + this.c [1] + '; b=' + this.c [2] , this.x, this.y+this.r + this.tS);
+  }
+
+}
+
+</code></pre>
+</div><br>
+</div>
+
+
+<!--FOOTER-->
+<div id = "footer"></div>
+
+</div>
+</body>
+</html>

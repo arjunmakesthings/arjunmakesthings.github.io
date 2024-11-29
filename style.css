@@ -499,11 +499,8 @@ height: auto;
 object-fit: contain;
 }
 
-#p5-canvas{
-position: relative; 
-left: 0;
-
-max-width: 100%;
+#canvas-container{
+position: inherit;
 }
 
 /*NOTES PAGE*/
