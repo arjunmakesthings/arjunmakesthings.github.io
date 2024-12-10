@@ -457,13 +457,19 @@ gap: 2vw;
 justify-content: space-between;
 width: 100%;
 overflow: hidden;
-
 }
 .half-width-media-container img {
 width: 50%;
 height: auto;
 object-fit: cover;
 max-width: 50%;
+}
+.half-width-media-container video{
+margin: 0;
+width: 50%;
+height: auto;
+max-height: calc(100vw * 9 / 16); 
+object-fit: contain;
 }
 
 .text-box-container{
