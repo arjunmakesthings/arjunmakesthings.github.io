@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+
+<meta name="description" content="Energy Exchanges | Arjun's Archive">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="energy,exchange,art,artwork,existence,existential,dark,generative,programmatic,drawing,digital">
+
+<!--SEO END-->
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+
+
+<!--HEADER & FOOTER-->
+<script>
+  // fetch header.
+  fetch("/assets/repeated-elements/header-for-project-pages.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("header").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+    });
+
+  // fetch footer.
+  fetch("/assets/repeated-elements/footer.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load footer: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+    });
+</script>
+
+<title>existence / energy exchanges</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+<!--HEADER-->
+<div id = "header"></div>
+
+<!--NEWSPAPER TITLE-->
+<div class = "titler">
+<div class = "left-items">
+<h3>energy exchanges</h3>
+<h3 id = "date">2024</h3>
+</div>
+<div class = "right-items">
+<h3>custom software, <br>
+image generated (currently) is 2339 &times; 3307 px </h3>
+</div>
+</div>
+
+<div class = "inline-image-container">
+<img src = "/work/existence/energy-exchanges/energy-exchange.webp">
+</div>
+
+
+<div class = "full-width-media-container">
+<img src = "/work/existence/energy-exchanges/energy-exchange.webp">
+</div>
+
+<div class = "half-width-media-container">
+<img src = "/work/existence/energy-exchanges/1.webp">
+<img src = "/work/existence/energy-exchanges/2.webp">
+</div>
+
+<div class = "text-box-container">
+<h1>Thought</h1>
+<p>The world is made up of many 'cells'. Each cell generates 'energy' particles — from its core — and radiates it outward. All cells live amidst a continuous exchange of these energy particles.</p>
+<p>Some cells have a wider spread of energy — and take up more space than others. This also means that, probabilistically, they participate in more external energy exchanges but their internal being is widely spread out. Others have a lesser spread of energy, and are more densely packed within themselves — closer to their core.</p>
+<p>No two cells can occupy the same physical space at a given point in time. They may get extremely close, and participate in an intense energy exchange, but never live in the exact position as another cell in the system.</p>
+<h1>Logic</h1>
+<p>First, I thought about the cell and began from its core. Energy particles (very small points in space, building blocks) are generated from the center and spread outwards in somewhat a circular fashion. The cell is not a solid shape, but only a densely packed collection of these energy particles.</p>
+<p>Next comes the problem of occupying space. When they are being given birth, one after the other, the system decides a position and energy spread radius (or size of the cell). The system only cares about itself, and its optimal functioning, and keeps deciding new positions and sizes until the cell finds a space that no other cell is occupying. The cell can play its part there.</p>
+<p>Finally, the cells can participate in the energy exchange. Energy is sent to and received by many cells at the same time, without the consent of the cell. Essentially, the cells have no will of their own, but only to perform their responsibilities as a 'cell' — existing in the system and giving + taking energy.</p>
+</div>
+
+<!--FOOTER-->
+<div id = "footer"></div>
+
+</div>
+</body>
+</html>
