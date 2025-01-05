@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+
+<meta name="description" content="Written as a note by Arjun | Arjun's Archive">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="note, arjun, blog">
+
+<!--SEO END-->
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+
+<!--HEADER & FOOTER-->
+<script>
+  // fetch header.
+  fetch("/assets/repeated-elements/header-for-project-pages.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("header").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+    });
+
+  // fetch footer.
+  fetch("/assets/repeated-elements/footer.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load footer: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+    });
+</script>
+
+<title>notes / my body is wrapped inside a permeable membrane</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+<!--HEADER-->
+<div id = "header"></div>
+
+<div class = "notes-body-container">
+<p>my body is wrapped inside a permeable membrane.</p>
+<p>beautiful things find their way to me. they, leisurely, interact with parts of my body; at-will, on-demand.</p>
+<p>i long for them to stay. to settle, to make a home, to transmute into an object of permanence and sit at the root of my very being; forcing my suspended body back to the earth.</p>
+<p>i prepare myself; i clear space — more than required — to ensure that they live comfortably. i clean, making sure that the surface feels impeccable. i now simple await; anticipation drooling down to the floor — like a child waiting to unwrap a christmas present that was diabolically hidden from him for 24 long years.</p>
+<p>however, they simply pass through me; sometimes, instantaneously — relieving themselves of a future and donning strange names of the past — these 'memories', 'experiences', 'activities' and 'people'.</p>
+<p>my body is <s>wrapped</s> trapped inside a permeable membrane. </p>
+</div>
+
+<!--FOOTER-->
+<div id = "footer"></div>
+
+</div>
+</body>
+</html>
