@@ -1,6 +1,5 @@
 /*COLOR VARIABLES*/
 
-
 /*OG*/
 :root{
 --grey: #939393;
@@ -9,16 +8,8 @@
 --white: #FFFFFF; 
 --gapGallery: 2vw; 
 --noOfItems: 8; 
+font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem); /*i did this to set the rem dynamically.*/
 }
-
-/*FLEXOKI*/
-/*
-:root{
---grey: #878580; 
---black: #1d1b1b; 
---white: #f9f8f5; 
-}
-*/
 
 /*FONT LOADING*/
 /*type scale: https://utopia.fyi/type/calculator/?c=375,10,1.414,1440,18,1.333,1,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
@@ -118,27 +109,14 @@ text-wrap: pretty;
 color: var(--grey);
 background: var(--greyOpacityReduced);
 
-list-style-type: none; 
-counter-reset: custom-counter;
-
 display: flex;
 flex-direction: column;
-row-gap: 0.4rem;
-padding: 2vw;
+row-gap: 0.8rem;
+padding: 2rem;
 
 width: 75%;
 }
-ol li{
-counter-increment: custom-counter; 
 
-display: flex; 
-align-items: flex-start;
-}
-ol li::before {
-content: "[" counter(custom-counter) "] "; 
-height: 100%;
-margin-right: 0.4rem;
-}
 ol p{
 margin: 0;
 padding: 0;
@@ -163,7 +141,7 @@ list-style-type: none;
 display: flex;
 flex-direction: column;
 row-gap: 0.4rem;
-padding: 2vw;
+padding: 2rem;
 
 width: 75%;
 }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+
+<meta name="description" content="Written as a note by Arjun | Arjun's Archive">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="note, arjun, blog">
+
+<!--SEO END-->
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+
+<!--HEADER & FOOTER-->
+<script>
+  // fetch header.
+  fetch("/assets/repeated-elements/header-for-project-pages.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("header").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+    });
+
+  // fetch footer.
+  fetch("/assets/repeated-elements/footer.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load footer: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+    });
+</script>
+
+<title>notes / living with artistic mediocrity</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+<!--HEADER-->
+<div id = "header"></div>
+
+<div class = "notes-body-container">
+<p>i have grown up, now, to treat my practice with discipline and patience. to fight off dangerous feelings of unrealised ambition and ineptitude, i wrote myself this reminder:</p>
+<p>i permit myself to come in today,<br>
+and make something hideous.</p>
+
+<p>something worthless, repulsive or downright ugly.</p>
+<p>and i promise to show up again tomorrow,<br>
+and day-after-tomorrow,<br>
+and day-after-day-after-tomorrow;<br>
+until the genius has nowhere else to go.</p>
+</div>
+
+<hr>
+
+<div class = "text-box-container">
+<p>inspired by:</p>
+<ol>
+<li>conversation with <a href = "https://sciencegallery.org/network/people/shaunaq-madan">shaunaq</a> about 'showing up without expectations' and 'how unfortunate it would be if someone gave up right when they were sitting on the precipice of something amazing'.</li>
+<li><a href = "https://setwrite.in/">shobhan's</a> timely recommendation of elizabeth gilbert's <a href = "https://www.youtube.com/watch?v=86x-u-tz0MA">talk</a>.</li>
+<li>conversation with <a href = "https://in.linkedin.com/in/pratyush-pillai-79a02a28">pratyush</a> about 'greatness'.</li>
+<li>the experience of participating in the <a href = "https://serendipityarts.org/foundation_init/music-production-residency-2024">b-side residency</a>, where everyone was a far more mature artist than me.</li>
+</ol>
+</div>
+
+<!--FOOTER-->
+<div id = "footer"></div>
+
+</div>
+</body>
+</html>
