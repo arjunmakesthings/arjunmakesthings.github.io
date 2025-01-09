@@ -8,7 +8,6 @@
 --white: #FFFFFF; 
 --gapGallery: 2vw; 
 --noOfItems: 8; 
-font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem); /*i did this to set the rem dynamically.*/
 }
 
 /*FONT LOADING*/
