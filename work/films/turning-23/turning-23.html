@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+
+<meta name="description" content="Why Do People Climb | Arjun's Archive">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="climbing, film, boulderbox, arjun">
+
+<!--SEO END-->
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+
+<!--HEADER & FOOTER-->
+<script>
+  // fetch header.
+  fetch("/assets/repeated-elements/header-for-project-pages.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("header").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+    });
+
+  // fetch footer.
+  fetch("/assets/repeated-elements/footer.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load footer: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+    });
+</script>
+
+<title>films / turning 23</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+<!--HEADER-->
+<div id = "header"></div>
+
+<!--NEWSPAPER TITLE-->
+<div class = "titler">
+<div class = "left-items">
+<h3>turning 23</h3>
+<h3 id = "date">2023</h3>
+</div>
+<div class = "right-items">
+<h3>short film</h3>
+</div>
+</div>
+
+<div class = "full-width-media-container">
+<iframe src="https://www.youtube.com/embed/UrrsjDg1te0?si=7eRUL26vBc9u5DyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class = "text-box-container">
+<h1>Context</h1>
+<p>Birthdays are difficult. I usually write on birthdays, but ended up making a film this year with snippets that I had recorded last year.</p>
+</div>
+
+<!--FOOTER-->
+<div id = "footer"></div>
+
+</div>
+</body>
+</html>
