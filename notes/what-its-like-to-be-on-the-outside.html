@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+
+<meta name="description" content="Written as a note by Arjun | Arjun's Archive">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="note, arjun, blog">
+
+<!--SEO END-->
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+
+<!--HEADER & FOOTER-->
+<script>
+  // fetch header.
+  fetch("/assets/repeated-elements/header-for-project-pages.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("header").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+    });
+
+  // fetch footer.
+  fetch("/assets/repeated-elements/footer.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load footer: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+    });
+</script>
+
+<title>notes / what it's like to be on the outside</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+<!--HEADER-->
+<div id = "header"></div>
+
+<div class = "notes-body-container">
+<p>
+sometimes, i see all of you.<br>
+jolly times, collectives smiles and unending gossip.<br>
+i've observed, listened and craved,<br>
+for a while now.
+</p>
+
+<p>
+sitting at the corner table,<br>
+invisible.<br>
+walking by the group photos,<br>
+excluded.<br>
+watching you leave with each other,<br>
+isolated.<br>
+overhearing your conversations,<br>
+voiceless.<br>
+comparing your life with mine,<br>
+empty.
+</p>
+
+<p>
+i've seen what this college looks like<br>
+way into the night,<br>
+as all of you rush into your merry homes,
+while i turn off the lights.<br>
+funnily enough,<br>
+nights are when it becomes easy,<br>
+as i'm not on the outside anymore<br>
+because the inside collapses within me.
+</p>
+
+<p>
+i wondered,<br>
+talked,<br>
+questioned,<br>
+tried,<br>
+and failed.<br>
+nothing ever worked,<br>
+and not knowing the reason behind my inevitable fate,<br>
+became unbearable.<br>
+so, i packed my bags,<br>
+and shifted cities;<br>
+it's been four months since.
+</p>
+
+<p>
+days are easier,<br>
+nights get tougher.<br>
+as the internet mocks me,<br>
+with updates from your space.<br>
+it's just like before,<br>
+and nothing really changed.
+</p>
+
+<p>
+i sit here,<br>
+miles away,<br>
+and i watch you,<br>
+hear you,<br>
+and desire what you have.<br>
+but you render my virtual presence invisible,<br>
+as if i'm not even there.
+</p>
+
+<p>
+the morning light hits,<br>
+and i type away on my computer,<br>
+hoping that, someday, i'll be:
+</p>
+
+<p>
+sitting at the center table,<br>
+visible.<br>
+walking into group photos,<br>
+included.<br>
+leaving with everyone,<br>
+together.<br>
+hearing your conversations,<br>
+vocal.<br>
+comparing your life to mine,<br>
+fulfilled.
+</p>
+</div>
+
+<!--FOOTER-->
+<div id = "footer"></div>
+
+</div>
+</body>
+</html>
