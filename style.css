@@ -1,181 +1,118 @@
-/*COLOR VARIABLES*/
+/* reset default css values using eric-meyer's script: */
 
-/*OG*/
-:root{
---grey: #939393;
---greyOpacityReduced: #9393932f;
---black: #000000; 
---white: #FFFFFF; 
---gapGallery: 2vw; 
---noOfItems: 8; 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   license: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/*FONT LOADING*/
-/*type scale: https://utopia.fyi/type/calculator/?c=375,10,1.414,1440,18,1.333,1,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* font-loads: */
 
 @font-face {
-font-family: "Alegreya";
-font-style: normal;
-font-weight: 400; 
-src: url("/fonts/Alegreya-Regular.woff") format("woff"); 
+  font-family: "Alegreya Sans";
+  src: url("/fonts/alegreya-sans_regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
 }
 
 @font-face {
-font-family: "Alegreya";
-font-style: italic;
-font-weight: 400; 
-src: url("/fonts/Alegreya-Italic.woff") format("woff"); 
+  font-family: "Alegreya Sans";
+  src: url("/fonts/alegreya-sans_italic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
 }
 
 @font-face {
-font-family: "Alegreya";
-font-style: normal;
-font-weight: 700; 
-src: url("/fonts/Alegreya-Bold.woff") format("woff"); 
+  font-family: "Alegreya Sans";
+  src: url("/fonts/alegreya-sans_bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
 }
 
-@font-face {
-font-family: "Alegreya";
-font-style: normal;
-font-weight: 600; 
-src: url("/fonts/Alegreya-SemiBold.woff") format("woff"); 
-}
-
-/*FONT SIZE DECLARATIONS*/
-/*14px*/
-#caption{
-font-family: "Alegreya";
-font-style: italic;
-font-weight: 400;
-
-font-size: clamp(0.442rem, 0.3005rem + 0.6039vw, 0.844rem);
-color: var(--grey);
-text-wrap: pretty;
-margin: 0;
-padding: 0.5vw 0;
+:root {
+/* colour-variables: */
+--bg: rgb(0, 253,253); 
 
 }
-h3{
-font-family: "Alegreya";
-font-style: normal;
-font-weight: 400;
-color: var(--black);
 
-font-size: clamp(0.442rem, 0.3005rem + 0.6039vw, 0.844rem);
+/* global-settings: */
+html {
+  font-size: 16px; /* value of 1rem. */
+  text-transform: lowercase; 
+  text-wrap: pretty;
+  background-color: var (--bg); 
 }
 
-/*24px*/
+
+/* typography */
+
+/* i use a fluid-typography-scale, the settings of which are here:
+https://utopia.fyi/type/calculator?c=320,12,1.2,1920,16,1.2,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
 h1{
-font-family: "Alegreya";
-font-style: normal;
-font-weight: 700;
-
-color: var(--black);
-
-font-size: clamp(0.8838rem, 0.6669rem + 0.9253vw, 1.4996rem);
-}
-
-/*18px*/
-h2{
-font-family: "Alegreya";
-font-style: normal;
-font-weight: 700;
-color: var(--black);    
-
-font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem);
+    font-family: "Alegreya Sans"; 
+    font-weight: 600; 
+    font-size: 24px; 
 }
 p{
-font-family: "Alegreya";
-font-style: normal;
-font-weight: 400;
-color: var(--black);
-
-font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem);
-line-height: 1.6;
-text-wrap: pretty;
-padding: 0.5vw 0;
-
-font-variant-ligatures: none;
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  line-height: 1.7;
+  color: rgb(40,40,40)
 }
 
-ol{
-font-family: "Alegreya";
-font-style: italic;
-font-weight: 400;
-font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem);
-text-wrap: pretty;
+/* typography ends */
 
-color: var(--grey);
-background: var(--greyOpacityReduced);
-
-display: flex;
-flex-direction: column;
-row-gap: 0.8rem;
-padding: 2rem;
-
-width: 75%;
-}
-
-ol p{
-margin: 0;
-padding: 0;
-font-size: inherit;
-font-weight: inherit;
-text-wrap: pretty;
-color: inherit;
-line-height: inherit;
-}
-ul{
-font-family: "Alegreya";
-font-style: italic;
-font-weight: 400;
-font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem);
-text-wrap: pretty;
-
-color: var(--grey);
-background: var(--greyOpacityReduced);
-
-list-style-type: none; 
-
-display: flex;
-flex-direction: column;
-row-gap: 0.4rem;
-padding: 2rem;
-
-width: 75%;
-}
-ul p{
-margin: 0;
-padding: 0;
-font-size: inherit;
-font-weight: inherit;
-text-wrap: pretty;
-color: inherit;
-line-height: inherit;
-}
-
-b{
-font-weight: 600;
-}
-nav a{
-font-family: "Alegreya";
-font-style: normal;
-font-weight: 400;
-
-font-size: clamp(0.625rem, 0.4489rem + 0.7512vw, 1.125rem);
-}
-
-/*MASTER SETTINGS*/
-html{
-margin: 0; 
-padding: 0;
-background-color: var(--white); 
-}
 .in-margin-container{
-display: flex;
-flex-direction: column;
-gap: 2vw;
-margin: 0 4vw; 
+margin: 2vw 32vw;
+display: flex; 
+flex-direction: column; 
+row-gap: 2rem
+/* background-color: rgba(255, 0, 0, 0.25);  */
 }
-
-/*MASTER ITEMS*/
