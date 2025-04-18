@@ -134,6 +134,18 @@ p{
   line-height: 1.6;
   color: var(--primary); 
 }
+h2{
+  font-family: "Alegreya Sans";
+  font-weight: 600;
+  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  line-height: 1.2;
+}
+h3{
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  line-height: 1.2;
+}
 figcaption{
   font-family: "Alegreya Sans";
   font-weight: 400;
@@ -186,6 +198,9 @@ nav .right-items{
 display:flex; 
 gap: 2rem; 
 width: auto; 
+}
+nav a{
+  padding-bottom: 0.8rem;
 }
 footer{
   margin-top: 2rem; 
@@ -304,11 +319,11 @@ hr{
   margin: 2rem var(--global_horizontal-margin) 2rem var(--global_horizontal-margin);
 }
 
-blockquotes{
+blockquote{
   background-color: var(--tertiary); 
   padding: 1.2rem;
 }
-blockquotes p{
+blockquote p{
   font-style: italic; 
   color: var(--secondary); 
   line-height: 1.2rem; 
@@ -325,5 +340,24 @@ li{
 }
 li:not(:last-child) {
     margin-bottom: 0.4rem;
+}
+
+/* work-page */
+header{
+display: flex; 
+margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
+align-items: top; 
+margin-bottom: 1.2rem; 
+}
+header .left-items{
+  width: 100%; 
+}
+header .right-items{
+  display: block; 
+  min-width: fit-content; 
+  color: var(--secondary); 
+}
+#date{
+  color: var(--secondary);
 }
 
