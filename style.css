@@ -1,10 +1,9 @@
-/* reset default css values using eric-meyer's script: */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* html-reset */
+  /* by using eric meyer's script http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    license: none (public domain)
 */
-
+  /* #region */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,9 +46,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* #endregion */
 
 /* font-loads: */
-
+  /* #region */
 @font-face {
   font-family: "Alegreya Sans";
   src: url("/fonts/alegreya-sans_regular.woff") format("woff");
@@ -73,72 +73,257 @@ table {
   font-weight: 600;
   font-display: block;
 }
+/* #endregion */
 
+/* global-settings (variables and html-element) */
+  /* #region */ 
 :root {
 /* colour-variables: */
 --bg: rgb(0, 253,253); 
+--primary: rgb(40,40,40); 
+--secondary: rgb(120,120,120);
+--tertiary: rgb(240,240,240); 
 
+/* others: */
+--global_horizontal-margin: 16vw; 
+}
+/* for anything 600px and down (phones, portrait tablets, etc): */
+@media (max-width: 768px){
+  :root{
+  --global_horizontal-margin: 2vw; 
+}
+}
+@media (min-width: 768px){
+  :root{
+  --global_horizontal-margin: 8vw; 
+}
+}
+@media (min-width: 1200px){
+  :root{
+  --global_horizontal-margin: 16vw; 
+}
 }
 
-/* global-settings: */
+/* html element: */
 html {
-  font-size: 16px; /* value of 1rem. */
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);; /* value of 1rem. */
+  font-family: "Alegreya Sans"; 
   text-transform: lowercase; 
   text-wrap: pretty;
+
   background-color: var (--bg); 
+  margin: 2vw var(--global_horizontal-margin); 
 }
+/* #endregion */
 
-
-/* typography */
-
-/* i use a fluid-typography-scale, the settings of which are here:
+/* type-styles */
+/* employing a fluid-typography-scale, the settings of which are here:
 https://utopia.fyi/type/calculator?c=320,12,1.2,1920,16,1.2,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
+/* #region */
 h1{
-    font-family: "Alegreya Sans"; 
-    font-weight: 600; 
-    font-size: 24px; 
+  font-family: "Alegreya Sans"; 
+  font-weight: 600; 
+  font-size: 1rem; 
+  color: var(--primary); 
+  margin-bottom: -1rem;
 }
 p{
   font-family: "Alegreya Sans";
   font-weight: 400;
-  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
-  line-height: 1.7;
-  color: rgb(40,40,40)
+  font-size: 1rem; 
+  line-height: 1.6;
+  color: var(--primary); 
 }
 figcaption{
   font-family: "Alegreya Sans";
   font-weight: 400;
   font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
-  line-height: 1.5;
-  color: rgb(120,120,120)
+  line-height: 1.2;
+  color: var(--secondary); 
+}
+cite{
+  font-style: italic;
 }
 
-figure{
+/* links */
+a{
+  font-size: inherit; 
+  font-weight: inherit; 
+  color: inherit; 
+  text-decoration: underline dashed 0.04rem ;
+  text-underline-offset: 0.2rem; 
+}
+a:hover{
+text-decoration: none;
+color: var(--primary); 
+}
+a:active{
+  color: var(--primary); 
+}
+
+/* #endregion */
+
+/* nav-bar and footer */
+/* #region */
+nav{
+  display: flex; 
+  gap: space-between; 
+  justify-content: space-between; 
+  align-items: center;
+
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  font-size: inherit;
+  color: var(--secondary); 
+
   width: 100%; 
-  background-color: red;
+  height: fit-content; 
+  padding-bottom: 0.4rem; 
+  border-bottom: 2px solid var(--tertiary); 
+  margin-bottom: 2rem; 
+}
+nav .right-items{
+display:flex; 
+gap: 2rem; 
+width: auto; 
+}
+footer{
+  margin-top: 2rem; 
+  border-top: 2px solid var(--tertiary); 
+  display:flex; 
+  text-align: center; 
+  justify-content: center;
+}
+footer p{
+  margin-top: 0.8rem; 
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  line-height: 1.2;
+  color: var(--secondary); 
+}
+/* #endregion */
+
+/* parent containers for media (and other things such as text, figures, image, video, etc) */
+/* #region */
+.full-width-container{
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.8rem;  
+  width: 100%; 
+  overflow:hidden; 
+  object-fit: contain; 
+  margin-top: 2rem; 
+}
+.full-width-container video {
+margin: 0;
+width: 100%;
+height: auto;
+max-height: calc(100vw * 9 / 16); 
+object-fit: contain;
+}
+.full-width-container img {
+margin: 0;
+width: 100%;
+height: auto;
+object-fit: contain;
+}
+.full-width-container iframe {
+margin: 0;
+width: 100%;
+height: calc(100vw * 9 / 16); 
+object-fit: contain;
+}
+
+.split-container{
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.8rem;  
+  width: 100%; 
+  overflow:hidden; 
+  object-fit: contain; 
+  margin-top: 2rem; 
+}
+.split-container-contents {
+display: flex;
+gap: 2rem; 
+justify-content: space-between;
+width: 100%;
+overflow: hidden;
+}
+.split-container img {
+width: 50%;
+height: auto;
+object-fit: cover;
+max-width: 50%;
+}
+.split-container video{
+margin: 0;
+width: 50%;
+height: auto;
+max-height: calc(100vw * 9 / 16); 
+object-fit: contain;
+}
+
+.text-container{
+display: flex; 
+row-gap: 1.4rem;
+margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
+flex-direction: column; 
+}
+
+/* use figure to explain things inside text (such as process, etc) */
+figure{
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.8rem;  
+  width: 100%; 
+  margin-bottom: 2rem; 
 }
 figure img{
-  width: auto;
+  width: auto; 
+  height: auto;
   max-width: 100%;
+  object-fit: cover;
+  object-position: center; 
+}
+figcaption{
+  border-left: 0.3rem solid var(--secondary); 
+  padding-left: 0.4rem;  
+}
+/* #endregion */
+
+hr{
+  all:unset;
+  display: block; 
+  height: 2px; 
+  background-color: var(--tertiary); 
+  margin: 0 var(--global_horizontal-margin) 2rem var(--global_horizontal-margin);
+}
+#separator{
+  margin: 2rem var(--global_horizontal-margin) 2rem var(--global_horizontal-margin);
 }
 
-.multiple-media{
-  width: 100%; 
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  max-width: 100%; 
-  object-fit: fill;
+blockquotes{
+  background-color: var(--tertiary); 
+  padding: 1.2rem;
+}
+blockquotes p{
+  font-style: italic; 
+  color: var(--secondary); 
+  line-height: 1.2rem; 
+}
+ol{
+  list-style-type: lower-roman; 
+  padding: 0 1.2rem;
+}
+li{
+  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  font-style: normal; 
+  color: var(--secondary); 
+  line-height: 1.2; 
+}
+li:not(:last-child) {
+    margin-bottom: 0.4rem;
 }
 
-
-/* typography ends */
-
-.in-margin-container{
-margin: 2vw 32vw;
-display: flex; 
-flex-direction: column; 
-row-gap: 2rem
-/* background-color: rgba(255, 0, 0, 0.25);  */
-}
