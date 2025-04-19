@@ -7,7 +7,7 @@
 
  @font-face {
   font-family: "Fira Code";
-  src: url("/fonts/fira-code.woff") format("woff");
+  src: url("/fonts/fira-code_regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: block;

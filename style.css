@@ -49,28 +49,34 @@ table {
 /* #endregion */
 
 /* font-loads: */
+/* use transfonter (https://transfonter.org/) to convert fonts to woff2 */
   /* #region */
 @font-face {
   font-family: "Alegreya Sans";
-  src: url("/fonts/alegreya-sans_regular.woff") format("woff");
+  src: url("/fonts/alegreya-sans_regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: block;
 }
-
 @font-face {
   font-family: "Alegreya Sans";
-  src: url("/fonts/alegreya-sans_italic.woff") format("woff");
+  src: url("/fonts/alegreya-sans_italic.woff2") format("woff2");
   font-style: italic;
   font-weight: 400;
   font-display: block;
 }
-
 @font-face {
   font-family: "Alegreya Sans";
-  src: url("/fonts/alegreya-sans_bold.woff") format("woff");
+  src: url("/fonts/alegreya-sans_bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
+  font-display: block;
+}
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("/fonts/alegreya-sans_light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
   font-display: block;
 }
 /* #endregion */
@@ -142,7 +148,7 @@ h2{
 }
 h3{
   font-family: "Alegreya Sans";
-  font-weight: 400;
+  font-weight: 300;
   font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
   line-height: 1.2;
 }
@@ -246,7 +252,7 @@ object-fit: contain;
 .full-width-container iframe {
 margin: 0;
 width: 100%;
-height: calc(100vw * 9 / 16); 
+height: calc(90vw * 9 / 18); 
 object-fit: contain;
 }
 
@@ -359,5 +365,25 @@ header .right-items{
 }
 #date{
   color: var(--secondary);
+}
+
+/* canvas */
+#canvas-container{
+position: inherit;
+}
+#canvas-replacer{
+display: none; 
+}
+#canvas-container-but-hidden-on-phone{
+position: inherit;
+}
+@media all and (max-width: 1000px) {
+
+#canvas-container-but-hidden-on-phone {
+display: none; 
+}
+#canvas-replacer{
+display: flex;
+}
 }
 
