@@ -162,6 +162,28 @@ figcaption{
 cite{
   font-style: italic;
 }
+blockquote{
+  background-color: var(--tertiary); 
+  padding: 1.2rem;
+}
+blockquote p{
+  font-style: italic; 
+  color: var(--secondary); 
+  line-height: 1.2rem; 
+}
+ol{
+  list-style-type: lower-roman; 
+  padding: 0 1.2rem;
+}
+li{
+  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  font-style: normal; 
+  color: var(--secondary); 
+  line-height: 1.2; 
+}
+li:not(:last-child) {
+    margin-bottom: 0.4rem;
+}
 
 /* links */
 a{
@@ -325,29 +347,6 @@ hr{
   margin: 2rem var(--global_horizontal-margin) 2rem var(--global_horizontal-margin);
 }
 
-blockquote{
-  background-color: var(--tertiary); 
-  padding: 1.2rem;
-}
-blockquote p{
-  font-style: italic; 
-  color: var(--secondary); 
-  line-height: 1.2rem; 
-}
-ol{
-  list-style-type: lower-roman; 
-  padding: 0 1.2rem;
-}
-li{
-  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
-  font-style: normal; 
-  color: var(--secondary); 
-  line-height: 1.2; 
-}
-li:not(:last-child) {
-    margin-bottom: 0.4rem;
-}
-
 /* work-page */
 header{
 display: flex; 
@@ -368,6 +367,7 @@ header .right-items{
 }
 
 /* canvas */
+/* #region */
 #canvas-container{
 position: inherit;
 }
@@ -386,4 +386,4 @@ display: none;
 display: flex;
 }
 }
-
+/* #endregion */
