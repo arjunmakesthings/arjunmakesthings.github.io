@@ -12,8 +12,6 @@
     <meta name="keywords" content="arjun, website, style-sheet, style, css" />
     <!-- seo end -->
 
-    <title>style-sheet</title>
-
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="/style.css" />
 
@@ -21,9 +19,12 @@
     <link rel="stylesheet" href="/prism.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
 
-    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
+    <!-- only include if p5 sketch exists: -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
 
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
+
+    <title>project-name / work title</title>
   </head>
 
   <body>
@@ -174,20 +175,26 @@ for (let i = 0; i &lt; friendPosition.length; i++) {
       </figcaption>
     </div>
 
-    <div class = "full-width-container">
-<iframe src="https://www.youtube.com/embed/-bn1hhMej7M?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="full-width-container">
+      <iframe
+        src="https://www.youtube.com/embed/-bn1hhMej7M?rel=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <figcaption>
         the explanation of this drawing and some more to check for wrapping
         text.
       </figcaption>
-</div>
+    </div>
 
     <hr id="separator" />
 
-    <div id = "canvas-container"></div>
-    <script src = "sketch.js"></script>
+    <div id="canvas-container"></div>
+    <script src="sketch.js"></script>
 
-<hr id = "separator">
+    <hr id="separator" />
 
     <div class="text-container">
       <p>in the end, i may also have some sources in an ordered list:</p>

@@ -1,192 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta name="description" content="earth 2052: hot or not " />
+    <meta name="author" content="arjun" />
+    <meta name="keywords" content="" />
+    <!-- seo end -->
 
-<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
 
-<meta name="description" content="Eart 2052: Hot or Not is a project done at Science Gallery Bengaluru for the Annual Youth Symposium 2022 | Arjun's Archive">
-<meta name="author" content="Arjun">
-<meta name="keywords" content="design, design futures, speculative design, presentation, what will the earth look like, earth">
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
 
-<!--SEO END-->
-
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-<link rel="stylesheet" href="/style.css">
-
-
-<!--HEADER & FOOTER-->
-<script>
-  // fetch header.
-  fetch("/assets/repeated-elements/header-for-project-pages.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load header: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("header").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
-    });
-
-  // fetch footer.
-  fetch("/assets/repeated-elements/footer.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load footer: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("footer").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
-    });
-</script>
-
-<title>design / earth 2052: hot or not?</title>
-</head>
+    <title>earth 2052: hot or not?</title>
+  </head>
 <body>
-<div class="in-margin-container">
+    <div id="nav-bar"></div>
 
-<!--HEADER-->
-<div id = "header"></div>
+    <header>
+      <div class="left-items">
+        <h2>earth 2052: hot or not?</h2>
+        <h3 id="date">2022</h3>
+      </div>
+      <div class="right-items">
+        <h3>
+          lead designer,<br />
+          xperimenters programme,<br />
+          at science gallery bengaluru. 
+        </h3>
+      </div>
+    </header>
 
-<!--NEWSPAPER TITLE-->
-<div class = "titler">
-<div class = "left-items">
-<h3>earth 2052: hot or not?</h3>
-<h3 id = "date">2022</h3>
-</div>
-<div class = "right-items">
-<h3>lead designer,<br>
-xperimenters programme,<br>
-at science gallery bengaluru</h3>
-</div>
-</div>
-
-<!--Use for full screen videos-->
-<div class = "full-width-media-container">
-<video preload="yes" muted playsinline autoplay controls loop>
-<source src="/work/design/earth-2052/16_e2052.mp4" type="video/mp4">
-Your browser does not support videos. 
-</video>
-</div>
-
-<!--Use for two split images-->
-<div class = "half-width-media-container">
-<img src = "/work/design/earth-2052/2e2052.webp">
-<img src = "/work/design/earth-2052/8_e2052.webp">
-</div>
-
-<div class = "text-box-container">
-<h1>Context</h1>
-<p>As part of the Xperimenters programme at Science Gallery Bengaluru, the four-person cohort was expected to co-create a project to be presented at the annual <a href = "https://sciencegallery.org/youth-symposium">Science Gallery Youth Symposium.</a> The 2022 edition was titled Hot & Bothered and aimed to bring young people together from around the world to foster action for climate justice.</p>
-</div>
-
-<div class = "inline-image-container" id = "white">
-<img src = "/work/design/earth-2052/1_e2052.webp">
-</div>
-
-<div class = "text-box-container">
-<p>The four of us decided to steer away from the scientific lens of dissecting the climate situation and attempted to look at its impact on the youth of Bengaluru, the city we lived in at the time.
-<ul>
-<li>What does climate change mean to the people around us and what kind of feelings does the anticipation of the future give rise to?</li>
-</ul>
-<h1>Process</h1>
-<p>Heavily inspired by the work of <a href = "https://drive.google.com/file/d/18xa9A2Ickfn3uSwrtyFqRisg7HfD1up1/view">Guerilla Science,</a> we fell in love with the idea of crowdsourcing data. Jargon-heavy climate debates aside, we simply wondered what young people thought the Earth would look like in the future, if we continue to live the way we do. Armed with hundreds of post-its, a couple dozen markers and a somewhat intriguing visual identity, we set out to try and find out the speculative visions of the Earth as envisioned by the young people of Bengaluru, India.</p>
-<p>In 4 days, we collected 200+ speculative visual depictions of the Earth in 2052. Each passerby was prompted with a simple question, “what do you think the Earth would look like, 30 years from now, with regards to climate change?”. The collected responses were then analysed manually by using qualitative frameworks.</p>
-<h1>Findings</h1>
-<p>The responses were extremely varied. While some had little/no hope for the planet, others visualised how human beings might possibly be able to save the planet. Some depended on the technology moguls of the modern world to be climate saviours while others thought technology would enslave us all on a burning planet.</p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/design/earth-2052/3_e2052.webp">
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/design/earth-2052/4_e2052.webp">
-<p id = "caption">One of my favourite visualisations out of the 200+, made by my dear friend <a href = "https://www.linkedin.com/in/atreyo-roy-a055011ba?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADL56GUBNMeiEkaojoo4lCxzJjxOvxRD_F8&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BfXDWsp6qTne%2Bsv8%2B9MyMaw%3D%3D">Atreyo Roy.</a></p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/design/earth-2052/5_e2052.webp">
-<p id = "caption">Some visualisations with little/no hope. Interestingly, the one on the top left was made by a 9 year old kid.</p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/design/earth-2052/6_e2052.webp">
-<p id = "caption">An interesting collection of visualisations that look at technology from different angles. While the top right visualisation hints towards a future where human beings are enslaved by robots, the one on the bottom highlights the belief that you adults have of technology moghuls saving the world.</p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/design/earth-2052/7_e2052.webp">
-<p id = "caption">Not all of them were negative, however. Some of the visualisations communicated actionable steps that we can take towards ensuring a better climate future.</p>
-</div>
-
-<div class = "text-box-container">
-<p>To derive an overall understanding of the nature of peoples’ responses, we decided to perform a sentiment analysis on the drawings. Each drawing was identified to be either a positive or negative drawing and the findings were then presented in the symposium.</p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/design/earth-2052/9_e2052.webp">
-<p id = "caption">I used the metaphor of a 'scale tilting in favour' of a particular sentiment to present the findings.</p>
-</div>
-
-<div class = "full-width-media-container">
-<img src = "/work/design/earth-2052/10_e2052.webp">
-</div>
-
-<div class = "text-box-container">
-<p>As I engaged more with the data, I realised that each drawing could be summed up in a few keywords (based on what was depicted in the drawing). This could help communicate broader themes that were being communicated through the drawings. We derived keywords from each of the 200+ drawings and I generated a word-cloud online from the same.</p>
-</div>
-
-<div class = "inline-image-container" id = "white">
-<img src = "/work/design/earth-2052/12.gif">
-</div>
-
-<div class = "text-box-container">
-<p>Personally, I became very interested in knowing what the computer would make of this data. If an image could be generated by using the top keywords derived from the youth’s perception of the Earth in 2052, it could be regarded as an accurate collective visual (with the subjectivity of the computer, of course). I used three AI methods (the Altair method & Orion method on StarryAI) as well as the popular OpenAI tool, DALL-E, to generate the visuals below.</p>
-</div>
-
-
-<!--Use for two split images-->
-<div class = "half-width-media-container">
-<img src = "/work/design/earth-2052/17_e2052.gif">
-<img src = "/work/design/earth-2052/15.webp">
-</div>
-
-<div class = "text-box-container">
-<h1>Outcome</h1>
-<p>These findings were presented virtually at the Hot & Bothered Youth Symposium 2022 and saw over 70+ participants.</p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/design/earth-2052/18.webp">
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/design/earth-2052/19.webp">
-<p id = "caption">A snippet from the <a href = "https://static1.squarespace.com/static/5d569899bdf59100013c8a11/t/632ae9456efcd92d60477040/1663756634212/Youth+Symposium+2022-FINAL-single-pages.pdf">2022 Youth Symposium Report,</a> published by the Science Gallery Network.</p>
-</div>
-
-<hr>
-
-<div class = "text-box-container">
-<h1>Acknowledgements</h1>
-<p>Worked with <a href = "https://www.linkedin.com/in/jyotsna-iyer?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC5gfX0BlhQ0KF3xRtWuy7gnPpX16L7RvXs&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B2G3WKHegRaagUWUPuEH16g%3D%3D">Jyotsna,</a> <a href = "https://www.linkedin.com/in/snehaja-venkatesh-702106235?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADqSCHIB7iseJgA9y_-iy4NGQnhZulsWOhU&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B5QgeWvjyS2ihjzHOVShBVw%3D%3D">Snehaja</a> and <a href = "https://www.linkedin.com/in/samyuktaprabhu?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACWXVaEBF8rlOfyI8oVnaUIqD5e4NGImYik&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bwf2Q4GuiRau54sVUgiQHlw%3D%3D">Samyukta;</a> mentored by <a href = "https://www.linkedin.com/in/vasudha-malani-9911661b1?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADFSr_0BZjmRsBmkkie0gukyBkQQ7LmJZuk&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bem3pDs3cQyOtXF8mL0vpSw%3D%3D">Vasudha</a> and <a href = "https://www.linkedin.com/in/madhushree-kamak-673951111?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABwVG3cBLsjjGBD_I2_iUpkrr4LQ1bQtuHQ&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B4G5rAgTrTtCUFknVjfv6UA%3D%3D">Madhushree.</a></p>
-</div>
-
-<!--FOOTER-->
-<div id = "footer"></div>
-
-</div>
+    <div class = "text-container">
+      <p>as part of the xperimenters-cohort at science gallery bengaluru, the four of us were asked to present a public engagement project at the annual <a href = "https://sciencegallery.org/youth-symposium">youth symposium</a>. that year, the symposium was titled ‘hot & bothered’, and aimed to engage young people in the global climate-crisis discourse.</p>
+      <p>we chose to steer away from traditional ‘scientific’ enquiries, and wished to do something with crowdsourced qualitative data; partly inspired by the work of <a href ="https://drive.google.com/file/d/18xa9A2Ickfn3uSwrtyFqRisg7HfD1up1/view">guerrilla science</a>. so, we put up a small stall at a local event, and asked 200+ young adults to draw the earth 30 years into the future (given the current climate-crisis). afterwards, each drawing was manually analysed and the findings were communicated at the symposium.</p>
+    </div>
+    <div id="footer_content"></div>
 </body>
 </html>
