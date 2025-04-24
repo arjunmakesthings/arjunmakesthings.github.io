@@ -295,14 +295,13 @@ width: 100%;
 overflow: hidden;
 }
 .split-container img {
-width: 50%;
+width: calc(50% - 1rem);
 height: auto;
 object-fit: cover;
-max-width: 50%;
 }
 .split-container video{
 margin: 0;
-width: 50%;
+width: calc(50% - 1rem);
 height: auto;
 max-height: calc(100vw * 9 / 16); 
 object-fit: contain;
