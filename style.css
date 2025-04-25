@@ -369,9 +369,13 @@ footer p {
   display: flex;
   object-fit: cover; 
   gap: 2rem; 
+  align-items: center; 
+  flex: 2; 
 }
 .split-container img {
   width: calc(50% - 1rem); /* remove half of the gap from each of the two media pieces) */
+  height: 100%; 
+  object-fit: cover; 
 }
 .split-container video {
   margin: 0;
