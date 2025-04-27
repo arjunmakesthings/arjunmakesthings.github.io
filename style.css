@@ -191,14 +191,17 @@ table {
   }
 }
 
-/* html element: */
+/* html & body element: */
 html {
   font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem); /* value of 1rem. */
   font-family: "Alegreya Sans";
   text-transform: lowercase;
   text-wrap: pretty;
 
-  background-color: var (--bg);
+  background-color: var (--bg); 
+}
+
+body{
   margin: 2vw var(--global_horizontal-margin);
 }
 /* #endregion */
