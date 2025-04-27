@@ -336,7 +336,6 @@ footer p {
   gap: 0.8rem;
   width: 100%;
   overflow: hidden;
-  object-fit: contain;
   margin-top: 2rem;
 }
 .full-width-container video {
@@ -344,11 +343,13 @@ footer p {
   width: 100%;
   height: auto;
   max-height: calc(100vw * 9 / 16);
+  object-fit: cover; 
 }
 .full-width-container img {
   margin: 0;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .full-width-container iframe {
   margin: 0;
@@ -358,6 +359,7 @@ footer p {
 }
 
 .split-container {
+  /* has a figcaption and a blank container for all images */
   display: flex;
   flex-direction: column; 
   gap: 0.8rem;
@@ -366,30 +368,36 @@ footer p {
   margin-top: 2rem;
 }
 .split-container-contents {
+  /* side by side media */
   display: flex;
-  object-fit: cover; 
   gap: 2rem; 
-  align-items: center; 
-  flex: 2; 
+  align-items: top; 
+  /* max-height: 30vh;  */
+}
+.split-container-contents .content{
+  display: flex; 
+  width: 100%; 
+  height: inherit; 
+  justify-content: center; 
 }
 .split-container img {
-  width: calc(50% - 1rem); /* remove half of the gap from each of the two media pieces) */
+  width: 100%; 
   height: 100%; 
-  object-fit: cover; 
+  object-fit: cover;   
 }
 .split-container video {
   margin: 0;
-  width: calc(50% - 1rem);
+  width: 100%;
   height: auto;
   max-height: calc(100vw * 9 / 16);
-  object-fit: contain;
+  object-fit: cover; 
 }
 
 .text-container {
   display: flex;
+  flex-direction: column;
   row-gap: 1.4rem;
   margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
-  flex-direction: column;
 }
 
 /* use figure to explain things inside text (such as process, etc) */
@@ -399,13 +407,13 @@ figure {
   gap: 0.8rem;
   width: 100%;
   margin-bottom: 2rem;
-  object-fit: cover;
 }
 figure img {
   width: auto;
   height: auto;
   max-width: 100%;
   object-position: center;
+  object-fit: cover;
 }
 figcaption {
   border-left: 0.3rem solid var(--secondary);
