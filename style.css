@@ -224,6 +224,9 @@ p {
   line-height: 1.6;
   color: var(--primary);
 }
+em{
+  font-style: italic; 
+}
 h2 {
   font-family: "Alegreya Sans";
   font-weight: 600;
@@ -421,6 +424,9 @@ figure img {
 figcaption {
   border-left: 0.3rem solid var(--secondary);
   padding-left: 0.4rem;
+}
+  #white{
+  border: 1px solid var(--tertiary); 
 }
 /* #endregion */
 
