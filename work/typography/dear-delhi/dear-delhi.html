@@ -1,139 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta
+      name="description"
+      content="case study for dear delhi, there's something wrong with you — a typographic project that sheds light on social injustices faced by northeastern migrants in delhi."
+    />
+    <meta name="author" content="arjun" />
+    <meta name="keywords" content="" />
+    <!-- seo end -->
 
-<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
 
-<meta name="description" content="A typographic publication highlighting social injustices faced by northeastern migrants in New Delhi | Arjun's Archive">
-<meta name="author" content="Arjun">
-<meta name="keywords" content="dear, delhi, typography, northeastern, migrants">
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
 
-<!--SEO END-->
+    <title>work / dear delhi</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
 
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-<link rel="stylesheet" href="/style.css">
+    <header>
+      <div class="left-items">
+        <h2>dear delhi</h2>
+        <h3 id="date">2021</h3>
+      </div>
+      <div class="right-items">
+        <h3>
+          publication & typographic posters<br />
+          at iiad, delhi.
+        </h3>
+      </div>
+    </header>
 
-<!--HEADER & FOOTER-->
-<script>
-  // fetch header.
-  fetch("/assets/repeated-elements/header-for-project-pages.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load header: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("header").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
-    });
+    <div class="text-container">
+      <p>
+        in 2021, as part of my third-year undergraduate work, i attempted the
+        <a href="https://www.istd.org.uk/">istd</a> student brief which read:
+      </p>
+      <blockquote>
+        <p>
+          What can a typographer do to address the imbalance, to harness, shape
+          and organise words in service of breaking barriers? To encourage
+          reflection, respect, and self-awareness between communities?
+        </p>
+      </blockquote>
+      <p>
+        the brief also put forth starting points, and exposed me to
+        gil-scott-heron’s poetry & the media theories of marshall mcluhan.
+      </p>
+      <figure>
+        <img src="/work/typography/dear-delhi/1.webp" />
+      </figure>
+      <p>
+        as i began unravelling global racial, sexist, political and religious
+        imbalances,
+        <a
+          href="https://www.linkedin.com/in/suman-bhandary?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAh6rwABYmMtrIAY84KB2PoBLYh577ofKq4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BjScCX3vlQ9SQTv5OqrUD7A%3D%3D"
+          >suman</a
+        >
+        asked me to look at issues closer to home. over time, my heart settled
+        on issues that often go unaddressed, and i decided to hone in on ‘casual
+        racism’ against northeastern migrants in delhi.
+      </p>
+    </div>
 
-  // fetch footer.
-  fetch("/assets/repeated-elements/footer.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load footer: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("footer").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
-    });
-</script>
+    <div class="full-width-container">
+      <img src="/work/typography/dear-delhi/3.0.webp" id="white" />
+      <figcaption>
+        largely derived from duncan mcduie-ra's ethnographic study:
+        <a href="Northeast Migrants in Delhi: Race, Refuge and Retail"
+          >Northeast Migrants in Delhi: Race, Refuge and Retail.</a
+        >
+      </figcaption>
+    </div>
 
-<title>typography / dear delhi</title>
-</head>
-<body>
-<div class="in-margin-container">
+    <div class="text-container" id="separator">
+      <p>
+        i saw a poetic link between the latin alphabet and human beings — each
+        individual was different, but part of the same larger system. so, i used
+        a system of letters to show the different kinds of injustices faced by
+        northeastern migrants in delhi, and supplemented it with evidence.
+      </p>
+    </div>
 
-<!--HEADER-->
-<div id = "header"></div>
+    <div class="full-width-container">
+      <img src="/work/typography/dear-delhi/O1.webp" />
+      <figcaption>
+        the full a-5 sized book can be accessed
+        <a href="/work/typography/dear-delhi/Dear Delhi A5.pdf">here</a>.
+      </figcaption>
+    </div>
 
-<!--NEWSPAPER TITLE-->
-<div class = "titler">
-<div class = "left-items">
-<h3>dear delhi</h3>
-<h3 id = "date">2021</h3>
-</div>
-<div class = "right-items">
-<h3>publication & poster-set for <a href = "https://www.istd.org.uk/sas">ISTD</a> 2021<br>
-at IIAD, delhi</h3>
-</div>
-</div>
+    <div class="split-container">
+      <div class="split-container-contents">
+        <div class="content">
+          <img src="/work/typography/dear-delhi/O2.webp" />
+        </div>
+        <div class="content">
+          <img src="/work/typography/dear-delhi/O3.webp" />
+        </div>
+      </div>
+    </div>
 
-<div class = "full-width-media-container">
-<img src = "/work/typography/dear-delhi/O1.webp">
-<p id = "caption">View a PDF of the final A5 book <a href = "/work/typography/dear-delhi/Dear Delhi A5.pdf">here</a>.</p>
-</div>
+    <div class="split-container">
+      <div class="split-container-contents">
+        <div class="content">
+          <img src="/work/typography/dear-delhi/O4.webp" />
+        </div>
+        <div class="content">
+          <img src="/work/typography/dear-delhi/O5.webp" />
+        </div>
+      </div>
+    </div>
 
-<div class = "half-width-media-container">
-<img src = "/work/typography/dear-delhi/O2.webp">
-<img src = "/work/typography/dear-delhi/O3.webp">
-</div>
+    <div class="split-container">
+      <div class="split-container-contents">
+        <div class="content">
+          <img src="/work/typography/dear-delhi/O6.webp" />
+        </div>
+        <div class="content">
+          <img src="/work/typography/dear-delhi/O7.webp" />
+        </div>
+      </div>
+      <figcaption>a collection of the typographic posters.</figcaption>
+    </div>
 
-<div class = "half-width-media-container">
-<img src = "/work/typography/dear-delhi/O4.webp">
-<img src = "/work/typography/dear-delhi/O5.webp">
-</div>
+    <hr id = "separator">
 
-<div class = "half-width-media-container">
-<img src = "/work/typography/dear-delhi/O6.webp">
-<img src = "/work/typography/dear-delhi/O7.webp">
-</div>
+    <div class = "text-container">
+      <h1>acknowledgements:</h1>
+      <p>mentored by <a href = "https://www.linkedin.com/in/suman-bhandary?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAh6rwABYmMtrIAY84KB2PoBLYh577ofKq4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BjScCX3vlQ9SQTv5OqrUD7A%3D%3D">suman bhandary</a>, at indian institute of art & design.</p>
+    </div>
 
-<div class = "text-box-container">
-<h1>Context</h1>
-<p>In my 3rd year at IIAD, each student was asked to choose a “path” — an area of communication design that we would like to explore in depth. That particular year, I had fallen in love with typography and chose to tackle the ISTD 2021 Student Brief. The brief very clearly read:</p>
-<ul>
-<li>What can a typographer do to address the imbalance, to harness, shape and organise words in service of breaking barriers? To encourage reflection, respect, and self-awareness between communities?</li>
-</ul>
-<p>As a starting point, the brief put forward the activist poems of Gil Scott-Heron and the media theories of Marshall McLuhan. Over the course of two weeks, I explored racial, sexist, political and religious imbalances on a global, national & local scale.</p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/typography/dear-delhi/1.webp">
-</div>
-
-<div class = "text-box-container">
-<p>After two weeks, my mentor prompted me to explore locally rooted issues that continued to exist around us without being explicitly discussed. The power of typography could truly be harnessed then. I agreed.</p>
-<p>I began exploring the roots of “casual racism” in the city and a huge chunk of it was directed towards Northeastern migrants. An ethnographic study done by Duncan McDuie-Ra, titled <a href = "https://www.jstor.org/stable/j.ctt46mv07">Northeast Migrants in Delhi: Race, Refuge and Retail</a> became a pivotal resource in my study. It was shocking to see that Duncan’s findings, first published in 2012, held true even in 2021. Not a lot had changed for almost 10 years and that became a pressing issue. I further explored this context through informal interviews with acquaintances in Munirka & North Campus, areas in Delhi infamously known for a high density of Northeastern migrants.</p>
-</div>
-
-<div class = "full-width-media-container" id = "white">
-<img src = "/work/typography/dear-delhi/3.0.webp">
-</div>
-
-<div class = "text-box-container">
-<p>At the same time, I was also exploring typographic forms to get familiar with the medium. I started to draw out parallels between the Latin alphabet and the feelings of Northeastern migrants in New Delhi. The idea then became about communicating facts through typography and indirectly converting the disturbing truths that I had uncovered in my research.</p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/work/typography/dear-delhi/4.0.webp">
-</div>
-
-<div class = "text-box-container">
-<p>The final outcomes were a set of 6 typographic posters, an A5 sized <a href = "/work/typography/dear-delhi/Dear Delhi A5.pdf">book</a> and a 1700-word <a href = "/work/typography/dear-delhi/dear-delhi-case-study.pdf">case study</a>.</p>
-</div>
-
-<hr>
-
-<div class = "text-box-container">
-<h1>Acknowledgements</h1>
-<p>Was mentored by <a href = "https://www.linkedin.com/in/suman-bhandary?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAh6rwABYmMtrIAY84KB2PoBLYh577ofKq4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BjScCX3vlQ9SQTv5OqrUD7A%3D%3D">Suman Bhandary</a> during this project.</p>
-</div>
-
-<!--FOOTER-->
-<div id = "footer"></div>
-
-</div>
-</body>
+    <div id="footer_content"></div>
+  </body>
 </html>

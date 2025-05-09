@@ -221,7 +221,7 @@ p {
   font-family: "Alegreya Sans";
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.6em;
   color: var(--primary);
 }
 em{
@@ -231,19 +231,19 @@ h2 {
   font-family: "Alegreya Sans";
   font-weight: 600;
   font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
-  line-height: 1.2;
+  line-height: 1.2em;
 }
 h3 {
   font-family: "Alegreya Sans";
   font-weight: 300;
   font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
-  line-height: 1.2;
+  line-height: 1.2em;
 }
 figcaption {
   font-family: "Alegreya Sans";
   font-weight: 400;
   font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
-  line-height: 1.2;
+  line-height: 1.2em;
   color: var(--secondary);
 }
 cite {
@@ -256,7 +256,7 @@ blockquote {
 blockquote p {
   font-style: italic;
   color: var(--secondary);
-  line-height: 1.2rem;
+  line-height: 1.2em;
 }
 ol {
   list-style-type: lower-roman;
@@ -266,7 +266,7 @@ li {
   font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
   font-style: normal;
   color: var(--secondary);
-  line-height: 1.2;
+  line-height: 1.2em;
 }
 li:not(:last-child) {
   margin-bottom: 0.4rem;
@@ -329,7 +329,7 @@ footer p {
   font-family: "Alegreya Sans";
   font-weight: 400;
   font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
-  line-height: 1.2;
+  line-height: 1.2em;
   color: var(--secondary);
 }
 /* #endregion */
