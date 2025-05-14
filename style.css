@@ -510,7 +510,13 @@ header .right-items {
 display: flex; 
 flex-direction: column;
 width: calc((100% - (var(--no_of_items) - 1) * var(--gallery-gap)) / var(--no_of_items));
+box-sizing: border-box; /* box sizing allows you to include padding in the width & height calculation */
 height: 100%; 
+text-decoration: none; 
+padding: 0.8rem
+}
+.gallery_item:hover{
+  background-color: var(--tertiary); 
 }
 /* for anything 600px and down (phones, portrait tablets, etc): */
 @media (max-width: 768px) { /* phones, portrait */
@@ -549,7 +555,6 @@ height: 100%;
   flex-wrap: nowrap; 
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 0.1rem;
   width: 100%;
 }
 .top h1{
