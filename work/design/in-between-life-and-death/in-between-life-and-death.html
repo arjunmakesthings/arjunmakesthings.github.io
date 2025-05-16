@@ -21,6 +21,10 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="/style.css" />
 
+    <!-- only include if code exists: -->
+    <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
     <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
 
     <title>in between life & death</title>
@@ -85,13 +89,6 @@
     <hr id = "separator">
 
     <div class = "text-container">
-      <h1>logic + programming:</h1>
-      <p>this was the first project i made using <a href = "https://p5js.org/">p5.js</a>, an open-source javascript library for people with less / no programming experience. the code can be found <a href = "https://github.com/arjunmakesthings/InBetweenLifeAndDeath">here</a>, and my programmatic-decisions are explained below.</p>
-    </div>
-
-    <hr id = "separator">
-
-    <div class = "text-container">
       <h1>effect:</h1>
       <p>the game sat quietly in the <a href = "https://bengaluru.sciencegallery.com/psy-ar-games">psyche media lounge</a>, and 121 unique people played it within the first month. i used the game as a tool to conduct <a href = "https://bengaluru.sciencegallery.com/psy-ar-workshops/in-between-life-death-breaking-down-the-making">virtual workshops</a>, where we would discuss the structure of the game, human-need theories and collectively wonder about the point of it all. here are some things that the participants said: </p>
       <blockquote>
@@ -114,6 +111,89 @@
         <p>“It’s not the numbers but the quality of engagement that matters. Impact one person’s life, but do it well.”</p>
       </blockquote>
       <p>this project also won the <a href = "https://www.iiad.edu.in/the-circle/unfold-2022-indian-institute-of-art-designs-graduate-show/">best graduation project</a> at indian institute of art & design in 2022, was featured in the 2022 <a href = "https://showcase.p5js.org/#/2022-All">p5.js global showcase</a> and presented at the <a href = "https://www.instagram.com/ccsantein/p/C3qDzw8xhdo/">cc-santé annual community conference</a> in 2024.</p>
+    </div>
+
+    <hr id = "separator">
+
+    <div class = "text-container">
+      <h1>interpretation, logic and programming:</h1>
+      <p>this was the first project i made using <a href = "https://p5js.org/">p5.js</a>, an open-source javascript library for people with less / no programming experience. the code can be found <a href = "https://github.com/arjunmakesthings/InBetweenLifeAndDeath">here</a>, and my programmatic-decisions are explained below.</p>
+      <p>The game had 5 stages for a digital particle to progress through. Players woke up as a digital particle (suddenly being given ‘life’) in a dark space. Movement of the particle was controlled through the p5.js lerp() function. Move the mouse somewhere, and the particle slowly moves there.</p>
+      <div class="code-box-container">
+        <pre><code class = "language-javascript">
+heroPosition = lerp(initialPosition, newPosition, amountOfInterpolation);</code></pre>
+      </div>
+      <p>
+        The first stage (or level) was physiological needs. This was interpreted as simply regaining the energy that the particle expends by breathing & moving. Food was created at different intervals of time, and the particle must be moved close to the food source for it to eat the food (much like the real world).</p>
+        <div class="code-box-container">
+          <pre><code class = "language-javascript">
+class Food {
+  objectProperties {
+      size,
+      colour,
+      position
+  }
+
+  eatenStatus {
+      if (eaten == true) {
+          foodDoesNotExist();
+      } else {
+          foodExists();
+      }
+  }
+}</code></pre>
+        </div>
+
+        <p>Next was the stage of safety. Hostile particles flew in from random places at random speeds and a collision detection algorithm was used to recognise whether the hero particle successfully steered away from them or not. If not, the particle would die.</p>
+        <div class="code-box-container">
+          <pre><code class = "language-javascript">
+var d = distance between heroObject and hostile particle[i]; 
+
+if (d > threshold) {
+  heroObject dies
+} else {
+    heroObject survives
+}</code></pre>
+        </div>
+
+        <p>The next stage was a complicated one to fit into a system of logic: belonging & need. I interpreted love (at the time) as companionship. In the lonely space, another similar looking particle appears and the hero particle must move in at a desirable speed to ‘connect’ with the other particle (used velocity to program ‘consent’).</p>
+        <div class="code-box-container">
+          <pre><code class = "language-javascript">
+//Free moving companion object
+
+if (companionObject.x < 0 | companionObject.x > width) companionObject.xSpeed =
+    companionObject.xSpeed * (-1)
+if (companionObject.y < 0 | companionObject.y > height) companionObject.ySpeed =
+    companionObject.ySpeed * (-1)
+
+//Calculating whether the heroObject is moving towards the companion or not
+
+detectMouse() {
+    if (mouseX < companion.x + companion.r / 2 + leeway) &
+        (mouseX > companion.x - companion.r / 2 - leeway) &
+        (mouseY < companion.y + companion.r / 2 + leeway) &
+        (mouseY > companion.y - companion.r / 2 - leeway) {
+            mouseOnTarget = true;
+        } else {
+            mouseOnTarget = false;
+        }
+}</code></pre>
+        </div>
+
+        <p>If a player made it till this point in the game, they had progressed through the Hierarchy of Human Needs in a linear fashion, one after the other. However, life is rarely like that. I programmed a shortage of food and the arrival of more hostile particles at this juncture. Once conditions were stable again, the hero particle was suddenly zoomed out into the grander universe where other similar particles existed. The hero particle now had to connect with the others (make friends) and take care of them (fulfilling esteem needs). At this point, the game became an autonomous system (friends moved independently, ate food and could also die from starvation).</p>
+        <div class="code-box-container">
+          <pre><code class = "language-javascript">
+for (let i = 0; i < numberOfFriends; i++) {
+    for (let j = 0; j < numberOfFood; j++) {
+        if (food[j].contains(friendPosition[i])) {
+            friend[j].radius = friend[j].radius + food[i].radius;
+            food.remove(i);
+        }
+    }
+}</code></pre>
+        </div>
+
+        <p>Finally, the hero particle reaches the level where it can self-actualise. After all, that’s what it’s been about, reaching this stage where the grand question of life can be answered and it can finally see what’s on the other side. However, at this stage, an algorithm (death) kicks in which has a 70% chance of the particle dying unexpectedly every frame (60 times in a second on most computer screens).</p>      
     </div>
 
     <hr id = "separator">
