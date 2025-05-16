@@ -294,10 +294,14 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: var(--primary);
+  /* color: var(--primary); */
 }
 a:active {
   color: var(--primary);
+}
+a.active{
+  text-decoration: none;
+  color: var(--primary); 
 }
 
 /* #endregion */
@@ -389,8 +393,14 @@ footer p {
   /* side by side media */
   display: flex;
   gap: 2rem; 
-  align-items: top; 
+  align-items: flex-start; 
   /* max-height: 30vh;  */
+}
+#vertically-center {
+  align-items: center; 
+}
+#quarter-width{
+width: 50%; 
 }
 .split-width-container-contents .content{
   display: flex; 
@@ -494,7 +504,7 @@ header .right-items {
 }
 /* #endregion */
 
-/* work-page */
+/* gallery*/
 /* #region */
 .gallery{
   display: flex; 
@@ -576,21 +586,11 @@ color: var(--secondary);
 }
 /* #endregion */
 
-/* .gallery{
-display: flex;        
-flex-wrap: wrap;
-margin-top: 1.2vw;
-column-gap: var(--gapGallery);
-row-gap: calc(var(--gapGallery) / 2);
+/* lander */
+.lander{
+  display:flex; 
+  /* height: 90vh;  */
+  margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
+  align-items: center; 
+  justify-content: center; 
 }
-.gallery-item{
-width: calc((100% - (var(--noOfItems) - 1) * var(--gapGallery)) / var(--noOfItems));
-}
-@media (max-width: 1000px) and (orientation: portrait) {
-:root{
---noOfItems: 4; 
-}
-.gallery{
-row-gap: var(--gapGallery);
-}
-} */
