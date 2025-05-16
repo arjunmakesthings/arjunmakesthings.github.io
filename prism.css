@@ -18,7 +18,7 @@ pre[class*="language-"] {
 	color: #f8f8f2;
 	background: none;
 	font-family: "Fira Code", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+	font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;

@@ -180,7 +180,7 @@ table {
 
     /* gallery */
   --no_of_items: 4; 
-  --gallery-gap: 4rem;
+  --gallery-gap: 2rem;
 
   /* others: */
   --global_horizontal-margin: 16vw;
@@ -204,7 +204,7 @@ table {
 
 /* html & body element: */
 html {
-  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem); /* value of 1rem. */
+  /* font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem); value of 1rem. */
   font-family: "Alegreya Sans";
   text-transform: lowercase;
   text-wrap: pretty;
@@ -224,7 +224,7 @@ https://utopia.fyi/type/calculator?c=320,12,1.2,1920,16,1.2,3,1,&s=0.75|0.5|0.25
 h1 {
   font-family: "Alegreya Sans";
   font-weight: 600;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
   line-height: 1.2em;
   color: var(--primary);
   margin-bottom: -1rem;
@@ -232,7 +232,7 @@ h1 {
 p {
   font-family: "Alegreya Sans";
   font-weight: 400;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
   line-height: 1.6em;
   color: var(--primary);
 }
@@ -242,19 +242,19 @@ em{
 h2 {
   font-family: "Alegreya Sans";
   font-weight: 600;
-  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
   line-height: 1.2em;
 }
 h3 {
   font-family: "Alegreya Sans";
   font-weight: 300;
-  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
   line-height: 1.2em;
 }
 figcaption {
   font-family: "Alegreya Sans";
   font-weight: 400;
-  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
   line-height: 1.2em;
   color: var(--secondary);
 }
@@ -275,7 +275,7 @@ ol {
   padding: 0 1.2rem;
 }
 li {
-  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
   font-style: normal;
   color: var(--secondary);
   line-height: 1.2em;
@@ -569,13 +569,15 @@ padding: 0.8rem
 }
 .top h1{
   height: fit-content; 
-  width: 100%; 
+  width: fit-content; 
   margin-bottom: 0.08rem; 
 }
 .top h3{
+  display: flex; 
   justify-content: flex-end; 
   height: fit-content; 
   padding-left: 0.2rem; 
+  width: max-content; 
 } 
 #category{
 font-style: italic; 
