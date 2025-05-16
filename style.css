@@ -376,7 +376,7 @@ footer p {
   object-fit: contain;
 }
 
-.split-container {
+.split-width-container {
   /* has a figcaption and a blank container for all images */
   display: flex;
   flex-direction: column; 
@@ -385,25 +385,25 @@ footer p {
   overflow: hidden;
   margin-top: 2rem;
 }
-.split-container-contents {
+.split-width-container-contents {
   /* side by side media */
   display: flex;
   gap: 2rem; 
   align-items: top; 
   /* max-height: 30vh;  */
 }
-.split-container-contents .content{
+.split-width-container-contents .content{
   display: flex; 
   width: 100%; 
   height: inherit; 
   justify-content: center; 
 }
-.split-container img {
+.split-width-container img {
   width: 100%; 
   height: 100%; 
   object-fit: cover;   
 }
-.split-container video {
+.split-width-container video {
   margin: 0;
   width: 100%;
   height: auto;
