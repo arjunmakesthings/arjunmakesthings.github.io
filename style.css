@@ -173,14 +173,21 @@ table {
 /* #region */
 :root {
   /* colour-variables: */
-  --bg: rgb(0, 253, 253);
+  --bg: rgb(253, 253, 253);
   --primary: rgb(40, 40, 40);
   --secondary: rgb(120, 120, 120);
   --tertiary: rgb(240, 240, 240);
 
+  /* font-sizes */
+/* employing a fluid-typography-scale, the settings of which are here:
+https://utopia.fyi/type/calculator?c=320,12,1.2,1920,16,1.2,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  --base-minus-one: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  --base_size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+
     /* gallery */
   --no_of_items: 3; 
-  --gallery-gap: 2rem;
+  --gallery-gap: calc(var(--base_size) * 2);
 
   /* others: */
   --global_horizontal-margin: 16vw;
@@ -204,12 +211,11 @@ table {
 
 /* html & body element: */
 html {
-  /* font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem); value of 1rem. */
   font-family: "Alegreya Sans";
   text-transform: lowercase;
   text-wrap: pretty;
 
-  background-color: var (--bg); 
+  background-color: var(--bg); 
 }
 
 body{
@@ -218,21 +224,19 @@ body{
 /* #endregion */
 
 /* type-styles */
-/* employing a fluid-typography-scale, the settings of which are here:
-https://utopia.fyi/type/calculator?c=320,12,1.2,1920,16,1.2,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 /* #region */
 h1 {
   font-family: "Alegreya Sans";
   font-weight: 600;
-  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  font-size: var(--base_size); 
   line-height: 1.2em;
   color: var(--primary);
-  margin-bottom: -1rem;
+  margin-bottom: calc(var(--base_size) * -1);
 }
 p {
   font-family: "Alegreya Sans";
   font-weight: 400;
-  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  font-size: var(--base_size);
   line-height: 1.6em;
   color: var(--primary);
 }
@@ -242,19 +246,19 @@ em{
 h2 {
   font-family: "Alegreya Sans";
   font-weight: 600;
-  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
+  font-size: var(--base-minus-one); 
   line-height: 1.2em;
 }
 h3 {
   font-family: "Alegreya Sans";
   font-weight: 300;
-  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
+  font-size: var(--base-minus-one); 
   line-height: 1.2em;
 }
 figcaption {
   font-family: "Alegreya Sans";
   font-weight: 400;
-  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
+  font-size: var(--base-minus-one); 
   line-height: 1.2em;
   color: var(--secondary);
 }
@@ -263,7 +267,7 @@ cite {
 }
 blockquote {
   background-color: var(--tertiary);
-  padding: 1.2rem;
+  padding: 1.2em;
 }
 blockquote p {
   font-style: italic;
@@ -272,16 +276,16 @@ blockquote p {
 }
 ol {
   list-style-type: lower-roman;
-  padding: 0 1.2rem;
+  padding: 0 1.2em;
 }
 li {
-  font-size: clamp(0.6667rem, 0.6542rem + 0.0625vw, 0.7292rem);
+  font-size: var(--base-minus-one);
   font-style: normal;
   color: var(--secondary);
   line-height: 1.2em;
 }
 li:not(:last-child) {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8em;
 }
 mark{
   background-color: #fff6d1; 
@@ -292,8 +296,8 @@ a {
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
-  text-decoration: underline dashed 0.04rem;
-  text-underline-offset: 0.2rem;
+  text-decoration: underline dashed 0.04em;
+  text-underline-offset: 0.2em;
 }
 a:hover {
   text-decoration: none;
@@ -324,30 +328,27 @@ nav {
 
   width: 100%;
   height: fit-content;
-  padding-bottom: 0.4rem;
+  padding-bottom: calc(var(--base_size) * 1.2);
   border-bottom: 2px solid var(--tertiary);
-  margin-bottom: 2rem;
+  margin-bottom: calc(var(--base_size) * 2);
 }
 nav .right-items {
   display: flex;
-  gap: 2rem;
+  gap: calc(var(--base_size) * 2);
   width: auto;
 }
-nav a {
-  padding-bottom: 0.8rem;
-}
 footer {
-  margin-top: 2rem;
+  margin-top: calc(var(--base_size) * 2);
   border-top: 2px solid var(--tertiary);
   display: flex;
   text-align: center;
   justify-content: center;
 }
 footer p {
-  margin-top: 0.8rem;
+  margin-top: calc(var(--base_size) * 0.8);
   font-family: "Alegreya Sans";
   font-weight: 400;
-  font-size: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
+  font-size: var(--base-minus-one);
   line-height: 1.2em;
   color: var(--secondary);
 }
@@ -358,10 +359,11 @@ footer p {
 .full-width-container {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: calc(var(--base_size) * 0.8); 
   width: 100%;
   overflow: hidden;
-  margin-top: 2rem;
+  margin-top: calc(var(--base_size) * 2);
+  box-sizing: border-box; /* box sizing allows you to include padding in the width & height calculation */
 }
 .full-width-container video {
   margin: 0;
@@ -387,16 +389,17 @@ footer p {
   /* has a figcaption and a blank container for all images */
   display: flex;
   flex-direction: column; 
-  gap: 0.8rem;
+  gap: calc(var(--base_size) * 0.8);
   width: 100%;
   overflow: hidden;
-  margin-top: 2rem;
+  margin-top: calc(var(--base_size) * 2);
 }
 .split-width-container-contents {
   /* side by side media */
   display: flex;
-  gap: 2rem; 
+  gap: calc(var(--base_size) * 2);
   align-items: flex-start; 
+  box-sizing: border-box; /* box sizing allows you to include padding in the width & height calculation */
   /* max-height: 30vh;  */
 }
 #vertically-center {
@@ -427,7 +430,7 @@ width: 50%;
 .text-container {
   display: flex;
   flex-direction: column;
-  row-gap: 1.4rem;
+  row-gap: calc(var(--base_size) * 1.4);
   margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
 }
 
@@ -435,9 +438,9 @@ width: 50%;
 figure {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: calc(var(--base_size) * 0.8); 
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: calc(var(--base_size));
 }
 figure img {
   width: auto;
@@ -447,11 +450,12 @@ figure img {
   object-fit: cover;
 }
 figcaption {
-  border-left: 0.3rem solid var(--secondary);
-  padding-left: 0.4rem;
+  border-left: calc(var(--base_size)* 0.3) solid var(--secondary);
+  padding-left: 0.4em;
 }
   #white{
-  border: 1px solid var(--tertiary); 
+  border: 1.5px solid var(--tertiary); 
+  padding: 0.01rem; 
 }
 /* #endregion */
 
@@ -460,11 +464,10 @@ hr {
   display: block;
   height: 2px;
   background-color: var(--tertiary);
-  margin: 0 var(--global_horizontal-margin) 2rem var(--global_horizontal-margin);
+  margin: 0 var(--global_horizontal-margin) calc(var(--base_size) * 2)  var(--global_horizontal-margin);
 }
 #separator {
-  margin: 2rem var(--global_horizontal-margin) 2rem
-    var(--global_horizontal-margin);
+  margin: calc(var(--base_size) * 2) var(--global_horizontal-margin)
 }
 
 /* work-page */
@@ -472,7 +475,7 @@ header {
   display: flex;
   margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
   align-items: top;
-  margin-bottom: 1.2rem;
+  margin-bottom: calc(var(--base_size) * 1.2);
 }
 header .left-items {
   width: 100%;
@@ -526,7 +529,7 @@ width: calc((100% - (var(--no_of_items) - 1) * var(--gallery-gap)) / var(--no_of
 box-sizing: border-box; /* box sizing allows you to include padding in the width & height calculation */
 height: 100%; 
 text-decoration: none; 
-padding: 0.8rem
+padding: 1em; 
 }
 .gallery_item:hover{
   background-color: var(--tertiary); 
@@ -580,16 +583,16 @@ padding: 0.8rem
   display: flex; 
   height: fit-content; 
   width: fit-content; 
-  margin-bottom: 0.08rem; 
-  line-height: 1rem; 
+  margin-bottom: 0.08em; 
+  line-height: var(--base_size); 
 }
 .top h3{
   display: flex; 
   justify-content: flex-end; 
   height: fit-content; 
-  padding-left: 0.2rem; 
+  padding-left: 0.2em; 
   width: max-content; 
-  line-height: 1rem; 
+  line-height: var(--base_size); 
 } 
 #category{
 font-style: italic; 
