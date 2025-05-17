@@ -179,7 +179,7 @@ table {
   --tertiary: rgb(240, 240, 240);
 
     /* gallery */
-  --no_of_items: 4; 
+  --no_of_items: 3; 
   --gallery-gap: 2rem;
 
   /* others: */
@@ -544,8 +544,14 @@ padding: 0.8rem
 }
 @media (min-width: 1200px) {
   :root {
-    --no_of_items: 4;
+    --no_of_items: 3;
   }
+}
+
+  @media (min-width: 1600px) { /* big laptop */
+    :root {
+      --no_of_items: 4;
+    }
 }
 
 .cover-image{
@@ -555,7 +561,7 @@ padding: 0.8rem
   overflow: hidden; 
   justify-content: center; 
 
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6em;
 }
 .cover-image img{
   object-fit: cover; 
@@ -571,9 +577,11 @@ padding: 0.8rem
   width: 100%;
 }
 .top h1{
+  display: flex; 
   height: fit-content; 
   width: fit-content; 
   margin-bottom: 0.08rem; 
+  line-height: 1rem; 
 }
 .top h3{
   display: flex; 
@@ -581,6 +589,7 @@ padding: 0.8rem
   height: fit-content; 
   padding-left: 0.2rem; 
   width: max-content; 
+  line-height: 1rem; 
 } 
 #category{
 font-style: italic; 
