@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+
+<meta name="description" content="laser lights experiment | Arjun's Archive">
+<meta name="author" content="Arjun">
+<meta name="keywords" content="laser lights, arjun, digital painters, arjun computational artist">
+
+<!--SEO END-->
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+
+<!--STYLING FOR CODE SNIPPETS-->
+<link rel="stylesheet" href="/prism.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+<!--HEADER & FOOTER-->
+<script>
+  // fetch header.
+  fetch("/assets/repeated-elements/header-for-project-pages.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("header").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+    });
+
+  // fetch footer.
+  fetch("/assets/repeated-elements/footer.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load footer: " + response.statusText);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+    });
+</script>
+
+<title>digital painters / laser lights</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+<!--HEADER-->
+<div id = "header"></div>
+
+<!--NEWSPAPER TITLE-->
+<div class = "titler">
+<div class = "left-items">
+<h3>laser lights</h3>
+<h3 id = "date">2023</h3>
+</div>
+<div class = "right-items">
+<h3>custom software</h3>
+</div>
+</div>
+
+<!--Use for inline image, text-margin to text-margin-->
+<div class = "inline-image-container">
+<img src = "/projects/digital-painters/laser-lights/laser-lights-1.webp">
+</div>
+
+<div class = "full-width-media-container">
+<video preload="yes" muted playsinline autoplay loop>
+<source src="/projects/digital-painters/laser-lights/laser-lights-vid.mp4" type="video/mp4">
+Your browser does not support videos. 
+</video>
+</div>
+
+<!--Use for two split images-->
+<div class = "half-width-media-container">
+<img src = "/projects/digital-painters/laser-lights/laser-lights-4.webp">
+<img src = "/projects/digital-painters/laser-lights/laser-lights-2.webp">
+</div>
+
+<!--Use for all text, including code-->
+<div class = "text-box-container">
+<h1>Thought</h1>
+<p>I was exploring the viscosity of paint and arrived at a visual texture that only a 'living' (thereby generative) painting can have.</p>
+<h1>Logic</h1>
+<p>Different layers of paint, with varying 'viscosity' (digitally opacity), start at different angles and move across the surface in a straight line.</p>
+</div>
+
+<!--FOOTER-->
+<div id = "footer"></div>
+
+</div>
+</body>
+</html>

@@ -174,7 +174,7 @@ table {
 :root {
   /* colour-variables: */
   --bg: rgb(253, 253, 253);
-  --primary: rgb(40, 40, 40);
+  --primary: rgb(60, 60, 60);
   --secondary: rgb(120, 120, 120);
   --tertiary: rgb(240, 240, 240);
 
@@ -606,6 +606,7 @@ color: var(--secondary);
 /* lander */
 .lander{
   display:flex; 
+  flex-direction: column; 
   /* height: 90vh;  */
   margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
   align-items: center; 

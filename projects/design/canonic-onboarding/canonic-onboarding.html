@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta name="description" content="a redesign of the onboarding experience for canonic — a low-code backend development platform — in 2021." />
+    <meta name="author" content="arjun" />
+    <meta name="keywords" content="canonic, arjun, ux, internship, product, design, ui" />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
+
+    <!-- only include if code exists: -->
+    <!-- <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script> -->
+
+    <!-- only include if p5 sketch exists: -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script> -->
+
+    <title>canonic onboarding</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <header>
+      <div class="left-items">
+        <h2>canonic onboarding</h2>
+        <h3 id="date">2021</h3>
+      </div>
+      <div class="right-items">
+        <h3>
+          digital product design, <br />
+          third-year summer internship,<br />
+          at canonic.
+        </h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <p>
+        in the summer of 2021, i was a product design intern at
+        <a href="https://www.producthunt.com/products/canonic#canonic"
+          >canonic</a
+        >
+        — a low-code backend development platform. the web-application allowed
+        people to create entire backend systems by using a graphical interface
+        (like a ‘<a
+          href="https://www.wix.com/?utm_source=google&utm_medium=cpc&utm_campaign=22079466192^173454183576^search%20-%20wix&experiment_id=wix^e^727706622124^&gad_source=1&gad_campaignid=22079466192&gbraid=0AAAAADwEfwUh0W84OdW8tT7eE2XDbvr7l&gclid=Cj0KCQjwxJvBBhDuARIsAGUgNfiYp60KzTVOkMev4DGpZb4ahboy9Hf6nxxeDNpAOOSjY8CsQp2a0E0aAkIuEALw_wcB"
+          >wix</a
+        >’, but for backend).
+      </p>
+      <p>
+        we noticed that it was difficult for people, irrespective of their
+        programming experience, to build their first application on canonic.
+        once they figured their way around the platform, they were able to adapt
+        it to their specific use-cases. in fact, 83% of people never finished
+        the onboarding and 75% of them dropped out after completing the first
+        (out of three) stages. so, i focused a chunk of my time redesigning
+        their onboarding experience.
+      </p>
+
+      <h1>problems:</h1>
+      <p>
+        <mark>high cognitive load:</mark> the onboarding prompts often had
+        irrelevant, lengthy explanations, and took a lot of time for people to
+        comprehend. when i observed people going through the onboarding
+        experience, many of them missed key information (since they skimmed
+        through it quickly) and went on to make inaccurate choices later.
+      </p>
+
+      <figure id = "white">
+        <img src="/projects/design/canonic-onboarding/problem 1.webp" />
+      </figure>
+
+      <p>
+        <mark>no intimation about errors:</mark>
+        once they took an action that prevented them from going ahead, they
+        couldn’t understand why. this also occurred when many steps were
+        combined into one (such as entering a name, selecting a type and
+        clicking on a button), and their error would have been on the first step
+        (but they would assume it was on the last).
+      </p>
+
+      <figure>
+        <img src="/projects/design/canonic-onboarding/ErrorGIF.gif"  id = "white"/>
+        <figcaption>
+          trying to proceed, but unable to do so and not knowing why. it's
+          because i've written 'author' instead of 'authors', but the product
+          doesn't tell me that.
+        </figcaption>
+      </figure>
+
+      <p>
+        <mark>generalisation:</mark>
+        a person, especially someone who wishes to use a tool to make something specific, wants to know how the tool will aid their process of creation. however, canonic made them choose between 3 projects, and asked them to learn the tool first, without considering their level of programming experience and what they wanted to ultimately build with the tool. the limited list of ‘mock-projects’ deterred people, and they misestimated the scope of what canonic could help them build.
+      </p>
+
+      <p>
+        <mark>multiple dead ends:</mark>
+        there were many cases where a person may arrive at a dead end in the onboarding flow, unable to figure out how to progress ahead, and would quit instantly. when i studied the architecture, i realised that this was a possibility in almost all the steps.
+      </p>
+
+      <figure id = "white">
+        <img src = "/projects/design/canonic-onboarding/earlierFlow.webp">
+      </figure>
+    </div>
+
+    <hr>
+
+    <div class = "text-container">
+      <h1>outcomes:</h1>
+      <p>i first suggested an ‘adaptable’ information-architecture, allowing the team to create any application on canonic and marking it as an onboarding project with a simple toggle. this meant that the team (or ‘power-users’ in the future) could make their own onboarding projects, that the platform would then be able to guide a person through.</p>
+
+      <figure id = "white">
+        <img src = "/projects/design/canonic-onboarding/IA.webp">
+      </figure>
+
+      <p>next, i looked at all possible canonic-actions that may occur, and suggested a system of context-specific visual-prompts. the idea was that developers could modify the type of prompt that comes up for a specific step, and it would have only the required amount of content (instead of force-fitting one prompt-design with multiple hidden features).</p>
+
+      <figure id = "white">
+        <img src = "/projects/design/canonic-onboarding/Components.webp">
+      </figure>
+
+      <p>here is a video demo that explains all the changes i made, and why:</p>
+    </div>
+
+    <div class = "full-width-container">
+      <iframe src="https://www.youtube.com/embed/-bn1hhMej7M?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <hr>
+
+      <div class = "text-container">
+        <h1>effect:</h1>
+        <p>this work was released as part of canonic’s <a href = "https://www.producthunt.com/products/canonic#canonic-2">out-of-beta launch</a> and it saw a <mark>22% increase in onboarding completion rates.</mark></p>
+
+        <figure>
+          <img src = "PH_Feedback.png" id = "white">
+          <figcaption>someone's comment on product-hunt, that specifically talks about the onboarding.</figcaption>
+        </figure>
+
+        <p>this was the first time i built something that was released in the world into the hands of actual people. so, i also wrote an <a href = "https://arjunmakesthings.medium.com/what-lies-beyond-making-digital-experiences-53382e2c28dc">article</a> on medium that discusses my learnings.</p>
+      </div>
+
+      <hr id = "separator">
+
+      <div class = "text-container">
+        <h1>acknowledgements:</h1>
+        <p>mentored by <a href = "https://in.linkedin.com/in/aditi-jain-001b766b">aditi</a>; engineered by <a href = "https://www.linkedin.com/in/pagrawl3/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in">pratham</a>; worked with <a href = "https://in.linkedin.com/in/iamsimranjot">simranjot</a> and <a href = "https://www.linkedin.com/in/kartikgrewal/">kartik</a>; at <a href = "https://www.linkedin.com/company/canonichq/">canonic</a>. </p>
+      </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>

@@ -11,9 +11,9 @@
 
 <!--ITEM STARTS-->
 <div class = "gallery-item">
-<a href="/work/digital-painters/laser-lights/laser-lights.html">
+<a href="/projects/digital-painters/laser-lights/laser-lights.html">
 <div class = "galleryImg-container">
-<img src = "/work/digital-painters/laser-lights/laser-lights-1.webp">
+<img src = "/projects/digital-painters/laser-lights/laser-lights-1.webp">
 </div>
 <h3>laser lights</h3>
 <h3 id = "date">2023</h3>
