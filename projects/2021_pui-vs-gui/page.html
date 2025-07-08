@@ -7,9 +7,15 @@
       content="width=device-width, height=device-height, initial-scale=1.0"
     />
     <!-- change on every page, for seo: -->
-    <meta name="description" content="quantitative comparison between a graphical-user-interface (gui) and perceptual-user-interface (pui)" />
+    <meta
+      name="description"
+      content="quantitative comparison between a graphical-user-interface (gui) and perceptual-user-interface (pui)."
+    />
     <meta name="author" content="arjun" />
-    <meta name="keywords" content="academic, research, quantitative, comparison, pui, gui, doms, keystroke, model" />
+    <meta
+      name="keywords"
+      content="academic, research, quantitative, comparison, pui, gui, doms, keystroke, model"
+    />
     <!-- seo end -->
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
@@ -36,15 +42,204 @@
       </div>
       <div class="right-items">
         <h3>
-          academic research, <br />
+          academic research,<br />
           at iiad, delhi.
         </h3>
       </div>
     </header>
 
-    <div class = "text-container">
+    <div class="text-container">
       <p>
-        
+        in 2021, i found it fascinating that technological discourse globally
+        spoke about gestural-input being the future of
+        human-computer-interaction (<a
+          href="https://economictimes.indiatimes.com/small-biz/sme-sector/need-a-machete-not-a-memo-niti-aayogs-arvind-virmani-on-why-msme-reform-needs-more-than-new-laws/articleshow/122105837.cms"
+          >1</a
+        >
+        & <a href="https://www.wired.com/story/gadget-lab-podcast-496/">2</a>),
+        but no one discussed <em>by how much?</em> so, when tasked with writing
+        a research paper during my third year of undergraduate study, i focused
+        my enquiry around trying to quantitatively compare a
+        head-tracked-interface with a graphical one.
+      </p>
+      <p>
+        at the time, i saw an increasing use-case for head-tracked interfaces in
+        environments such as hospitals, where people were asked a standard set
+        of questions with binary answer possibilities (such as the
+        <a
+          href="https://www.osha.gov/sites/default/files/publications/OSHA4132.pdf"
+          ><em>osha-covid-screening-questionnaire</em></a
+        >).
+      </p>
+
+      <figure>
+        <img src="/projects/2021_pui-vs-gui/crowd.webp" />
+        <figcaption>covid-screening in india. source: india today.</figcaption>
+      </figure>
+
+      <p>
+        i used a blob-tracking algorithm to develop a head-tracked-interface,
+        where a person could tilt their head to choose between either of two
+        displayed options (such as <em>yes</em> or <em>no</em>).
+      </p>
+
+      <figure>
+        <img src="/projects/2021_pui-vs-gui/HeadGIF.gif" />
+      </figure>
+
+      <p>
+        for the graphical-interface, i used a google-forms form on a laptop.
+        other usability gimmicks were stripped off from both interfaces, to
+        ensure that comparison was restricted to the efficiency of input
+        modalities.
+      </p>
+    </div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img src="/projects/2021_pui-vs-gui/IntefaceElements-02.webp" />
+        </div>
+        <div class="content">
+          <img src="/projects/2021_pui-vs-gui/IntefaceElements-03.webp" />
+        </div>
+      </div>
+      <figcaption>
+        left: head-tracked interface; right: google-forms-form.
+      </figcaption>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>experiment design:</h1>
+      <p>
+        the idea was to make multiple people complete a subset of the
+        osha-questionnaire (3/16 questions), using both interfaces,
+        one-at-a-time. by recording them doing this task, i could compare the
+        total time they took to answer each question via both input modalities
+        (finger-on-trackpad versus head-movement).
+      </p>
+
+      <figure>
+        <img src="/projects/2021_pui-vs-gui/pui_difference.gif" />
+        <figcaption>
+          a person doing the same action (pointing to an answer choice) via both
+          input modalities.
+        </figcaption>
+      </figure>
+
+      <p>
+        then, smaller computing-actions to answer each question were broken down
+        via an adaptation of the goms-keystroke-level-model — originally
+        proposed by jef raskin in
+        <a href="https://en.wikipedia.org/wiki/The_Humane_Interface"
+          ><em>the humane interface</em></a
+        >. jef proposed that the total time taken to complete a task on a
+        computer system is the sum of elementary gestures that the task
+        comprises (such as moving the mouse pointer, clicking a key, moving
+        between the mouse & keyboard, et-cetera).
+      </p>
+
+      <figure>
+        <img src="/projects/2021_pui-vs-gui/Mnemonics.webp" />
+        <figcaption>
+          goms-keystroke-level-model mnemonics, from
+          <a href="https://en.wikipedia.org/wiki/The_Humane_Interface"
+            ><em>the humane interface</em></a
+          >
+          by jef raskin.
+        </figcaption>
+      </figure>
+
+      <p>
+        in the given time frame and conditions, i was only able to perform this
+        experiment with 5 people.
+      </p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>findings:</h1>
+      <p>
+        there was a <mark>~0.5s decrease in input time</mark> for each question,
+        after participants comprehended it, on the head-tracked interface. this
+        suggests that perceptual-interfaces might be more efficient in
+        situations where time to complete a task is vital.
+      </p>
+
+      <p>
+        next, people had to perform <mark>~1.6 lesser steps</mark>, on average,
+        while using the head-tracked interface (according to the ‘steps’ defined
+        on the goms-keystroke-level-model). these steps include tasks like:
+        scrolling, removing their fingers from the trackpad after scrolling,
+        pointing to the answer choice, et-cetera. this finding can be
+        interpreted as lesser effort / energy being expended by people who use a
+        perceptual-interface. however, the exact difference could not be
+        accurately measured.
+      </p>
+
+      <p>
+        lastly, via follow-up questions, i established that all of the
+        participants found the head-tracked interface
+        <mark>easier to use</mark>. however, a couple of them said that using
+        the trackpad felt more ‘natural’ (since they were accustomed to it),
+        which presented an interesting hypothesis to pursue in the future — how
+        much does digital literacy impact the interface-effectiveness comparison
+        between a perceptual and traditional interface?
+      </p>
+
+      <p>
+        so, i concluded my paper empirically by stating that
+        perceptual-interfaces work better (faster & with reduced effort) than
+        graphical ones, albeit with the acceptance that my study was done in a
+        hyper-controlled environment, with zero error rates, with a
+        lesser-than-ideal sample size.
+      </p>
+
+      <p>
+        the paper can be read
+        <a
+          href="/projects/2021_pui-vs-gui/Quantitative Comparison Between A Traditional User Interface (GUI) and A Perceptual User Interface (PUI).pdf"
+          target="_blank"
+          >here</a
+        >.
+      </p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>acknowledgements:</h1>
+      <p>
+        mentors at iiad:
+        <a href="https://in.linkedin.com/in/prachi-mittal-designeducator"
+          >prachi</a
+        >, <a href="https://www.linkedin.com/in/suman-bhandary">suman</a>,
+        <a href="https://in.linkedin.com/in/shyam-attreya-aa077950">shyam</a>;
+        peers: <a href="https://in.linkedin.com/in/nikhilshankar13">nikhil</a>,
+        <a href="https://in.linkedin.com/in/pratishtha-purwar-3200361ab"
+          >pratishtha</a
+        >,
+        <a href="https://in.linkedin.com/in/muskan-gupta-69705a164">muskan</a>,
+        <a href="https://in.linkedin.com/in/alina-khatri-5a9471167">alina</a>,
+        <a href="https://in.linkedin.com/in/atreyo-roy-a055011ba">atreyo</a>,
+        <a href="https://in.linkedin.com/in/kriagg">kriti</a>,
+        <a href="https://in.linkedin.com/in/navya-baranwal-561814193">navya</a>,
+        <a href="https://in.linkedin.com/in/harshvardhan-srivastava-4634b91ba"
+          >harsh</a
+        >; librarians: natesh &
+        <a href="https://in.linkedin.com/in/paramjit-singh-8aa1238">paramjit</a
+        >.
+      </p>
+
+      <p>
+        <a href="https://thecodingtrain.com/">daniel shiffman</a>, the
+        <a href="https://processing.org/">processing</a> team and
+        <a href="https://peterabeles.com/">peter abeles</a> for their
+        contributions to open-source-software and the propagation of related
+        knowledge.
       </p>
     </div>
 
