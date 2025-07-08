@@ -6,9 +6,9 @@
 
 <!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
 
-<meta name="description" content="everything is about u typographic experiment | Arjun's Archive">
+<meta name="description" content="washed up potential typographic experiment | Arjun's Archive">
 <meta name="author" content="Arjun">
-<meta name="keywords" content="everything is about u, typography, experiment, expressive typography, arjun">
+<meta name="keywords" content="washed up potential, typography, experiment, expressive typography, arjun">
 
 <!--SEO END-->
 
@@ -54,7 +54,7 @@
     });
 </script>
 
-<title>expressive typography / everything is about u</title>
+<title>expressive typography / washed up potential</title>
 </head>
 <body>
 <div class="in-margin-container">
@@ -65,7 +65,7 @@
 <!--NEWSPAPER TITLE-->
 <div class = "titler">
 <div class = "left-items">
-<h3>everything is about u</h3>
+<h3>washed up potential</h3>
 <h3 id = "date">2024</h3>
 </div>
 <div class = "right-items">
@@ -73,20 +73,40 @@
 </div>
 </div>
 
+<div class = "inline-image-container">
+<img src = "/projects/2023-24_living-messages/washed-up-potential/1.webp">
+</div>
+
+<!--Use for full screen videos-->
 <div class = "full-width-media-container">
 <video preload="yes" muted playsinline autoplay loop>
-<source src="/projects/expressive-typography/everything-is-about-u/vid.mp4" type="video/mp4">
+<source src="/projects/2023-24_living-messages/washed-up-potential/vid2.mp4" type="video/mp4">
 Your browser does not support videos. 
 </video>
 </div>
 
-<div class = "inline-image-container">
-<img src = "/projects/expressive-typography/everything-is-about-u/1.webp">
+<div class = "full-width-media-container">
+<img src = "/projects/2023-24_living-messages/washed-up-potential/2.webp">
 </div>
 
 <div class = "text-box-container">
 <h1>Thought</h1>
-<p>The text "everything is about" moves in the shape of a parabola denoting the "u" and completing the intended message.</p>
+<p>Wanted to treat text like a wave hitting the beach with many particles.</p>
+<h1>Logic</h1>
+<p>First figured out what a 'wave' would look like. A grid of circles oscillated in size and colour by using a sine wave that moves through time.</p>
+<div class = "code-box-container">
+<pre><code class = "language-javascript">
+  for (let y = 0; y <= height; y += 50) {
+    let wave = sin((y + waveOffset) / 50) * waveHeight;
+    fill(100 + wave, 150 + wave, 255);
+
+    circle(500, y, 300+wave);
+  }
+  waveOffset += waveSpeed;
+
+</code></pre>
+</div>
+<p>Then applied the same logic to a piece of text where the text is made up of separate square particles.</p>
 </div>
 
 <!--FOOTER-->

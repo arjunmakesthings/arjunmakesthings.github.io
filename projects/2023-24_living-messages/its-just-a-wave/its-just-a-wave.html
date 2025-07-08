@@ -6,9 +6,9 @@
 
 <!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
 
-<meta name="description" content="washed up potential typographic experiment | Arjun's Archive">
+<meta name="description" content="it's just a wave typographic experiment | Arjun's Archive">
 <meta name="author" content="Arjun">
-<meta name="keywords" content="washed up potential, typography, experiment, expressive typography, arjun">
+<meta name="keywords" content="it's just a wave, typography, experiment, expressive typography, arjun">
 
 <!--SEO END-->
 
@@ -54,7 +54,7 @@
     });
 </script>
 
-<title>expressive typography / washed up potential</title>
+<title>expressive typography / it's just a wave</title>
 </head>
 <body>
 <div class="in-margin-container">
@@ -65,7 +65,7 @@
 <!--NEWSPAPER TITLE-->
 <div class = "titler">
 <div class = "left-items">
-<h3>washed up potential</h3>
+<h3>it's just a wave</h3>
 <h3 id = "date">2024</h3>
 </div>
 <div class = "right-items">
@@ -74,39 +74,52 @@
 </div>
 
 <div class = "inline-image-container">
-<img src = "/projects/expressive-typography/washed-up-potential/1.webp">
+<img src = "/projects/2023-24_living-messages/its-just-a-wave/1.webp">
 </div>
 
 <!--Use for full screen videos-->
 <div class = "full-width-media-container">
 <video preload="yes" muted playsinline autoplay loop>
-<source src="/projects/expressive-typography/washed-up-potential/vid2.mp4" type="video/mp4">
+<source src="/projects/2023-24_living-messages/its-just-a-wave/vid2.mp4" type="video/mp4">
 Your browser does not support videos. 
 </video>
 </div>
 
+<div class = "half-width-media-container">
+<img src = "/projects/2023-24_living-messages/its-just-a-wave/3.webp">
+<img src = "/projects/2023-24_living-messages/its-just-a-wave/4.webp">
+</div>
+
 <div class = "full-width-media-container">
-<img src = "/projects/expressive-typography/washed-up-potential/2.webp">
+<img src = "/projects/2023-24_living-messages/its-just-a-wave/5.webp">
 </div>
 
 <div class = "text-box-container">
 <h1>Thought</h1>
-<p>Wanted to treat text like a wave hitting the beach with many particles.</p>
+<p>What if a wave of water could pass through a piece of text?</p>
 <h1>Logic</h1>
-<p>First figured out what a 'wave' would look like. A grid of circles oscillated in size and colour by using a sine wave that moves through time.</p>
+<p>The entire piece of text is made up of elliptical particles and treated as one 'group' or object. A sine wave passes through the object from the bottom to the top, manipulating each of the elliptical particles in terms of size and position.</p>
 <div class = "code-box-container">
 <pre><code class = "language-javascript">
-  for (let y = 0; y <= height; y += 50) {
-    let wave = sin((y + waveOffset) / 50) * waveHeight;
-    fill(100 + wave, 150 + wave, 255);
+  for (let i = 0; i < xPos.length; i++) {
+    let wa = map(sin(i*waveOffset), -1,1, 0, 10); 
+    let wave = wa*waveHeight; 
 
-    circle(500, y, 300+wave);
+    let col2 = map(wave, -25, 25, 10, 40);
+
+  fill (h,s,col2); 
+
+    push();
+    translate(xPos[i], yPos[i]+wave);
+    ellipse (0,0,gridSize*3, gridSize+wave*1.2); 
+    pop();
+
+  waveOffset += yPos[i]*waveSpeed;
+
   }
-  waveOffset += waveSpeed;
 
 </code></pre>
 </div>
-<p>Then applied the same logic to a piece of text where the text is made up of separate square particles.</p>
 </div>
 
 <!--FOOTER-->
