@@ -107,6 +107,7 @@ section {
 }
 body {
   line-height: 1;
+  min-height: 100vh; 
 }
 ol,
 ul {
@@ -603,11 +604,10 @@ color: var(--secondary);
 /* #endregion */
 
 /* lander */
-.lander{
-  display:flex; 
-  flex-direction: column; 
-  height: 90vh; 
-  margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
-  align-items: center; 
+#small{
+height: 25vw; 
+}
+#lander{
+  height: 80vh; 
   justify-content: center; 
 }
