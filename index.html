@@ -39,7 +39,7 @@
       </nav>
       </div>
 
-    <div class="lander">
+    <!-- <div class="lander">
       <div class="split-width-container">
         <div class="split-width-container-contents" id = "vertically-center">
           <div class="content" id = "quarter-width">
@@ -59,43 +59,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div id="footer_content"></div>
-
-    <script>
-      function setLanderHeight() {
-        const nav = document.getElementById('nav-static');
-        const footer = document.getElementById('footer_content');
-        const lander = document.querySelector('.lander');
     
-        if (!nav || !footer || !lander) return;
-    
-        const navHeight = nav.offsetHeight;
-        const footerHeight = footer.offsetHeight;
-    
-        const totalReserved = navHeight + footerHeight;
-        const newLanderHeight = window.innerHeight - totalReserved;
-    
-        lander.style.height = `${newLanderHeight}px`;
-      }
-    
-      // Recalculate on resize
-      window.addEventListener('resize', setLanderHeight);
-    
-      // When DOM is ready, check if footer has content yet
-      window.addEventListener('DOMContentLoaded', () => {
-        const footer = document.getElementById('footer_content');
-    
-        // Observe when the footer gets content
-        const observer = new MutationObserver(() => {
-          setLanderHeight();
-        });
-    
-        observer.observe(footer, { childList: true, subtree: true });
-      });
-    </script>
-    
-
   </body>
 </html>

@@ -317,7 +317,7 @@ a.active{
 /* #region */
 nav {
   display: flex;
-  gap: space-between;
+
   justify-content: space-between;
   align-items: center;
 
@@ -335,7 +335,6 @@ nav {
 nav .right-items {
   display: flex;
   gap: calc(var(--base_size) * 2);
-  width: auto;
 }
 footer {
   margin-top: calc(var(--base_size) * 2);
@@ -607,7 +606,7 @@ color: var(--secondary);
 .lander{
   display:flex; 
   flex-direction: column; 
-  /* height: 90vh;  */
+  height: 90vh; 
   margin: 0 var(--global_horizontal-margin) 0 var(--global_horizontal-margin);
   align-items: center; 
   justify-content: center; 
