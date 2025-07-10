@@ -329,7 +329,7 @@ nav {
 
   width: 100%;
   height: fit-content;
-  padding-bottom: calc(var(--base_size) * 1.2);
+  padding: calc(var(--base_size) * 1.2) 0;
   border-bottom: 2px solid var(--tertiary);
   margin-bottom: calc(var(--base_size) * 2);
 }
