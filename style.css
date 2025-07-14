@@ -293,18 +293,18 @@ mark{
 }
 
 /* links */
-a {
+a{
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
   text-decoration: underline dashed 0.04em;
   text-underline-offset: 0.2em;
 }
-a:hover {
+a:hover{
   text-decoration: none;
   /* color: var(--primary); */
 }
-a:active {
+a:active{
   color: var(--primary);
 }
 a.active{
@@ -368,8 +368,8 @@ footer p {
 .full-width-container video {
   margin: 0;
   width: 100%;
-  height: auto;
-  max-height: calc(100vw * 9 / 16);
+  height: fit-content;
+  /* max-height: calc(100vw * 9 / 16); */
   object-fit: cover; 
 }
 .full-width-container img {
