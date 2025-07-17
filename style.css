@@ -394,6 +394,9 @@ footer p {
   overflow: hidden;
   margin-top: calc(var(--base_size) * 2);
 }
+#no-top-margin{
+  margin-top: 0; 
+}
 .split-width-container-contents {
   /* side by side media */
   display: flex;
