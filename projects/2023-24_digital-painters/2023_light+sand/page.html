@@ -1,100 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta
+      name="description"
+      content="title: a part of arjun's collection of digital painters — in pursuit of a desire to algorithmise painting processes."
+    />
+    <meta name="author" content="arjun" />
+    <meta
+      name="keywords"
+      content="digital painters, digital painting, algorithmic art, art, algorithm, painting algorithm, digital painter algorithm, generative art, creative coding"
+    />
+    <!-- seo end -->
 
-<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
 
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
 
-<meta name="description" content="light+Sand experiment | Arjun's Archive">
-<meta name="author" content="Arjun">
-<meta name="keywords" content="light+sand, arjun, digital painters, arjun computational artist">
+    <title># title</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
 
-<!--SEO END-->
+    <div class="text-container">
+      <a href="/projects/2023-24_digital-painters/page.html#gallery"
+        ><h3>&larr; back to <em>digital painters</em></h3></a
+      >
+    </div>
 
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-<link rel="stylesheet" href="/style.css">
+    <header id="separator">
+      <div class="left-items">
+        <h2>title</h2>
+        <h3 id="date">2024</h3>
+      </div>
+      <div class="right-items">
+        <h3>part of the <em>digital painters</em> project</h3>
+      </div>
+    </header>
 
-<!--STYLING FOR CODE SNIPPETS-->
-<link rel="stylesheet" href="/prism.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <div class="text-container">
+      <p>
+        started out as an exploration of rotating a 'paintbrush', when
+        put & dragged across a surface. eventually resembled streaks of paint
+        seen in pollock-paintings.
+      </p>
+      <figure>
+        <img
+          src="/projects/2023-24_digital-painters/2023_comp-finds-colour/frame (33).webp"
+        />
+        <figcaption>
+          still. text says "<em>dancing in the dark</em>".
+        </figcaption>
+      </figure>
+    </div>
 
-<!--HEADER & FOOTER-->
-<script>
-  // fetch header.
-  fetch("/assets/repeated-elements/header-for-project-pages.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load header: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("header").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
-    });
+    <div class="full-width-container">
+      <video preload="yes" muted playsinline autoplay nocontrols loop>
+        <source
+          src="/projects/2023-24_digital-painters/2023_comp-finds-colour/SCR_1.mp4"
+          type="video/mp4"
+        />
+        your browser does not support videos.
+      </video>
+      <figcaption>video-loop.</figcaption>
+    </div>
 
-  // fetch footer.
-  fetch("/assets/repeated-elements/footer.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load footer: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("footer").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
-    });
-</script>
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img
+            src="/projects/2023-24_digital-painters/2023_comp-finds-colour/frame (33).webp"
+          />
+        </div>
+        <div class="content">
+          <img
+            src="/projects/2023-24_digital-painters/2023_comp-finds-colour/frame (33).webp"
+          />
+        </div>
+      </div>
+      <figcaption>
+        two stills from different frames in the video-loop.
+      </figcaption>
+    </div>
 
-<title>digital painters / light+sand</title>
-</head>
-<body>
-<div class="in-margin-container">
-
-<!--HEADER-->
-<div id = "header"></div>
-
-<!--NEWSPAPER TITLE-->
-<div class = "titler">
-<div class = "left-items">
-<h3>light+sand</h3>
-<h3 id = "date">2023</h3>
-</div>
-<div class = "right-items">
-<h3>custom software</h3>
-</div>
-</div>
-
-<div class = "half-width-media-container">
-<img src = "/projects/digital-painters/light+sand/light+sand_4.webp">
-<img src = "/projects/digital-painters/light+sand/light+sand_5.webp">
-</div>
-
-<!--Use for full screen videos-->
-<div class = "full-width-media-container">
-<video preload="yes" muted playsinline autoplay loop>
-<source src="/projects/digital-painters/light+sand/light+Sand.mp4" type="video/mp4">
-Your browser does not support videos. 
-</video>
-</div>
-
-<div class = "half-width-media-container">
-<img src = "/projects/digital-painters/light+sand/light+sand_1.webp">
-<img src = "/projects/digital-painters/light+sand/light+sand_2.webp">
-</div>
-
-<!--FOOTER-->
-<div id = "footer"></div>
-
-</div>
-</body>
+    <div id="footer_content"></div>
+  </body>
 </html>
