@@ -1,100 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta
+      name="description"
+      content="dark pollocks: a part of arjun's collection of digital painters — in pursuit of a desire to algorithmise painting processes."
+    />
+    <meta name="author" content="arjun" />
+    <meta
+      name="keywords"
+      content="digital painters, digital painting, algorithmic art, art, algorithm, painting algorithm, digital painter algorithm, generative art, creative coding"
+    />
+    <!-- seo end -->
 
-<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
 
-<meta name="description" content="Dark Pollocks | Arjun's Archive">
-<meta name="author" content="Arjun">
-<meta name="keywords" content="comp finds colour, arjun, digital painters, arjun computational artist">
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
 
-<!--SEO END-->
+    <title>dark pollocks</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
 
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-<link rel="stylesheet" href="/style.css">
+    <div class="text-container">
+      <a href="/projects/2023-24_digital-painters/page.html#gallery"
+        ><h3>&larr; back to <em>digital painters</em></h3></a
+      >
+    </div>
 
-<!--STYLING FOR CODE SNIPPETS-->
-<link rel="stylesheet" href="/prism.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <header id="separator">
+      <div class="left-items">
+        <h2>dark pollocks</h2>
+        <h3 id="date">2024</h3>
+      </div>
+      <div class="right-items">
+        <h3>part of the <em>digital painters</em> project</h3>
+      </div>
+    </header>
 
-<!--HEADER & FOOTER-->
-<script>
-  // fetch header.
-  fetch("/assets/repeated-elements/header-for-project-pages.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load header: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("header").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
-    });
+    <div class="text-container">
+      <p>
+        recycled my
+        <a
+          href="/projects/2023-24_digital-painters/2023_pollock-painter/page.html"
+          >pollock algorithm</a
+        >, with modified blend modes.
+      </p>
+      <figure>
+        <img
+          id="white"
+          src="/projects/2023-24_digital-painters/2024_dark-pollocks/1.webp"
+        />
+        <figcaption>still.</figcaption>
+      </figure>
+    </div>
 
-  // fetch footer.
-  fetch("/assets/repeated-elements/footer.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load footer: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("footer").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
-    });
-</script>
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content" id="white">
+          <img
+            src="/projects/2023-24_digital-painters/2024_dark-pollocks/2.webp"
+          />
+        </div>
+        <div class="content" id="white">
+          <img
+            src="/projects/2023-24_digital-painters/2024_dark-pollocks/3.webp"
+          />
+        </div>
+      </div>
+      <figcaption>two stills showing generation over time.</figcaption>
+    </div>
 
-<title>digital painters / dark pollocks</title>
-</head>
-<body>
-<div class="in-margin-container">
+    <div class="full-width-container">
+      <img id = "white"src="/projects/2023-24_digital-painters/2024_dark-pollocks/4.webp" />
+      <figcaption>still; overdone.</figcaption>
+    </div>
 
-<!--HEADER-->
-<div id = "header"></div>
-
-<!--NEWSPAPER TITLE-->
-<div class = "titler">
-<div class = "left-items">
-<h3>dark pollocks</h3>
-<h3 id = "date">2024</h3>
-</div>
-<div class = "right-items">
-<h3>custom software</h3>
-</div>
-</div>
-
-<!--Use for inline image, text-margin to text-margin-->
-<div class = "inline-image-container" id = "white">
-<img src = "/projects/digital-painters/dark-pollocks/1.webp">
-</div>
-
-<div class = "half-width-media-container">
-<img src = "/projects/digital-painters/dark-pollocks/2.webp">
-<img src = "/projects/digital-painters/dark-pollocks/3.webp">
-</div>
-
-<div class = "full-width-media-container">
-<img src = "/projects/digital-painters/dark-pollocks/4.webp">
-</div>
-
-<div class = "text-box-container">
-<h1>Thought</h1>
-<p>Wanted to recycle my <a href = "/projects/digital-painters/pollock-painter/pollock-painter.html">pollock algorithm</a>, but modify the blend modes.</p>
-</div>
-
-<!--FOOTER-->
-<div id = "footer"></div>
-
-</div>
-</body>
+    <div id="footer_content"></div>
+  </body>
 </html>
