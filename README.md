@@ -1,1 +1,1 @@
-Public repository for the archive of all of my work. Written from scratch in HTML & CSS.
+public repository for the archive of my life's work. built from scratch, with html & css.
