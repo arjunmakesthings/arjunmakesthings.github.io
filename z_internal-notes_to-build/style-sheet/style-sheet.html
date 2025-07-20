@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta name="description" content="style-sheet of arjun's archive." />
+    <meta name="author" content="arjun" />
+    <meta name="keywords" content="arjun, website, style-sheet, style, css" />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- only include if code exists: -->
+    <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+    <!-- only include if p5 sketch exists: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
+
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
+
+    <title>project-name / work title</title>
+  </head>
+
+  <body>
+    <div id="nav-bar"></div>
+
+    <header>
+      <div class="left-items">
+        <h2>project title</h2>
+        <h3 id="date">2025</h3>
+      </div>
+      <div class="right-items">
+        <h3>
+          type of work, formats, etc<br />
+          where.
+        </h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <p>
+        I studied visual design at a tiny college in New Delhi, where persistent
+        acts of rebellion against the notion that designers shouldn't engineer,
+        pushed me to produce interdisciplinary work. As a result, in my final
+        year, I was invited by
+        <a href="www.google.com">Science Gallery Bengaluru</a> to join the
+        Xperimenters Programme. This was a first-of-its-kind programme in the
+        country, where four young adults interacted with leading experts in
+        diverse disciplinary fields and produced public engagement projects for
+        young adults to interface with the sciences.
+      </p>
+      <p>
+        I spent my time sitting in biophysics labs and making simulations,
+        discussing human needs and wants with a theoretical computer scientist,
+        programming a web game based on Maslow's Hierarchy of Human Needs, and
+        presenting a climate-anxiety analysis of 200+ crowdsourced drawings of
+        the Earth in 2052 at an international youth symposium.
+      </p>
+      <p>
+        For economic reasons, I then spent the next two years of my life working
+        with behaviour design consultancies. There, I largely led design
+        research for projects that aimed to enable access / adoption in some of
+        the lowest-resource environments in the country. A significant
+        contribution of mine was conducting ethnographic research for and
+        leading the conversation design of the 'Just Ask' chatbot, an AI-enabled
+        chatbot launched by UNFPA to improve sexual health awareness amongst
+        adolescents in the country. During this project, I spent time in rural
+        Madhya Pradesh understanding the information-seeking behaviour of
+        adolescents, performing wizard-of-oz tests for WhatsApp chatbots,
+        suggesting technological approaches to the design of the query bank and
+        losing an ethical battle of allowing women under 18 to access
+        pregnancy-related information.
+      </p>
+      <p>i may even have blockquote, like so:</p>
+      <blockquote>
+        <p>
+          someone said something beautiful, and i wish to record it as is.
+          someone may also say something very, very, very, very, very, very,
+          very, very ,very, very long.
+        </p>
+      </blockquote>
+      <p>
+        I then chose to step away from a fairly stable career in design research
+        for 'social impact', because I believed that there were fundamental
+        problems that funders weren't willing to solve. Instead, a lot of time
+        was spent on higher-order problems, to produce 'better-looking'
+        solutions that can be passed off in the global 'innovation' discourse.
+        Now, I operate as an independent design consultant; engaged in dutiful
+        product-design work for a brilliantly, but hastily designed
+        observability platform for financial institutions, postgraduate teaching
+        and mentorship for UX students, and artistic research that looks at the
+        potential of code as a creative medium.
+      </p>
+      <figure>
+        <img src="/projects/art-with-math/1/cover.webp" />
+        <figcaption>
+          the explanation of this image, and extended one to see wrapping
+          underneath. some more bullshit required, to see wrapping properly.
+        </figcaption>
+      </figure>
+      <p>
+        I then chose to step away from a fairly stable career in design research
+        for 'social impact', because I believed that there were fundamental
+        problems that funders weren't willing to solve. Instead, a lot of time
+        was spent on higher-order problems, to produce 'better-looking'
+        solutions that can be passed off in the global 'innovation' discourse.
+        Now, I operate as an independent design consultant; engaged in dutiful
+        product-design work for a brilliantly, but hastily designed
+        observability platform for financial institutions, postgraduate teaching
+        and mentorship for UX students, and artistic research that looks at the
+        potential of code as a creative medium.
+      </p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>section:</h1>
+      <p>
+        sometimes, i may start an entirely new section like so, and fill it up
+        with more text.
+      </p>
+      <p>
+        For economic reasons, I then spent the next two years of my life working
+        with behaviour design consultancies. There, I largely led design
+        research for projects that aimed to enable access / adoption in some of
+        the lowest-resource environments in the country. A significant
+        contribution of mine was conducting ethnographic research for and
+        leading the conversation design of the 'Just Ask' chatbot, an AI-enabled
+        chatbot launched by UNFPA to improve sexual health awareness amongst
+        adolescents in the country. During this project, I spent time in rural
+        Madhya Pradesh understanding the information-seeking behaviour of
+        adolescents, performing wizard-of-oz tests for WhatsApp chatbots,
+        suggesting technological approaches to the design of the query bank and
+        losing an ethical battle of allowing women under 18 to access
+        pregnancy-related information.
+      </p>
+      <p>i may also have code blocks, like so:</p>
+      <div class="code-box-container">
+        <pre><code class = "language-javascript">
+for (let i = 0; i &lt; friendPosition.length; i++) {
+  for (let j = 0; j &lt; food.length; j++) {
+    if (food[j].contains(friendPosition[i])) {
+      friend[j].radius = friend[j].radius + food[i].radius;
+      food.remove(i);
+      // + long equation...
+    }
+}
+}
+</code></pre>
+      </div>
+    </div>
+
+    <div class="full-width-container">
+      <img src="/projects/drawings-on-a-cartesian-plane/2/2.webp" id="white" />
+      <figcaption>
+        the explanation of this drawing and some more to check for wrapping
+        text.
+      </figcaption>
+    </div>
+
+    <div class="full-width-container">
+      <video preload="yes" muted playsinline autoplay controls loop>
+        <source src="/projects/2022_earth-2052/16_e2052.mp4" type="video/mp4" />
+        your browser does not support videos.
+      </video>
+      <figcaption>
+        the explanation of this drawing and some more to check for wrapping
+        text.
+      </figcaption>
+    </div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img src="/projects/drawings-on-a-cartesian-plane/2/2.webp" />
+        </div>
+        <div class="content">
+          <video preload="yes" muted playsinline autoplay controls loop>
+            <source
+              src="/projects/2022_in-between-life-and-death/GamePromo.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support videos.
+          </video>
+        </div>
+      </div>
+      <figcaption>
+        the explanation of this drawing and some more to check for wrapping
+        text.
+      </figcaption>
+    </div>
+
+    <div class="full-width-container">
+      <iframe
+        src="https://www.youtube.com/embed/-bn1hhMej7M?rel=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <figcaption>
+        the explanation of this drawing and some more to check for wrapping
+        text.
+      </figcaption>
+    </div>
+
+    <hr id="separator" />
+
+    <div id="canvas-container"></div>
+    <script src="sketch.js"></script>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <p>in the end, i may also have some sources in an ordered list:</p>
+      <blockquote>
+        <ol>
+          <li>something</li>
+          <li>something 2</li>
+          <li>
+            <cite><a href="">title</a></cite> by
+            <a href="">james avery jones</a>
+          </li>
+          <li>
+            something may be very, very, very, very, very, very, very, very,
+            very, very, very, very, very, very, very, very, very, very, very,
+            very, long.
+          </li>
+        </ol>
+      </blockquote>
+    </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>

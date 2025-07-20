@@ -1,192 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta
+      name="description"
+      content="pieces of writing that i wish to leave behind."
+    />
+    <meta name="author" content="arjun" />
+    <meta
+      name="keywords"
+      content="arjun, notes, writing, essays, arjun essays, article, design, design writing, poems, poem, articles, writings, design writings essay"
+    />
+    <!-- seo end -->
 
-<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
 
-<meta name="description" content="ever-evolving data, definitions, stances and opinions.">
-<meta name="author" content="Arjun">
-<meta name="keywords" content="Arjun, designer, design researcher, computational artist, Indian artist, notes">
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
 
-<!--SEO END-->
+    <title>arjun's archive / notes</title>
+  </head>
 
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-<link rel="stylesheet" href="style.css">
+  <body>
+    <div class="text-container">
+      <nav id="nav-static">
+        <a href="/index.html">arjun's archive</a>
+        <div class="right-items">
+          <a href="/projects.html">projects</a>
+          <a href="/notes.html" class="active">notes</a>
+          <a href="/teaching.html">teaching</a>
+          <a href="/info.html">info</a>
+        </div>
+      </nav>
+    </div>
 
-<!--FOOTER-->
-<script>
-// fetch footer.
-fetch("/assets/repeated-elements/footer.html")
-.then((response) => {
-if (!response.ok) {
-throw new Error("Failed to load footer: " + response.statusText);
-}
-return response.text();
-})
-.then((html) => {
-document.getElementById("footer").innerHTML = html;
-})
-.catch((error) => {
-console.error(error);
-document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
-});
-</script>
+    <div class="text-container">
+      <div class="gallery" id="vertical-flex">
+        <a
+          href="/notes/2025_past/page.html"
+          class="gallery_item"
+          id="note-item"
+        >
+          <div class="top">
+            <h1>past</h1>
+            <h3 id="date">2025</h3>
+          </div>
+          <div class="bottom">
+            <h3 id="category">essay</h3>
+          </div>
+        </a>
 
-<title>arjun's archive / notes</title>
-</head>
-<body>
-<div class="in-margin-container">
+        <a
+        href="/notes/2025_living-with-artistic-mediocrity/page.html"
+        class="gallery_item"
+        id="note-item"
+      >
+        <div class="top">
+          <h1>living with artistic mediocrity</h1>
+          <h3 id="date">2025</h3>
+        </div>
+        <div class="bottom">
+          <h3 id="category">reminder</h3>
+        </div>
+      </a>
 
-<nav class = "header">
-<a href="index.html">arjun's archive</a>
-<div class = "right-items">
-<a href="notes.html" class = "active">notes</a>
-<a href="information.html">information</a>
-</div>
-</nav>
+      <a
+      href="/notes/2025_my-body-is-wrapped-inside-a-permeable-membrane/page.html"
+      class="gallery_item"
+      id="note-item"
+    >
+      <div class="top">
+        <h1>my body is wrapped inside a permeable membrane</h1>
+        <h3 id="date">2025</h3>
+      </div>
+      <div class="bottom">
+        <h3 id="category">short essay</h3>
+      </div>
+    </a>
 
-<div class = "lander">
-<p>short pieces-of-writing that i wish to leave behind. longer, more structured ones are on <a href = "https://medium.com/@arjunmakesthings" target = "_blank">medium</a>.</p>
-</div>
+        <a
+          href="/notes/2024_itp-personal-statement/page.html"
+          class="gallery_item"
+          id="note-item"
+        >
+          <div class="top">
+            <h1>itp personal statement</h1>
+            <h3 id="date">2024</h3>
+          </div>
+          <div class="bottom">
+            <h3 id="category">admission essay for master's program</h3>
+          </div>
+        </a>
 
-<hr>
+        <a
+          href="/notes/2024_aphorisms-for-adulthood/page.html"
+          class="gallery_item"
+          id="note-item"
+        >
+          <div class="top">
+            <h1>aphorisms for adulthood</h1>
+            <h3 id="date">2024</h3>
+          </div>
+          <div class="bottom">
+            <h3 id="category">essay</h3>
+          </div>
+        </a>
 
-<!--ALL NOTES BEGIN -->
-<div class="all-notes-container">
+        <a
+          href="/notes/2022_fragments-of-your-memory/page.html"
+          class="gallery_item"
+          id="note-item"
+        >
+          <div class="top">
+            <h1>fragments of your memory</h1>
+            <h3 id="date">2022</h3>
+          </div>
+          <div class="bottom">
+            <h3 id="category">poem</h3>
+          </div>
+        </a>
 
-<!--INDIVIDUAL NOTES CONTAINER BEGINS-->
-<div class="notes-item-container">
-<a href = "/notes/8th-february.html">
-<div class="notes-titler">
+        <a
+        href="/notes/2022_what-its-like-to-be-on-the-outside/page.html"
+        class="gallery_item"
+        id="note-item"
+      >
+        <div class="top">
+          <h1>what it's like to be on the outside</h1>
+          <h3 id="date">2022</h3>
+        </div>
+        <div class="bottom">
+          <h3 id="category">poem</h3>
+        </div>
+      </a>
 
-<div class="left">
-<h1>8th february</h1>
-<p id="last-updated">08th February, 2025</p>
-</div>
+      </div>
+    </div>
 
-<div class="right">
-<p>&rarr;</p>
-</div>
+    <div id="separator"></div>
 
-</div>
-</a>
-</div>
-<!--INDIVIDUAL NOTES CONTAINER ENDS-->
-
-<hr>
-
-<!--INDIVIDUAL NOTES CONTAINER BEGINS-->
-<div class="notes-item-container">
-<a href = "/notes/living-with-artistic-mediocrity.html">
-<div class="notes-titler">
-
-<div class="left">
-<h1>living with artistic mediocrity</h1>
-<p id="last-updated">09th January, 2025</p>
-</div>
-
-<div class="right">
-<p>&rarr;</p>
-</div>
-
-</div>
-</a>
-</div>
-<!--INDIVIDUAL NOTES CONTAINER ENDS-->
-
-<hr>
-
-<!--INDIVIDUAL NOTES CONTAINER BEGINS-->
-<div class="notes-item-container">
-<a href = "/notes/my-body-is-wrapped-inside-a-permeable-membrane.html">
-<div class="notes-titler">
-
-<div class="left">
-<h1>my body is wrapped inside a permeable membrane</h1>
-<p id="last-updated">06th January, 2025</p>
-</div>
-
-<div class="right">
-<p>&rarr;</p>
-</div>
-
-</div>
-</a>
-</div>
-<!--INDIVIDUAL NOTES CONTAINER ENDS-->
-
-<hr>
-
-<!--INDIVIDUAL NOTES CONTAINER BEGINS-->
-<div class="notes-item-container">
-<a href = "/notes/fragments-of-your-memory.html">
-<div class="notes-titler">
-
-<div class="left">
-<h1>fragments of your memory</h1>
-<p id="last-updated">29th May, 2022</p>
-</div>
-
-<div class="right">
-<p>&rarr;</p>
-</div>
-
-</div>
-</a>
-</div>
-<!--INDIVIDUAL NOTES CONTAINER ENDS-->
-
-<hr>
-
-<!--INDIVIDUAL NOTES CONTAINER BEGINS-->
-<div class="notes-item-container">
-<a href = "/notes/my-unheard-voice.html">
-<div class="notes-titler">
-
-<div class="left">
-<h1>my unheard voice</h1>
-<p id="last-updated">06th April, 2022</p>
-</div>
-
-<div class="right">
-<p>&rarr;</p>
-</div>
-
-</div>
-</a>
-</div>
-<!--INDIVIDUAL NOTES CONTAINER ENDS-->
-
-<hr>
-
-<!--INDIVIDUAL NOTES CONTAINER BEGINS-->
-<div class="notes-item-container">
-<a href = "/notes/what-its-like-to-be-on-the-outside.html">
-<div class="notes-titler">
-
-<div class="left">
-<h1>what it's like to be on the outside</h1>
-<p id="last-updated">04th April, 2022</p>
-</div>
-
-<div class="right">
-<p>&rarr;</p>
-</div>
-
-</div>
-</a>
-</div>
-<!--INDIVIDUAL NOTES CONTAINER ENDS-->
-
-
-<!--ALL NOTES END -->
-</div>
-
-
-<div id = "footer"></div>
-
-</div>
-</body>
+    <div id="footer_content"></div>
+  </body>
 </html>

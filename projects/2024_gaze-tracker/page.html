@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta
+      name="description"
+      content="an open-source gaze-tracking software that works over the browser."
+    />
+    <meta name="author" content="arjun" />
+    <meta
+      name="keywords"
+      content="gaze, tracker, open, source, eye, track, track, study, webgazer"
+    />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
+
+    <title>gaze tracker</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <header>
+      <div class="left-items">
+        <h2>gaze tracker</h2>
+        <h3 id="date">2024</h3>
+      </div>
+      <div class="right-items">
+        <h3>internet tool</h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <p>
+        Since college, I wanted to conduct eye-tracking studies for the products
+        that I was working on. However, a Tobii eye tracker was (and is) very
+        expensive for an individual to buy. One day during my time at Treemouse,
+        we were discussing the possibility of creating in-house research tools —
+        to make data gathering and analysis easier, faster and more diverse. I
+        suggested the idea of a browser-based eye tracking tool and spent the
+        next weekend prototyping it, with the help of the
+        <a href="https://webgazer.cs.brown.edu/#contact" target="_blank"
+          >WebGazer library</a
+        >
+        developed by Brown University.
+
+        <figure>
+          <img src="/projects/2024_gaze-tracker/old_GIF.gif" />
+          <figcaption>
+            in use during my work at vunet, to instigate a platform-wide change
+            from card-based-layouts to list-based-layouts.
+          </figcaption>
+        </figure>
+      </p>
+    </div>
+
+    <div class="full-width-container">
+      <video preload="yes" muted playsinline autoplay controls loop>
+        <source
+          src="/projects/2024_gaze-tracker/gaze-tracker-sped.mp4"
+          type="video/mp4"
+        />
+        your browser does not support videos.
+      </video>
+      <figcaption>a sped up video-demonstration of the tool.</figcaption>
+    </div>
+
+    <div class="text-container" id="separator">
+      <p>
+        One can use the tool
+        <a
+          href="https://arjunmakesthings.github.io/gaze-tracker/index.html"
+          target="_blank"
+          >here</a
+        >. To change the image and use it for a screen of your choice, the
+        instructions are in
+        <a
+          href="https://github.com/arjunmakesthings/gaze-tracker"
+          target="_blank"
+          >this</a
+        >
+        GitHub repository. In case you struggle, please email me at
+        arjunmakesthings[at]gmail.com.
+      </p>
+    </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>

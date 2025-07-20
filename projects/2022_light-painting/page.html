@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta
+      name="description"
+      content="wondered whether it is possible to actually paint with light.."
+    />
+    <meta name="author" content="arjun" />
+    <meta
+      name="keywords"
+      content="light, paint, light paint, webcam, painting with light, art, project"
+    />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
+
+    <title>light painting</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <header>
+      <div class="left-items">
+        <h2>light painting</h2>
+        <h3 id="date">2022</h3>
+      </div>
+      <div class="right-items">
+        <h3>custom software</h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <p>
+        wondered whether it was possible to <em>actually</em> paint with light.
+        so, i taped an led to a coin-battery, and wrote a program that
+        persistently tracks a predefined point via the webcam. if the point is
+        detected in the current frame, then the software drops a circle there.
+      </p>
+
+      <figure>
+        <video preload="yes" muted playsinline autoplay nocontrols loop>
+          <source
+            src="/projects/2022_light-painting/vidHey.mp4"
+            type="video/mp4"
+          />
+          your browser does not support videos.
+        </video>
+      </figure>
+
+      <p>
+        since the dropped shape is a digital-object, its properties (such as
+        colour) can also be manipulated post-drawing.
+      </p>
+
+      <figure>
+        <video preload="yes" muted playsinline autoplay nocontrols loop>
+          <source
+            src="/projects/2022_light-painting/smileyVid_1.mp4"
+            type="video/mp4"
+          />
+          your browser does not support videos.
+        </video>
+      </figure>
+    </div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img src="/projects/2022_light-painting/1.webp" />
+        </div>
+        <div class="content">
+          <img src="/projects/2022_light-painting/2.webp" />
+        </div>
+      </div>
+      <figcaption>left & right: stills.</figcaption>
+    </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>

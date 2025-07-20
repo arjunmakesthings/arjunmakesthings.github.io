@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta
+      name="description"
+      content="grafik: a part of arjun's collection of digital painters — in pursuit of a desire to algorithmise painting processes."
+    />
+    <meta name="author" content="arjun" />
+    <meta
+      name="keywords"
+      content="digital painters, digital painting, algorithmic art, art, algorithm, painting algorithm, digital painter algorithm, generative art, creative coding"
+    />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"></script>
+
+    <title>grafik</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <div class="text-container">
+      <a href="/projects/2023-24_digital-painters/page.html#gallery"
+        ><h3>&larr; back to <em>digital painters</em></h3></a
+      >
+    </div>
+
+    <header id="separator">
+      <div class="left-items">
+        <h2>grafik</h2>
+        <h3 id="date">2023</h3>
+      </div>
+      <div class="right-items">
+        <h3>part of the <em>digital painters</em> project</h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <p>
+        started out as an exploration to represent bristles of a paintbrush, as
+        a stroke moves across a canvas.
+      </p>
+      <figure>
+        <img
+          src="/projects/2023-24_digital-painters/2023_grafik/grafik1.webp"
+        />
+        <figcaption>still.</figcaption>
+      </figure>
+    </div>
+
+    <div class="full-width-container">
+      <video preload="yes" muted playsinline autoplay nocontrols loop>
+        <source
+          src="/projects/2023-24_digital-painters/2023_grafik/grafikVid.mp4"
+          type="video/mp4"
+        />
+        your browser does not support videos.
+      </video>
+      <figcaption>
+        video-loop of many iterations, while changing small variables.
+      </figcaption>
+    </div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img
+            src="/projects/2023-24_digital-painters/2023_grafik/grafik2.webp"
+          />
+        </div>
+        <div class="content">
+          <img
+            src="/projects/2023-24_digital-painters/2023_grafik/grafik3.webp"
+          />
+        </div>
+      </div>
+      <figcaption>
+        two stills from different frames in the video-loop.
+      </figcaption>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>logic:</h1>
+      <p>
+        Instead of the 'brush' being a singular object, it is an array of many
+        points spread across its width. Movement remains similar to that of
+        <a
+          href="/projects/2023-24_digital-painters/2023_pollock-painter/page.html"
+          ><em>pollock painter</em></a
+        >, with random rotation, speed and destination for each stroke.
+      </p>
+    </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>
