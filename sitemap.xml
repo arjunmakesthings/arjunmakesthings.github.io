@@ -2,61 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://localhost/teaching</loc>
-		<lastmod>2025-07-19-T18:03:35+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/assets/repeated-elements/footer</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/assets/repeated-elements/nav-bar</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects</loc>
-		<lastmod>2025-07-19-T17:51:38+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/notes</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/google3509377a17ddf9ea</loc>
-		<lastmod>2025-07-05-T17:04:31+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/teaching/2023_set-rules-make-art/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/teaching/2025_behaviour-design/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/info</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<lastmod>2025-07-19-T18:19:46+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
@@ -67,56 +13,50 @@
 		<priority>1</priority>
 	</url>
 	<url>
+		<loc>https://localhost/projects</loc>
+		<lastmod>2025-07-20-T10:42:59+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/notes</loc>
+		<lastmod>2025-07-20-T09:46:26+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/google3509377a17ddf9ea</loc>
+		<lastmod>2025-07-05-T17:04:31+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/z_internal-notes_to-build/style-sheet/style-sheet</loc>
+		<lastmod>2025-07-20-T10:39:59+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
 		<loc>https://localhost/notes/2024_itp-personal-statement/page</loc>
 		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/z_internal-notes_to-build/style-sheet/style-sheet</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<loc>https://localhost/teaching/2023_set-rules-make-art/page</loc>
+		<lastmod>2025-07-19-T18:19:40+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/2023_mulaqat/page</loc>
-		<lastmod>2025-07-19-T17:36:07+06:30</lastmod>
+		<loc>https://localhost/projects/2023_turning-23/page</loc>
+		<lastmod>2025-07-20-T09:43:51+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/data-visualisation/how-do-i-spend-my-days/how-do-i-spend-my-days</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/data-visualisation/organisational-complexity-hp/organisational-complexity-hp</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2021_dear-delhi/page</loc>
+		<loc>https://localhost/projects/2021_canonic-onboarding/page</loc>
 		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/webcam/distance-responsive-type/distance-responsive-type</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/webcam/light-painting/light-painting</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/webcam/shit-to-do/shit-to-do</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
@@ -127,8 +67,8 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/2021_pui-vs-gui/page</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<loc>https://localhost/projects/2023_mulaqat/page</loc>
+		<lastmod>2025-07-19-T17:36:07+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
@@ -139,13 +79,67 @@
 		<priority>1</priority>
 	</url>
 	<url>
+		<loc>https://localhost/projects/2021_pui-vs-gui/page</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
 		<loc>https://localhost/projects/2022_just-ask/page</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/2024_gaze-tracker/gaze-tracker</loc>
+		<loc>https://localhost/projects/2024_drawings-on-a-cartesian-plane/page</loc>
+		<lastmod>2025-07-20-T10:21:51+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2021_dear-delhi/page</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/notes/2025_past/page</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/notes/2025_my-body-is-wrapped-inside-a-permeable-membrane/page</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2024_drawings-on-a-cartesian-plane/5/5</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2024_drawings-on-a-cartesian-plane/2/2</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2024_drawings-on-a-cartesian-plane/4/4</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2024_drawings-on-a-cartesian-plane/3/3</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2024_drawings-on-a-cartesian-plane/6/6</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
@@ -157,13 +151,7 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/typography/letraset/letraset</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2022_in-between-life-and-death/page</loc>
+		<loc>https://localhost/projects/2024_gaze-tracker/gaze-tracker</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
@@ -175,181 +163,19 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/typography/36-dot-2023/36-dot-2023</loc>
+		<loc>https://localhost/projects/2024_drawings-on-a-cartesian-plane/7/7</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/drawings-on-a-cartesian-plane/2/2</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<loc>https://localhost/teaching/2025_behaviour-design/page</loc>
+		<lastmod>2025-07-19-T18:14:59+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2024_washed-up-potential/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2023_your-words-dont-escape/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/drawings-on-a-cartesian-plane/5/5</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2023_give+take/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/inner-template</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2024_its-just-a-wave/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2023_what-i-wish-to-say-is-lost-in-your-pixels/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2023_the-distance-between-us/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2024_dancing-in-the-dark/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2024_everything-is-about-u/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2024_im-so-messed-up/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2024_we-go-around-in-circles/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2023_gravity/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_living-messages/2023_love-me/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/drawings-on-a-cartesian-plane/template</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/drawings-on-a-cartesian-plane/4/4</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/drawings-on-a-cartesian-plane/3/3</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/drawings-on-a-cartesian-plane/6/6</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/drawings-on-a-cartesian-plane/7/7</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2021_photolapse/page</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_digital-painters/inner-template</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2021_canonic-onboarding/page</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-25_tiny-love-letters/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_digital-painters/2024_green-sand/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_digital-painters/2023_light+sand/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_digital-painters/2024_dark-pollocks/page</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/2023-24_digital-painters/2023_laser-lights/page</loc>
+		<loc>https://localhost/projects/2023_art-with-math/1/1</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
@@ -361,7 +187,91 @@
 		<priority>1</priority>
 	</url>
 	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2023_your-words-dont-escape/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2023_what-i-wish-to-say-is-lost-in-your-pixels/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_digital-painters/2023_light+sand/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_digital-painters/inner-template</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_digital-painters/2024_dark-pollocks/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/z_yet-to-archive/webcam/shit-to-do/shit-to-do</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/z_yet-to-archive/webcam/distance-responsive-type/distance-responsive-type</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-25_tiny-love-letters/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
 		<loc>https://localhost/projects/2023-24_digital-painters/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/z_yet-to-archive/data-visualisation/organisational-complexity-hp/organisational-complexity-hp</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/z_yet-to-archive/data-visualisation/how-do-i-spend-my-days/how-do-i-spend-my-days</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/inner-template</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2021_photolapse/page</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_digital-painters/2023_laser-lights/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_digital-painters/2024_green-sand/page</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
@@ -385,7 +295,19 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/films/turning-23/turning-23</loc>
+		<loc>https://localhost/projects/2023-24_living-messages/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2024_washed-up-potential/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2023_give+take/page</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
@@ -397,13 +319,85 @@
 		<priority>1</priority>
 	</url>
 	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2023_love-me/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
 		<loc>https://localhost/projects/2023-24_digital-painters/2023_pollock-painter/page</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/2023_get-colours-from-webcam/page</loc>
+		<loc>https://localhost/projects/2023-24_living-messages/2024_everything-is-about-u/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2024_its-just-a-wave/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023_art-with-math/page</loc>
+		<lastmod>2025-07-20-T10:35:50+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2024_we-go-around-in-circles/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2022_in-between-life-and-death/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2024_im-so-messed-up/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023_art-with-math/2/2</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2023_the-distance-between-us/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2023_gravity/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023-24_living-messages/2024_dancing-in-the-dark/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023_art-with-math/5/5</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023_art-with-math/3/3</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
@@ -415,7 +409,25 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/2022_earth-2052/page</loc>
+		<loc>https://localhost/projects/2023_get-colours-from-webcam/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/info</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/2023_art-with-math/4/4</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
@@ -427,20 +439,8 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/notes/2022_what-its-like-to-be-on-the-outside/page</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/notes/2025_living-with-artistic-mediocrity/page</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/notes/2022_fragments-of-your-memory/page</loc>
-		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<loc>https://localhost/projects/2022_earth-2052/page</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
@@ -451,61 +451,55 @@
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/notes/2025_my-body-is-wrapped-inside-a-permeable-membrane/page</loc>
+		<loc>https://localhost/projects/z_yet-to-archive/typography/letraset/letraset</loc>
+		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/notes/2022_fragments-of-your-memory/page</loc>
 		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/existence/energy-exchanges/energy-exchanges</loc>
+		<loc>https://localhost/projects/z_yet-to-archive/existence/energy-exchanges/energy-exchanges</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/existence/co-existence/co-existence</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/notes/2025_past/page</loc>
+		<loc>https://localhost/notes/2025_living-with-artistic-mediocrity/page</loc>
 		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/art-with-math/5/5</loc>
+		<loc>https://localhost/notes/2022_what-its-like-to-be-on-the-outside/page</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://localhost/projects/z_yet-to-archive/existence/co-existence/co-existence</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/art-with-math/2/2</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<loc>https://localhost/assets/repeated-elements/footer</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/art-with-math/3/3</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
+		<loc>https://localhost/assets/repeated-elements/nav-bar</loc>
+		<lastmod>2025-07-19-T17:34:40+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://localhost/projects/art-with-math/template</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/art-with-math/4/4</loc>
-		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://localhost/projects/art-with-math/1/1</loc>
+		<loc>https://localhost/projects/z_yet-to-archive/typography/36-dot-2023/36-dot-2023</loc>
 		<lastmod>2025-07-19-T17:34:41+06:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
