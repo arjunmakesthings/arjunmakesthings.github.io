@@ -311,6 +311,10 @@ a.active{
   text-decoration: none;
   color: var(--primary); 
 }
+.active{
+  text-decoration: none;
+  color: var(--primary); 
+}
 
 /* #endregion */
 
