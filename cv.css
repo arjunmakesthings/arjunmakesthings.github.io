@@ -1,16 +1,36 @@
-.cv-entry{
-
+.cv-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 0.5rem; 
 }
-.cv-entry #date{
-
+.cv-entry #date {
+  min-width: 5em;
+  /* background-color: blue;  */
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.cv-entry #contents{
-
+.cv-entry .contents {
 }
-.cv-entry #title_and_company{
-
+.contents h1{
+    margin-bottom: 0.08em; 
+}
+.contents h3{
+    font-weight: 400; 
+}
+.contents ul{
+    padding-left: 1.2em; 
+    list-style-type: square;
+    margin-top: 0.5em; 
+    line-height: 1.6em; 
+}
+li{
+margin: -0.2em  0;
+}
+.cv-entry #title_and_org {
 }
 
-.cv-entry #description{
-
+.cv-entry #description {
 }
