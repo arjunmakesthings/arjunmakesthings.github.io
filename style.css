@@ -217,6 +217,7 @@ html {
   text-wrap: pretty;
 
   background-color: var(--bg); 
+  print-color-adjust: exact;
 }
 
 body{
