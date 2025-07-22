@@ -1,0 +1,43 @@
+.cv-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.cv-entry #date {
+  min-width: 5em;
+  /* background-color: blue;  */
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+/* .cv-entry .contents {
+} */
+.contents h1 {
+  margin-bottom: 0.08em;
+}
+.contents h3 {
+  font-weight: 400;
+}
+.contents ul {
+  padding-left: 1.2em;
+  list-style-type: square;
+  margin-top: 0.5em;
+  line-height: 1.6em;
+}
+li {
+  margin: -0.2em 0;
+}
+#no-marker {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex; 
+  gap: 1rem; 
+  margin-bottom: -0.8rem;
+}
+/* .cv-entry #title_and_org {
+}
+
+.cv-entry #description {
+} */
