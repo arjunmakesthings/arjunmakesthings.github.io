@@ -470,7 +470,7 @@ hr {
   all: unset;
   display: block;
   height: 2px;
-  background-color: var(--tertiary);
+  background-color: var(--tertiary); 
   margin: 0 var(--global_horizontal-margin) calc(var(--base_size) * 2)  var(--global_horizontal-margin);
 }
 #separator {
