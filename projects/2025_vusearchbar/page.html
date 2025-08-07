@@ -110,15 +110,15 @@
       </p>
       <ol>
         <li>
-          know <em>what</em> they can search for, when they see the search-bar.
+          <mark>know <em>what</em> they can search for</mark>, when they see the search-bar.
         </li>
         <li>
-          understand <em>how</em> they can perform a search, when they activate
+          <mark>understand <em>how</em></mark> they can perform a search, when they activate
           it.
         </li>
-        <li><em>narrow down</em> their search, as they type.</li>
+        <li><mark><em>narrow down</em></mark> their search, as they type.</li>
         <li>
-          <em>remain syntactically correct</em>, if they try to build a
+          <em><mark>remain syntactically correct</em></mark>, if they try to build a
           vql-query.
         </li>
       </ol>
@@ -130,6 +130,29 @@
     </div>
 
     <div class="text-container" id="separator">
+      <figure>
+        <img src="/projects/2025_vusearchbar/7.gif" id="white" />
+        <figcaption>
+          dynamically updating suggestions based on what the person typed.
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content" id="white">
+          <img src="/projects/2025_vusearchbar/8.gif" />
+        </div>
+        <div class="content" id="white">
+          <img src="/projects/2025_vusearchbar/9.gif" />
+        </div>
+      </div>
+      <figcaption>
+        navigating through suggestions, and accepting one (performing a search).
+      </figcaption>
+    </div>
+
+    <div class="text-container" id="separator">
       <p>
         i accounted for all possible keyboard-triggers (and the resulting
         suggestions), error resolution (if people were syntactically incorrect),
@@ -137,13 +160,13 @@
         future.
       </p>
       <p>
-        to demonstrate tactility and technical-feasibility*, i also built a
+        to demonstrate digital-tactility and technical-feasibility*, i also built a
         javascript-prototype.
       </p>
     </div>
 
     <div class="full-width-container">
-      <video preload="yes" muted playsinline autoplay controls loop>
+      <video preload="yes" muted playsinline autoplay nocontrols loop>
         <source src="/projects/2025_vusearchbar/vid.mp4" type="video/mp4" />
         your browser does not support videos.
       </video>
@@ -155,7 +178,7 @@
         calls we'd have to make to the backend, in order to recommend items to a
         person as they typed. so, the prototype demonstrated how the search-bar
         could store items locally (in different arrays), and perform searches
-        locally (instead of doing so externally).
+        locally (instead of sending calls to do so externally).
       </h3>
     </div>
 
