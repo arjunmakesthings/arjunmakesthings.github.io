@@ -7,9 +7,15 @@
       content="width=device-width, height=device-height, initial-scale=1.0"
     />
     <!-- change on every page, for seo: -->
-    <meta name="description" content="a contextually-aware search-bar, proposed as a platform-wide recommendation on vusmartmaps; allowing people to find specific items quicker." />
+    <meta
+      name="description"
+      content="a contextually-aware search-bar, proposed as a platform-wide recommendation on vusmartmaps; allowing people to find specific items quicker."
+    />
     <meta name="author" content="arjun" />
-    <meta name="keywords" content="product-design, design, product design, vunet, vusmartmaps, vusmartmaps search bar, search bar design, search bar, ux design, ui design" />
+    <meta
+      name="keywords"
+      content="product-design, design, product design, vunet, vusmartmaps, vusmartmaps search bar, search bar design, search bar, ux design, ui design"
+    />
     <!-- seo end -->
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
@@ -37,6 +43,82 @@
         </h3>
       </div>
     </header>
+
+    <div class="text-container">
+      <p>
+        <a href="https://vunetsystems.com/" target="_blank">vunet</a> built
+        <a href="https://vunetsystems.com/platform/" target="_blank"
+          >vusmartmaps</a
+        >
+        — an observability platform that financial institutions use to identify,
+        diagnose, and resolve errors across their distributed components. in
+        2025, i was hired as a design-consultant, to work on ambiguous asks.
+      </p>
+      <p>
+        while the product was complex, and comprised many modules, there were
+        only two types of distinct pages where people consumed information —
+        listing-pages (with cards, panels, et-cetera), and table-pages (with
+        many rows & columns).
+      </p>
+    </div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img src="/projects/2025_vusearchbar/2.webp" />
+        </div>
+        <div class="content">
+          <img src="/projects/2025_vusearchbar/3.webp" />
+        </div>
+      </div>
+      <figcaption>
+        the explanation of this drawing and some more to check for wrapping
+        text.
+      </figcaption>
+    </div>
+
+    <div class="text-container" id="separator">
+      <p>
+        in both cases, finding a specific item was laborious. there
+        <em>was</em> a search-bar, but it only allowed people to perform keyword
+        searches.
+      </p>
+      <figure>
+        <img src="/projects/2025_vusearchbar/4.webp" id="white" />
+      </figure>
+      <p>
+        to facilitate more complex searches on pages with tables, vunet had
+        built its own query-language (<a
+          href="https://vunetsystems.com/docs/vusmartmaps/vunet-query-language/"
+          >vql</a
+        >). this allowed people to write functions & expressions to find
+        specific items across loads of entries. however, using vql assumed an
+        understanding of the language & its syntax, which only 'advanced-users'
+        were expected to have. therefore, the ability to write vql queries was
+        limited to specific pages.
+      </p>
+      <figure>
+        <img src="/projects/2025_vusearchbar/5.gif" id="white" />
+        <figcaption>
+          if a person encountered a vql-enabled search bar, they had to visit an
+          external documentation-website to understand its syntax (and then come
+          back to the original page to use it). this was impractical, since
+          vusmartmaps was not an exploration-based product — it was meant to
+          help people do specific things, in the least amount of time possible.
+        </figcaption>
+      </figure>
+      <p>
+        so, i proposed a contextually-aware search-bar, that could be deployed across different pages on the platform, helping people find specific items quicker. the idea was to help people:
+      </p>
+      <ul>
+        <li>know <em>what</em> they can search for, when they see the search-bar. </li>
+        <li>understand <em>how</em> they can perform a search, when they activate it. </li>
+        <li><em>narrow down</em> their search, as they type. </li>
+        <li><em>remain syntactically correct</em>, if they try to build a vql-query. </li>
+      </ul>
+    </div>
+
+
 
     <div id="footer_content"></div>
   </body>
