@@ -71,10 +71,6 @@
           <img src="/projects/2025_vusearchbar/3.webp" />
         </div>
       </div>
-      <figcaption>
-        the explanation of this drawing and some more to check for wrapping
-        text.
-      </figcaption>
     </div>
 
     <div class="text-container" id="separator">
@@ -108,17 +104,73 @@
         </figcaption>
       </figure>
       <p>
-        so, i proposed a contextually-aware search-bar, that could be deployed across different pages on the platform, helping people find specific items quicker. the idea was to help people:
+        so, i proposed a contextually-aware search-bar, that could be deployed
+        across different pages on the platform, helping people find specific
+        items quicker. the idea was to help people:
       </p>
-      <ul>
-        <li>know <em>what</em> they can search for, when they see the search-bar. </li>
-        <li>understand <em>how</em> they can perform a search, when they activate it. </li>
-        <li><em>narrow down</em> their search, as they type. </li>
-        <li><em>remain syntactically correct</em>, if they try to build a vql-query. </li>
-      </ul>
+      <ol>
+        <li>
+          know <em>what</em> they can search for, when they see the search-bar.
+        </li>
+        <li>
+          understand <em>how</em> they can perform a search, when they activate
+          it.
+        </li>
+        <li><em>narrow down</em> their search, as they type.</li>
+        <li>
+          <em>remain syntactically correct</em>, if they try to build a
+          vql-query.
+        </li>
+      </ol>
     </div>
 
+    <div class="text-container">
+      <p>
+        i accounted for all possible keyboard-triggers (and the resulting
+        suggestions), error resolution (if people were syntactically incorrect),
+        and left room in the design for the query-language to grow in the
+        future.
+      </p>
+      <p>
+        to demonstrate tactility and technical-feasibility*, i also built a
+        javascript-prototype.
+      </p>
+    </div>
 
+    <div class="full-width-container">
+      <video preload="yes" muted playsinline autoplay controls loop>
+        <source src="/projects/2025_vusearchbar/vid.mp4" type="video/mp4" />
+        your browser does not support videos.
+      </video>
+    </div>
+
+    <div class="text-container" id = "separator">
+      <h3>
+        * a person from the engineering-team was concerned about the number of
+        calls we'd have to make to the backend, in order to recommend items to a
+        person as they typed. so, the prototype demonstrated how the search-bar
+        could store items locally (in different arrays), and perform searches
+        locally (instead of doing so externally).
+      </h3>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>acknowledgements:</h1>
+      <p>
+        co-instigator:
+        <a href="https://in.linkedin.com/in/setwrite">shobhan</a>; worked with:
+        <a href="https://in.linkedin.com/in/jitheshkaveetil">jithesh</a>,
+        <a href="https://in.linkedin.com/in/bharatjosh">bharat</a>,
+        <a href="">pukal</a>,
+        <a href="https://in.linkedin.com/in/nithin-m-s-17a6ab13a">nithin</a>,
+        <a href="https://in.linkedin.com/in/jishnumk">jishnu</a>,
+        <a href="https://in.linkedin.com/in/arkoprabho-bhattacharjee">arko</a>
+        (all from
+        <a href="https://www.linkedin.com/company/vunet-systems/">vunet</a>).
+      </p>
+    </div>
 
     <div id="footer_content"></div>
   </body>
