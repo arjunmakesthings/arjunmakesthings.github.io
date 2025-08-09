@@ -621,9 +621,23 @@ color: var(--secondary);
 
 /* lander */
 #small{
-height: 25vw; 
+height: 25vw;
 }
 #lander{
   height: 80vh; 
   justify-content: center; 
+}
+
+#vertically-center {
+  display: flex;
+  align-items: stretch; /* make children same height */
+  justify-content: center; 
+  align-items: center; 
+}
+
+#small img {
+  height: 100%;
+  width: auto;
+  display: block;
+  align-items: right; 
 }
