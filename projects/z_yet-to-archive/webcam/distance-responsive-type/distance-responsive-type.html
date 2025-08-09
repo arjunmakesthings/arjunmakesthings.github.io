@@ -1,113 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
-<!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
+    <!--CHANGE THIS FOR EVERY PAGE FOR SEO-->
 
-<meta name="description" content="Distance responsive type | Arjun's Archive">
-<meta name="author" content="Arjun">
-<meta name="keywords" content="distance, reactive, graphic, type, webcam">
+    <meta name="description" content="Distance responsive type | Arjun's Archive" />
+    <meta name="author" content="Arjun" />
+    <meta name="keywords" content="distance, reactive, graphic, type, webcam" />
 
-<!--SEO END-->
+    <!--SEO END-->
 
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-<link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
 
-<!--STYLING FOR CODE SNIPPETS-->
-<link rel="stylesheet" href="/prism.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <!--STYLING FOR CODE SNIPPETS-->
+    <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
 
-<!--HEADER & FOOTER-->
-<script>
-  // fetch header.
-  fetch("/assets/repeated-elements/header-for-project-pages.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load header: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("header").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
-    });
+    <!--HEADER & FOOTER-->
+    <script>
+      // fetch header.
+      fetch("/assets/repeated-elements/header-for-project-pages.html")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to load header: " + response.statusText);
+          }
+          return response.text();
+        })
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        })
+        .catch((error) => {
+          console.error(error);
+          document.getElementById("header").innerHTML = "<h1>Error loading header</h1>";
+        });
 
-  // fetch footer.
-  fetch("/assets/repeated-elements/footer.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load footer: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById("footer").innerHTML = html;
-    })
-    .catch((error) => {
-      console.error(error);
-      document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
-    });
-</script>
+      // fetch footer.
+      fetch("/assets/repeated-elements/footer.html")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to load footer: " + response.statusText);
+          }
+          return response.text();
+        })
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
+        })
+        .catch((error) => {
+          console.error(error);
+          document.getElementById("footer").innerHTML = "<h1>Error loading footer</h1>";
+        });
+    </script>
 
+    <title>webcam / distance responsive type</title>
+  </head>
+  <body>
+    <div class="in-margin-container">
+      <!--HEADER-->
+      <div id="header"></div>
 
-<title>webcam / distance responsive type</title>
-</head>
-<body>
-<div class="in-margin-container">
+      <!--NEWSPAPER TITLE-->
+      <div class="titler">
+        <div class="left-items">
+          <h3>distance responsive type</h3>
+          <h3 id="date">2023</h3>
+        </div>
+        <div class="right-items">
+          <h3>custom software</h3>
+        </div>
+      </div>
 
-<!--HEADER-->
-<div id = "header"></div>
+      <!--Use for full screen videos-->
+      <div class="full-width-media-container" id="white">
+        <video preload="yes" muted playsinline autoplay loop>
+          <source src="/projects/webcam/distance-responsive-type/distResponsive_Video.mp4" type="video/mp4" />
+          your browser does not support videos.
+        </video>
+      </div>
 
-<!--NEWSPAPER TITLE-->
-<div class = "titler">
-<div class = "left-items">
-<h3>distance responsive type</h3>
-<h3 id = "date">2023</h3>
-</div>
-<div class = "right-items">
-<h3>custom software</h3>
-</div>
-</div>
+      <div class="text-box-container">
+        <h1>Thought</h1>
+        <p>A lot of graphic design outcomes, for me, remain trapped in a power structure between the designer & the viewer — the same 16-point sized paragraph is viewed from a range of distances, resulting in varying experiences. Go too far, or too near, and the paragraph will no longer be legible.</p>
+      </div>
 
-<!--Use for full screen videos-->
-<div class = "full-width-media-container" id = "white">
-<video preload="yes" muted playsinline autoplay loop>
-<source src="/projects/webcam/distance-responsive-type/distResponsive_Video.mp4" type="video/mp4">
-your browser does not support videos. 
-</video>
-</div>
+      <div class="inline-image-container">
+        <img src="/projects/webcam/distance-responsive-type/squinter.webp" />
+        <p id="caption">
+          Image credits:
+          <a href="https://www.nvisioncenters.com/eye-health/squinting-not-bad-for-your-eyes/ " target="_blank">Nvision</a>.
+        </p>
+      </div>
 
-<div class = "text-box-container">
-<h1>Thought</h1>
-<p>A lot of graphic design outcomes, for me, remain trapped in a power structure between the designer & the viewer — the same 16-point sized paragraph is viewed from a range of distances, resulting in varying experiences. Go too far, or too near, and the paragraph will no longer be legible.</p>
-</div>
+      <div class="text-box-container">
+        <p>
+          In a world where experiences are largely becoming responsive — user flows react to user-inputted data, websites fit content based on the size of the viewport, and components of buildings react to the way they are being perceived (see
+          <a href="https://resenv.media.mit.edu/ " target="_blank">Responsive Environments at the MIT Media Lab</a>), I wondered whether typography on a digital screen could do the same.
+        </p>
+        <p>While many perceptual factors come into action when attempting to comprehend a piece of a text on a screen, I decided to play around first with the simplest one — distance.</p>
+        <h1>Logic</h1>
+        <p>What’s interesting in terms of the logic of the program is that webcams cannot typically sense depth — how far has the eye moved from the camera? However, what it <em>can</em> do with the use of TensorFlow’s PoseNet is to continuously track the position of the eyeball on a 2D plane.</p>
+        <p>The logic used is then simple: the further the eyes go, the smaller the distance between the pupils, and the closer the eyes come, the greater the distance between the pupils.</p>
+      </div>
 
-<div class = "inline-image-container">
-<img src = "/projects/webcam/distance-responsive-type/squinter.webp">
-<p id = "caption">Image credits: <a href = "https://www.nvisioncenters.com/eye-health/squinting-not-bad-for-your-eyes/ " target="_blank">Nvision</a>.</p>
-</div>
+      <div class="inline-image-container">
+        <img src="/projects/webcam/distance-responsive-type/notebook.webp" />
+      </div>
 
-<div class = "text-box-container">
-<p>In a world where experiences are largely becoming responsive — user flows react to user-inputted data, websites fit content based on the size of the viewport, and components of buildings react to the way they are being perceived (see <a href = "https://resenv.media.mit.edu/ " target="_blank">Responsive Environments at the MIT Media Lab</a>), I wondered whether typography on a digital screen could do the same.</p>
-<p>While many perceptual factors come into action when attempting to comprehend a piece of a text on a screen, I decided to play around first with the simplest one — distance.</p>
-<h1>Logic</h1>
-<p>What’s interesting in terms of the logic of the program is that webcams cannot typically sense depth — how far has the eye moved from the camera? However, what it <em>can</em> do with the use of TensorFlow’s PoseNet is to continuously track the position of the eyeball on a 2D plane.</p>
-<p>The logic used is then simple: the further the eyes go, the smaller the distance between the pupils, and the closer the eyes come, the greater the distance between the pupils.</p>
-</div>
-
-<div class = "inline-image-container">
-<img src = "/projects/webcam/distance-responsive-type/notebook.webp">
-</div>
-
-<div class = "text-box-container">
-<p>The font-size was, therefore, tied into a relationship with the distance between the two pupils. However, to prevent the font-size from constantly changing every frame, I used the concept of breakpoints — go beyond a certain threshold and the font size changes.</p>
-<div class = "code-box-container">
-<pre><code class = "language-javascript">
+      <div class="text-box-container">
+        <p>The font-size was, therefore, tied into a relationship with the distance between the two pupils. However, to prevent the font-size from constantly changing every frame, I used the concept of breakpoints — go beyond a certain threshold and the font size changes.</p>
+        <div class="code-box-container">
+          <pre><code class = "language-javascript">
 //Assigning the distance between pupils to a variable
 d = int(dist(pose.leftEye.x, pose.leftEye.y, pose.rightEye.x, pose.rightEye.y));
 
@@ -131,14 +135,16 @@ function tChange() {
 }
 
 </code></pre>
-</div><br>
-<p>All the actual code can be found <a href = "https://github.com/arjunmakesthings/distance-responsive-text " target="_blank">here</a>.</p>
-</div>
+        </div>
+        <br />
+        <p>
+          All the actual code can be found
+          <a href="https://github.com/arjunmakesthings/distance-responsive-text " target="_blank">here</a>.
+        </p>
+      </div>
 
-
-<!--FOOTER-->
-<div id = "footer"></div>
-
-</div>
-</body>
+      <!--FOOTER-->
+      <div id="footer"></div>
+    </div>
+  </body>
 </html>
