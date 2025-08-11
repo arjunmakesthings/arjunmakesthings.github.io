@@ -464,6 +464,7 @@ figcaption {
   #white{
   border: 1.5px solid var(--tertiary); 
   padding: 0.01rem; 
+   box-sizing: border-box;
 }
 /* #endregion */
 
