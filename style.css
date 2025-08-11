@@ -261,7 +261,7 @@ figcaption {
   font-family: "Alegreya Sans";
   font-weight: 400;
   font-size: var(--base-minus-one); 
-  line-height: 1.2em;
+  line-height: 1.3em;
   color: var(--secondary);
 }
 cite {
