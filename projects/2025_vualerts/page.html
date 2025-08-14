@@ -6,7 +6,7 @@
     <!-- change on every page, for seo: -->
     <meta name="description" content="a comprehensive redesign of vsm's alerting-module, that helped vunet redefine engineering & product aspirations." />
     <meta name="author" content="arjun" />
-    <meta name="keywords" content="tags, tags, longer tag, tags" />
+    <meta name="keywords" content="product design, alerts, alerting, observability design, design, interface design" />
     <!-- seo end -->
 
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
@@ -21,17 +21,143 @@
 
     <header>
       <div class="left-items">
-        <h2>title</h2>
-        <h3 id="date">year</h3>
+        <h2>vualerts</h2>
+        <h3 id="date">2025</h3>
       </div>
       <div class="right-items">
         <h3>
-          what / role, <br />
-          what (line 2),<br />
-          where / for whom.
+          product-design, <br />
+          at vunet-systems.
         </h3>
       </div>
     </header>
+
+    <div class="text-container">
+      <p><a href="https://vunetsystems.com/" target="_blank">vunet</a> built <a href="https://vunetsystems.com/platform/" target="_blank">vusmartmaps</a> (vsm) — an observability platform that financial institutions use to identify, diagnose, and resolve errors across their distributed components. in 2025, i was hired as a design-consultant, to work on ambiguous asks.</p>
+      <p>a fourth of what the product enabled people to do was create, consume & act on alerts. i worked for 3 months, to synthesise product & engineering work done over the last 3 years, and proposed a better system for alert-consumption & an industry-first approach to alert-creation.</p>
+    </div>
+    <hr id="separator" />
+    <div class="text-container">
+      <p>vsm monitored things — individual computing <mark>components</mark> (such as routers, servers, load-balancers, et-cetera), <mark>applications</mark> that run on those components (such as a bank's log-in page, core-banking-system, et-cetera), and custom-defined <mark>business-journeys</mark> (comprising many components & applications).</p>
+      <p>through human-defined or machine-defined rules, vsm generated alerts for the above-mentioned things. when clicked on, an alert was expected to help a person resolve the issue quickly — by enabling faster escalation, helping with root-cause-analyses, and aiding in debugging.</p>
+      <figure>
+        <img src="/projects/2025_vualerts/1.webp" id="white" />
+        <figcaption>sketched note to understand the system at vunet.</figcaption>
+      </figure>
+      <p>
+        due to the interdependencies in banking-networks, a single active alert (for a few minutes) could result in negative business-impact (and potential <a href="https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11693&Mode=0" target="_blank"><em>fines by authorities</em></a
+        >).
+      </p>
+      <p>to avoid this, financial institutions hire external teams (such as vunet) to monitor, filter, and escalate alerts quickly to the relevant personnel (who then fix these issues).</p>
+      <figure>
+        <img src="/projects/2025_vualerts/2.webp" />
+        <figcaption>monitoring-room (also called the 'itcc-room') in a bank. representative image; source: unknown.</figcaption>
+      </figure>
+      <p>people from these teams were having to deal with multiple alerts in a single minute, manually assessing impact, and jumping through windows (or tabs) to form root-cause-hypotheses. previous design-work had been put in to improve these workflows, but failed to provide a comprehensive solution that was, both, sellable & usable.</p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <p>i first studied all the different kinds of alerts that vsm could possibly produce, and then proposed a unified system for consumption that aimed to reduce cognitive load.</p>
+
+      <div class="split-width-container" id="no-top-margin">
+        <div class="split-width-container-contents">
+          <div class="content">
+            <img src="/projects/2025_vualerts/understanding-alert-rules_static-thresholds.webp" id="white" />
+          </div>
+          <div class="content">
+            <img src="/projects/2025_vualerts/understanding-dynamic.webp" id="white" />
+          </div>
+        </div>
+        <figcaption>2/4 sketches to understand different kinds of alerts. left: static-thresholding based alerts; right: ml-based anomaly detection.</figcaption>
+      </div>
+
+      <div class="split-width-container" id="no-top-margin">
+        <div class="split-width-container-contents">
+          <div class="content">
+            <img src="/projects/2025_vualerts/understanding-ml-correlation.webp" id="white" />
+          </div>
+          <div class="content">
+            <img src="/projects/2025_vualerts/understanding-topology.webp" id="white" />
+          </div>
+        </div>
+        <figcaption>2/5 sketches to understand different algorithms for 'correlating' (or grouping similar alerts together). left: ml-based correlation; right: topology-based correlation.</figcaption>
+      </div>
+    </div>
+
+    <div id="separator"></div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img src="/projects/2025_vualerts/old-alert-console.webp" id="white" />
+        </div>
+        <div class="content">
+          <img src="/projects/2025_vualerts/new-alert-console.webp" id="white" />
+        </div>
+      </div>
+      <figcaption>old (left) vs new (right) 'alert-console' — the central point for alert-consumption. interface-design possibilities were restricted by the ui-framework the platform used — <a href="https://developers.grafana.com/ui/latest/index.html?path=/">grafana</a>. most columns were changed, new systems were proposed (such as a different system for generating unique alert-ids), and indicators clearly differentiated between read & unread alerts (reducing cognitive load).</figcaption>
+    </div>
+
+    <div class="full-width-container">
+      <video preload="yes" muted playsinline autoplay nocontrols loop>
+        <source src="/projects/2025_vualerts/correlated-view.mp4" type="video/mp4" />
+        your browser does not support videos.
+      </video>
+      <figcaption>people could choose to enable a 'correlated-view', where alerts could intelligently be clubbed with each other — requiring a person to look at a single alert instead of, say, 20. since correlations were machine-driven (and prone to errors), we successfully fought against the idea of people only being able to see correlated (or grouped) alerts, as proposed by upper-management.</figcaption>
+    </div>
+
+    <div class="text-container" id="separator">
+      <p>next, i observed debugging-conversations in banks, and proposed an appropriate system to display an alert's information for all levels of problem escalation (monitoring person, engineer trying to fix it, and managers who wish to perform analyses).</p>
+      <figure>
+        <img src="/projects/2025_vualerts/drawer-explanation.webp" id="white" />
+        <figcaption>representative wireframe — information about an alert opened in a drawer, so that people who monitor alerts can quickly shuffle between monitoring-view and detailed-view.</figcaption>
+      </figure>
+      <figure>
+        <img src="/projects/2025_vualerts/tabs-explanation.webp" id="white" />
+        <figcaption>details were separated into tabs, in such a way that each tab answered a specific question. information that was put into each tab is, unfortunately, proprietary information.</figcaption>
+      </figure>
+      <p>due to the complex computing-architecture that indian banks often have, vsm had struggled in the past to offer accurate root-cause-hypotheses. so, i worked with engineering teams, understanding siloed work that had been put in, and suggested a unified mechanism to display hypotheses. we used correlations (grouping relevant alerts together), time-series data (to identify the first problem in a chain of events), and chose to dynamically fetch poor-performing granular metrics to help with the debugging of a chosen hypothesis.</p>
+    </div>
+
+    <div class="full-width-container">
+      <img src="/projects/2025_vualerts/resolution-workflow.webp" id="white" />
+      <figcaption>representative workflow to display root-cause-hypotheses.</figcaption>
+    </div>
+
+    <div class="text-container" id="separator">
+      <p>via this proposal, the product-design team helped all engineering teams working on alerts to strive towards a common aspiration — reducing the possibility of siloed work happening in the future (that is then difficult to stitch together as a product).</p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <p>while proposing a better system for consumption, shobhan (co-instigator on this project) & i realised that the system people used to <em>configure</em> alerts opened up many possibilities of creating 'bad' alerts (that are later reported as problems by people who consume them).</p>
+      <p>so, we got rid of mechanical norms that the industry used to set up alerts (via numbers & thresholds), and proposed a <a href="https://en.wikipedia.org/wiki/WYSIWYG" target="_blank">wysiwyg</a>-editor (what-you-see-is-what-you-get-editor) to help people estimate future-frequency of alerts generated by a particular rule.</p>
+    </div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img src="/projects/2025_vualerts/old-config.webp" id="white" />
+        </div>
+        <div class="content">
+          <img src="/projects/2025_vualerts/new-config.webp" id="white" />
+        </div>
+      </div>
+      <figcaption>representative wireframe — old (left) vs proposed (right) alert-configuration. through the suggested-mechanism, people could see (and tweak) the frequency of alerts triggered by a particular rule (which is all they cared about, when they reported poor alerts).</figcaption>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>acknowledgements:</h1>
+      <p>
+        co-instigator:
+        <a href="https://in.linkedin.com/in/setwrite " target="_blank">shobhan</a>; worked with: <a href="https://in.linkedin.com/in/jitheshkaveetil " target="_blank">jithesh</a>, <a href="https://in.linkedin.com/in/bharatjosh " target="_blank">bharat</a>, <a href="https://www.linkedin.com/in/ashwinkumarramachandran/" target="_blank">ashwin</a> (all three founders of <a href="https://www.linkedin.com/company/vunet-systems/ " target="_blank">vunet</a>); <a href="https://in.linkedin.com/in/hanusravantht" target="_blank">hanu</a>, <a href="https://in.linkedin.com/in/nirmalkumar96" target="_blank">nirmal</a>, <a href="https://in.linkedin.com/in/pallav-chanda" target="_blank">pallav</a>, <a href="https://in.linkedin.com/in/nithin-m-s-17a6ab13a" target="_blank">nithin</a>, pukal, <a href="https://in.linkedin.com/in/deepak-g-5ab44a2b" target="_blank">deepak</a>, <a href="https://in.linkedin.com/in/ragu-gopal-a7003b208" target="_blank">ragu</a>; assisted by: <a href="https://in.linkedin.com/in/sankalp-kanchan" target="_blank">sankalp</a>, <a href="https://in.linkedin.com/in/bhavanasodha" target="_blank">bhavana</a>.
+      </p>
+    </div>
 
     <div id="footer_content"></div>
   </body>
