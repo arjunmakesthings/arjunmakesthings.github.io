@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <!-- change on every page, for seo: -->
+    <meta name="description" content="an experiment where typography reacts to the distance it is being viewed from." />
+    <meta name="author" content="arjun" />
+    <meta name="keywords" content="typography, type, design, art, code, code art, art, web art" />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js" defer></script>
+
+    <!-- only include if code exists: -->
+    <!-- <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script> -->
+
+    <!-- only include if p5 sketch exists: -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script> -->
+
+    <title>distance responsive type</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <header>
+      <div class="left-items">
+        <h2>distance responsive type</h2>
+        <h3 id="date">2023</h3>
+      </div>
+      <div class="right-items">
+        <h3>independent experiment</h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <p>a lot of graphic design outcomes — for me — remain trapped in power structures between the designer & the viewer. for example, the same 16-point sized paragraph is offered to people viewing the text from different distances, which may result in varying experiences. go too far or too near, and the paragraph will cease to be legible.</p>
+      <p>
+        in a world where experiences are increasingly attempting to become more responsive<sup><a href="#footnotes">1</a></sup
+        >, i wondered whether typography on a digital screen could do the same.
+      </p>
+      <figure>
+        <img src="/projects/2023_distance-responsive-type/squinter.webp" />
+        <figcaption>a person squinting to read text on a phone screen. image source: <a href="https://www.nvisioncenters.com/eye-health/squinting-not-bad-for-your-eyes/" target="_blank">nvision</a>.</figcaption>
+      </figure>
+      <p>many factors influence the perception of text on a screen. however, i restricted myself to play with the simplest one — (linear) distance. webcams typically are unable to assess depth; so, i chose to persistently track the distance between the pupils of a viewer's eye, to ascertain whether they were further (smaller distances between pupils), or closer (larger distances between pupils) to the screen (camera).</p>
+      <figure>
+        <video preload="yes" muted playsinline autoplay nocontrols loop id="white">
+          <source src="/projects/2023_distance-responsive-type/distResponsive_Video.mp4" type="video/mp4" />
+          your browser does not support videos.
+        </video>
+        <figcaption>video demonstration.</figcaption>
+      </figure>
+      <p>code for this can be found <a href="https://github.com/arjunmakesthings/distance-responsive-text" target="_blank">here</a> (written in p5.js).</p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container" id="footnotes">
+      <h3>footnotes:</h3>
+      <ol>
+        <li>the responsive environments group at the mit media lab has produced <a href="https://resenv.media.mit.edu/" target="_blank">several experiments</a> to make components of buildings react to the way they are being perceived.</li>
+      </ol>
+    </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>
