@@ -45,8 +45,8 @@ let headSize = 80;
 let tSize = 16; 
 
 function preload(){
-  mono = loadFont ("VictorMono-Regular.otf");
-  cursive = loadFont ("VictorMono-LightItalic.otf");
+  mono = loadFont ("/projects/2022_how-do-i-spend-my-days/sketch/VictorMono-Regular.otf");
+  cursive = loadFont ("/projects/2022_how-do-i-spend-my-days/sketch/VictorMono-LightItalic.otf");
 }
 
 function setup(){

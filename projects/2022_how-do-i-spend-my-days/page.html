@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <!-- change on every page, for seo: -->
+    <meta name="description" content="a data-visualisation project to understand where my time goes every day, to keep myself in check for living a 'balanced' life." />
+    <meta name="author" content="arjun" />
+    <meta name="keywords" content="data viz, data visualisation, data visualization, how do i spend my days, how do i spend my days arjun, arjun data viz, arjun data visualisation, data visualization" />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/assets/repeated-elements/fetch-nav-bar_and-footer.js" defer></script>
+
+    <!-- only include if code exists: -->
+    <!-- <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script> -->
+
+    <!-- only include if p5 sketch exists: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+    <script src="/projects/2022_how-do-i-spend-my-days/sketch/matter.min.js"></script>
+
+    <script src="/projects/2022_how-do-i-spend-my-days/sketch/sketch.js" defer></script>
+    <script src="/projects/2022_how-do-i-spend-my-days/sketch/container.js" defer></script>
+    <script src="/projects/2022_how-do-i-spend-my-days/sketch/box.js" defer></script>
+
+    <title>how do i spend my days?</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <header>
+      <div class="left-items">
+        <h2>how do i spend my days?</h2>
+        <h3 id="date">2022</h3>
+      </div>
+      <div class="right-items">
+        <h3>
+          independent experiment, <br />
+          data visualisation.
+        </h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <blockquote>
+        <p>How we spend our days is, of course, how we spend our lives.</p>
+        <br />
+        <h3>- annie dillard.</h3>
+      </blockquote>
+      <p>inspired by annie dillard's eloquent words, i sought a way to keep track of how i <em>spend</em> my life. there were six distinct buckets that i wanted to spend my time in:</p>
+      <ol>
+        <li><mark>work</mark> (my full-time job)</li>
+        <li><mark>teaching</mark> (my part-time job)</li>
+        <li><mark>creative practice</mark></li>
+        <li><mark>people</mark> (friends, family & social obligations)</li>
+        <li><mark>health</mark> (physical exercise)</li>
+        <li><mark>archiving</mark> (website & writing activities)</li>
+      </ol>
+      <p>the objective was to achieve a balance every day, and <em>put</em> time into each one of them. the amount of time didn't matter — (a) because some buckets (such as working out) required lesser time than others (my full-time job), and (b) the amount of time i spent in a bucket might vary because of the situation at-hand.</p>
+      <p>i first did this activity on a paper stuck to my front-door, and later converted that into a visualisation using <a href="https://brm.io/matter-js/ " target="_blank">matter.js</a>:</p>
+    </div>
+
+    <div class="full-width-container">
+      <video preload="yes" muted playsinline autoplay nocontrols loop>
+        <source src="/projects/2022_how-do-i-spend-my-days/vid.mp4" type="video/mp4" />
+        your browser does not support videos.
+      </video>
+      <figcaption>video loop.</figcaption>
+    </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>
