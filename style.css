@@ -292,6 +292,12 @@ li:not(:last-child) {
 mark{
   background-color: #fff6d1; 
 }
+sup {
+  vertical-align: super;
+  font-size: smaller;
+  padding: 0.1em; 
+  line-height: 1;
+}
 
 /* links */
 a{
