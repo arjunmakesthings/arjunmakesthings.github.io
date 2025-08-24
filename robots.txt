@@ -1,3 +1,3 @@
 User-agent: *
-Disallow:
+Disallow: show-one-thing_lander.html
 Sitemap: https://arjunmakesthings.github.io/sitemap.xml
