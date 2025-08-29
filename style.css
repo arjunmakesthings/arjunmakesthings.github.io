@@ -107,7 +107,7 @@ section {
 }
 body {
   line-height: 1;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 ol,
 ul {
@@ -180,26 +180,28 @@ table {
   --tertiary: rgb(240, 240, 240);
 
   /* font-sizes */
-/* employing a fluid-typography-scale, the settings of which are here:
+  /* employing a fluid-typography-scale, the settings of which are here:
 https://utopia.fyi/type/calculator?c=320,12,1.2,1920,16,1.2,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
   --base-minus-one: clamp(0.625rem, 0.5833rem + 0.2083vw, 0.8333rem);
   --base_size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
 
-    /* gallery */
-  --no_of_items: 3; 
+  /* gallery */
+  --no_of_items: 3;
   --gallery-gap: calc(var(--base_size) * 2);
 
   /* others: */
   --global_horizontal-margin: 16vw;
 }
 /* for anything 600px and down (phones, portrait tablets, etc): */
-@media (max-width: 768px) { /* phones, portrait */
+@media (max-width: 768px) {
+  /* phones, portrait */
   :root {
     --global_horizontal-margin: 2vw;
   }
 }
-@media (min-width: 768px) { /* landscape tablets, small laptops */
+@media (min-width: 768px) {
+  /* landscape tablets, small laptops */
   :root {
     --global_horizontal-margin: 8vw;
   }
@@ -216,11 +218,11 @@ html {
   text-transform: lowercase;
   text-wrap: pretty;
 
-  background-color: var(--bg); 
+  background-color: var(--bg);
   print-color-adjust: exact;
 }
 
-body{
+body {
   margin: 2vw var(--global_horizontal-margin);
 }
 /* #endregion */
@@ -230,7 +232,7 @@ body{
 h1 {
   font-family: "Alegreya Sans";
   font-weight: 600;
-  font-size: var(--base_size); 
+  font-size: var(--base_size);
   line-height: 1.2em;
   color: var(--primary);
   margin-bottom: calc(var(--base_size) * -1);
@@ -242,25 +244,25 @@ p {
   line-height: 1.6em;
   color: var(--primary);
 }
-em{
-  font-style: italic; 
+em {
+  font-style: italic;
 }
 h2 {
   font-family: "Alegreya Sans";
   font-weight: 600;
-  font-size: var(--base-minus-one); 
+  font-size: var(--base-minus-one);
   line-height: 1.2em;
 }
 h3 {
   font-family: "Alegreya Sans";
   font-weight: 300;
-  font-size: var(--base-minus-one); 
+  font-size: var(--base-minus-one);
   line-height: 1.2em;
 }
 figcaption {
   font-family: "Alegreya Sans";
   font-weight: 400;
-  font-size: var(--base-minus-one); 
+  font-size: var(--base-minus-one);
   line-height: 1.3em;
   color: var(--secondary);
 }
@@ -289,38 +291,38 @@ li {
 li:not(:last-child) {
   margin-bottom: 0.8em;
 }
-mark{
-  background-color: #fff6d1; 
+mark {
+  background-color: #fff6d1;
 }
 sup {
   vertical-align: super;
   font-size: smaller;
-  padding: 0.1em; 
+  padding: 0.1em;
   line-height: 1;
 }
 
 /* links */
-a{
+a {
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
   text-decoration: underline dashed 0.04em;
   text-underline-offset: 0.2em;
 }
-a:hover{
+a:hover {
   text-decoration: none;
   /* color: var(--primary); */
 }
-a:active{
+a:active {
   color: var(--primary);
 }
-a.active{
+a.active {
   text-decoration: none;
-  color: var(--primary); 
+  color: var(--primary);
 }
-.active{
+.active {
   text-decoration: none;
-  color: var(--primary); 
+  color: var(--primary);
 }
 
 /* #endregion */
@@ -370,7 +372,7 @@ footer p {
 .full-width-container {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--base_size) * 0.8); 
+  gap: calc(var(--base_size) * 0.8);
   width: 100%;
   overflow: hidden;
   margin-top: calc(var(--base_size) * 2);
@@ -381,7 +383,7 @@ footer p {
   width: 100%;
   height: fit-content;
   /* max-height: calc(100vw * 9 / 16); */
-  object-fit: cover; 
+  object-fit: cover;
 }
 .full-width-container img {
   margin: 0;
@@ -399,46 +401,46 @@ footer p {
 .split-width-container {
   /* has a figcaption and a blank container for all images */
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: calc(var(--base_size) * 0.8);
   width: 100%;
   overflow: hidden;
   margin-top: calc(var(--base_size) * 2);
 }
-#no-top-margin{
-  margin-top: 0; 
+#no-top-margin {
+  margin-top: 0;
 }
 .split-width-container-contents {
   /* side by side media */
   display: flex;
   gap: calc(var(--base_size) * 2);
-  align-items: flex-start; 
+  align-items: flex-start;
   box-sizing: border-box; /* box sizing allows you to include padding in the width & height calculation */
   /* max-height: 30vh;  */
 }
 #vertically-center {
-  align-items: center; 
+  align-items: center;
 }
-#quarter-width{
-width: 50%; 
+#quarter-width {
+  width: 50%;
 }
-.split-width-container-contents .content{
-  display: flex; 
-  width: 100%; 
-  height: inherit; 
-  justify-content: center; 
+.split-width-container-contents .content {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  justify-content: center;
 }
 .split-width-container img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover;   
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .split-width-container video {
   margin: 0;
   width: 100%;
   height: auto;
   max-height: calc(100vw * 9 / 16);
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .text-container {
@@ -452,7 +454,7 @@ width: 50%;
 figure {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--base_size) * 0.8); 
+  gap: calc(var(--base_size) * 0.8);
   width: 100%;
   margin-bottom: calc(var(--base_size));
 }
@@ -464,13 +466,13 @@ figure img {
   object-fit: cover;
 }
 figcaption {
-  border-left: calc(var(--base_size)* 0.3) solid var(--secondary);
+  border-left: calc(var(--base_size) * 0.3) solid var(--secondary);
   padding-left: 0.4em;
 }
-  #white{
-  border: 1.5px solid var(--tertiary); 
-  padding: 0.01rem; 
-   box-sizing: border-box;
+#white {
+  border: 1.5px solid var(--tertiary);
+  padding: 0.01rem;
+  box-sizing: border-box;
 }
 /* #endregion */
 
@@ -478,11 +480,11 @@ hr {
   all: unset;
   display: block;
   height: 2px;
-  background-color: var(--tertiary); 
-  margin: 0 var(--global_horizontal-margin) calc(var(--base_size) * 2)  var(--global_horizontal-margin);
+  background-color: var(--tertiary);
+  margin: 0 var(--global_horizontal-margin) calc(var(--base_size) * 2) var(--global_horizontal-margin);
 }
 #separator {
-  margin: calc(var(--base_size) * 2) var(--global_horizontal-margin)
+  margin: calc(var(--base_size) * 2) var(--global_horizontal-margin);
 }
 
 /* work-page */
@@ -527,43 +529,45 @@ header .right-items {
 
 /* gallery*/
 /* #region */
-.gallery{
-  display: flex; 
-  flex-direction: row; 
-  flex-wrap: wrap; 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: var(--gallery-gap);
   row-gap: calc(var(--gallery-gap) / 2);
 
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
-#vertical-flex{
+#vertical-flex {
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
 }
-.gallery_item{
-display: flex; 
-flex-direction: column;
-width: calc((100% - (var(--no_of_items) - 1) * var(--gallery-gap)) / var(--no_of_items));
-box-sizing: border-box; /* box sizing allows you to include padding in the width & height calculation */
-height: 100%; 
-text-decoration: none; 
-padding: 1em; 
+.gallery_item {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - (var(--no_of_items) - 1) * var(--gallery-gap)) / var(--no_of_items));
+  box-sizing: border-box; /* box sizing allows you to include padding in the width & height calculation */
+  height: 100%;
+  text-decoration: none;
+  padding: 1em;
 }
-#note-item{
-  width: 100%; 
-  border-bottom: 1px solid var(--tertiary); 
+#note-item {
+  width: 100%;
+  border-bottom: 1px solid var(--tertiary);
 }
-.gallery_item:hover{
-  background-color: var(--tertiary); 
+.gallery_item:hover {
+  background-color: var(--tertiary);
 }
 /* for anything 600px and down (phones, portrait tablets, etc): */
-@media (max-width: 768px) { /* phones, portrait */
+@media (max-width: 768px) {
+  /* phones, portrait */
   :root {
-    --no_of_items: 2; 
+    --no_of_items: 2;
   }
 }
-@media (min-width: 768px) { /* landscape tablets, small laptops */
+@media (min-width: 768px) {
+  /* landscape tablets, small laptops */
   :root {
     --no_of_items: 3;
   }
@@ -574,77 +578,78 @@ padding: 1em;
   }
 }
 
-  @media (min-width: 1600px) { /* big laptop */
-    :root {
-      --no_of_items: 4;
-    }
+@media (min-width: 1600px) {
+  /* big laptop */
+  :root {
+    --no_of_items: 4;
+  }
 }
 
-.cover-image{
+.cover-image {
   aspect-ratio: 192 / 108;
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden; 
-  justify-content: center; 
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
 
   margin-bottom: 0.6em;
 }
-.cover-image img{
-  object-fit: cover; 
+.cover-image img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
- .top{
-  display: flex; 
-  flex-direction: row; 
-  flex-wrap: nowrap; 
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
-.top h1{
-  display: flex; 
-  height: fit-content; 
-  width: fit-content; 
-  margin-bottom: 0.08em; 
-  line-height: var(--base_size); 
+.top h1 {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: 0.08em;
+  line-height: var(--base_size);
 }
-.top h3{
-  display: flex; 
-  justify-content: flex-end; 
-  height: fit-content; 
-  padding-left: 0.2em; 
-  width: max-content; 
-  line-height: var(--base_size); 
-} 
-#category{
-font-style: italic; 
-color: var(--secondary); 
+.top h3 {
+  display: flex;
+  justify-content: flex-end;
+  height: fit-content;
+  padding-left: 0.2em;
+  width: max-content;
+  line-height: var(--base_size);
 }
-.bottom{
-  display: flex; 
+#category {
+  font-style: italic;
+  color: var(--secondary);
+}
+.bottom {
+  display: flex;
 }
 /* #endregion */
 
 /* lander */
-#small{
-height: 25vw;
+#small {
+  height: 25vw;
 }
-#lander{
-  height: 80vh; 
-  justify-content: center; 
+#lander {
+  height: 80vh;
+  justify-content: center;
 }
 
 #vertically-center {
   display: flex;
   align-items: stretch; /* make children same height */
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 #small img {
   height: 100%;
   width: auto;
   display: block;
-  align-items: right; 
+  align-items: right;
 }
