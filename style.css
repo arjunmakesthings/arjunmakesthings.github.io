@@ -279,7 +279,7 @@ blockquote p {
   line-height: 1.2em;
 }
 ol {
-  list-style-type: lower-roman;
+  list-style-type: decimal;
   padding: 0 1.2em;
 }
 li {
