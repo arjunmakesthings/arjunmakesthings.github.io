@@ -274,9 +274,9 @@ blockquote {
   padding: 1.2em;
 }
 blockquote p {
-  font-style: italic;
+  font-size: var(--base-minus-one); 
   color: var(--secondary);
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 ol {
   list-style-type: decimal;
@@ -286,7 +286,7 @@ li {
   font-size: var(--base-minus-one);
   font-style: normal;
   color: var(--secondary);
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 li:not(:last-child) {
   margin-bottom: 0.8em;
