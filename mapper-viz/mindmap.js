@@ -1,7 +1,7 @@
 // ---------------------------------------------
-// cache: project page URL -> array of image srcs
+// cache: project page URL -> array of media srcs
 // ---------------------------------------------
-const projectImageCache = {};
+const projectMediaCache = {};
 
 // ---------------------------------------------
 // fetch projects.html and build category -> project page map
@@ -37,15 +37,16 @@ async function loadProjects() {
 }
 
 // ---------------------------------------------
-// fetch a project page and return a random image
+// fetch a project page and return a random media
 // ---------------------------------------------
-async function getRandomImageFromProject(projectUrl) {
+async function getRandomMediaFromProject(projectUrl) {
   // cache hit
-  if (projectImageCache[projectUrl]) {
-    const imgs = projectImageCache[projectUrl];
-    console.log("cache hit:", projectUrl, imgs);
-    if (imgs.length === 0) return null;
-    return imgs[Math.floor(Math.random() * imgs.length)];
+  if (projectMediaCache[projectUrl]) {
+    const media = projectMediaCache[projectUrl];
+    if (media.length === 0) return null;
+    const chosen = media[Math.floor(Math.random() * media.length)];
+    console.log("cache hit:", projectUrl, "chosen media:", chosen);
+    return chosen;
   }
 
   console.group("FETCH PROJECT PAGE");
@@ -56,32 +57,80 @@ async function getRandomImageFromProject(projectUrl) {
     const html = await res.text();
 
     const doc = new DOMParser().parseFromString(html, "text/html");
-    const imgEls = Array.from(doc.querySelectorAll("img"));
 
-    console.log("img elements found:", imgEls.length);
+    // get all images and videos
+    let mediaEls = [...Array.from(doc.querySelectorAll("img")), ...Array.from(doc.querySelectorAll("video"))];
 
-    const imgs = imgEls.map((img) => img.getAttribute("src")).filter(Boolean);
+    let media = mediaEls.map((el) => el.getAttribute("src")).filter(Boolean);
 
-    console.log("image srcs:", imgs);
+    // fallback to cover image
+    if (media.length === 0) {
+      const coverImg = doc.querySelector(".cover-image img");
+      if (coverImg) media.push(coverImg.getAttribute("src"));
+    }
 
-    projectImageCache[projectUrl] = imgs;
+    projectMediaCache[projectUrl] = media;
 
-    if (imgs.length === 0) {
-      console.warn("NO IMAGES FOUND IN:", projectUrl);
+    if (media.length === 0) {
+      console.warn("NO MEDIA FOUND IN:", projectUrl);
       console.groupEnd();
       return null;
     }
 
-    const chosen = imgs[Math.floor(Math.random() * imgs.length)];
-    console.log("chosen image:", chosen);
+    const chosen = media[Math.floor(Math.random() * media.length)];
+    console.log("chosen media:", chosen);
     console.groupEnd();
-
     return chosen;
   } catch (err) {
     console.error("FAILED TO FETCH PROJECT:", projectUrl, err);
-    projectImageCache[projectUrl] = [];
+    projectMediaCache[projectUrl] = [];
     console.groupEnd();
     return null;
+  }
+}
+
+// ---------------------------------------------
+// helper: show media as background
+// ---------------------------------------------
+function setBackgroundMedia(src) {
+  // remove any existing video
+  const existingVideo = document.getElementById("background-video");
+  if (existingVideo) {
+    existingVideo.pause();
+    existingVideo.remove();
+  }
+
+  if (!src) {
+    document.body.style.backgroundImage = "none";
+    return;
+  }
+
+  // detect if src is video
+  const videoExtensions = [".mp4", ".webm", ".mov"];
+  const isVideo = videoExtensions.some((ext) => src.toLowerCase().endsWith(ext));
+
+  if (isVideo) {
+    const video = document.createElement("video");
+    video.id = "background-video";
+    video.src = src;
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.playsInline = true;
+    video.style.position = "fixed";
+    video.style.top = 0;
+    video.style.left = 0;
+    video.style.width = "100%";
+    video.style.height = "100%";
+    video.style.objectFit = "contain";
+    video.style.zIndex = "-1";
+
+    document.body.appendChild(video);
+  } else {
+    document.body.style.backgroundImage = `url(${src})`;
+    document.body.style.backgroundSize = "contain";
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundRepeat = "no-repeat";
   }
 }
 
@@ -106,13 +155,12 @@ function renderMindmap(categories) {
   svg.innerHTML = "";
 
   const nodes = [];
-  const nodeSize = 80; // approximate width/height for collision avoidance
+  const nodeSize = 80;
 
   // --- category nodes ---
   names.forEach((name, i) => {
-    const angle = (i / names.length) * Math.PI * 2 + (Math.random() - 0.5) * 0.4; // angular jitter
-
-    const r = radius + (Math.random() - 0.5) * radius * 0.25; // radial jitter
+    const angle = (i / names.length) * Math.PI * 2 + (Math.random() - 0.5) * 0.4;
+    const r = radius + (Math.random() - 0.5) * radius * 0.25;
 
     const x = centerX + r * Math.cos(angle);
     const y = centerY + r * Math.sin(angle);
@@ -125,36 +173,25 @@ function renderMindmap(categories) {
     node.style.top = `${y}px`;
     node.style.transform = "translate(-50%, -50%)";
 
-    // hover handler
+    // hover -> random media
     node.addEventListener("mouseenter", async () => {
       const projects = categories[name];
-      if (!projects || projects.length === 0) {
-        console.warn("No projects for category:", name);
-        return;
-      }
+      if (!projects || projects.length === 0) return;
 
       const randomProject = projects[Math.floor(Math.random() * projects.length)];
-
       console.group("HOVER CATEGORY");
       console.log("category:", name);
       console.log("project page:", randomProject);
 
-      const img = await getRandomImageFromProject(randomProject);
-      console.log("chosen image:", img);
+      const media = await getRandomMediaFromProject(randomProject);
+      console.log("chosen media:", media);
       console.groupEnd();
 
-      if (img) {
-        document.body.style.backgroundImage = `url(${img})`;
-        document.body.style.backgroundSize = "contain";
-        document.body.style.backgroundPosition = "center center";
-        document.body.style.backgroundRepeat = "no-repeat";
-      } else {
-        document.body.style.backgroundImage = "none";
-      }
+      setBackgroundMedia(media);
     });
 
     node.addEventListener("mouseleave", () => {
-      document.body.style.backgroundImage = "none";
+      setBackgroundMedia(null);
     });
 
     mindmap.appendChild(node);
@@ -162,7 +199,7 @@ function renderMindmap(categories) {
   });
 
   // --- simple collision avoidance ---
-  const iterations = 20; // number of relaxation steps
+  const iterations = 20;
   for (let it = 0; it < iterations; it++) {
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
@@ -187,13 +224,12 @@ function renderMindmap(categories) {
     }
   }
 
-  // --- apply adjusted positions ---
+  // --- apply positions and draw lines ---
   nodes.forEach(({ x, y, el }) => {
     el.style.left = `${x}px`;
     el.style.top = `${y}px`;
   });
 
-  // --- draw lines ---
   nodes.forEach(({ x, y }) => {
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
     line.setAttribute("x1", centerX);
