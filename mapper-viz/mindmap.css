@@ -1,3 +1,19 @@
+:root {
+  /* colour-variables: */
+  --bg: rgb(253, 253, 253);
+  --primary: rgb(60, 60, 60);
+  --secondary: rgb(120, 120, 120);
+  --tertiary: rgb(240, 240, 240);
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/fira-code_regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
 html,
 body {
   margin: 0;
@@ -13,15 +29,16 @@ body {
 } */
 
 body {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain; /* fit the image inside the viewport */
-    background-origin: content-box;
-    background-clip: content-box;
-    transition: background-image 0.3s ease-in-out;
-    padding: 2rem; /* padding around the viewport */
-  }
-  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* fit the image inside the viewport */
+  background-origin: content-box;
+  background-clip: content-box;
+  transition: background-image 0.3s ease-in-out;
+  padding: 2rem; /* padding around the viewport */
+  font-family: "Fira Code";
+  font-size: 16px; 
+}
 
 #mindmap {
   position: relative;
@@ -34,7 +51,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold;
+  color: var(--primary); 
+  padding: 1em;
 }
 
 .category-node {
@@ -42,18 +60,22 @@ body {
   cursor: pointer;
   font-size: 0.9rem;
   white-space: nowrap;
-    padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.4rem;
+  color: var(--secondary); 
+  font-size: 18px; 
 }
 #connections {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-  
-  line {
-    stroke: black;
-    stroke-width: 1;
-  }
-  
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: var(--primary); 
+  opacity: 70%; 
+}
+
+line {
+  stroke: var(--secondary);
+  opacity: 70%; 
+  stroke-width: 1;
+}

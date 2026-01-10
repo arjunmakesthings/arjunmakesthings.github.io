@@ -149,7 +149,7 @@ function renderMindmap(categories) {
 
   const centerX = width / 2;
   const centerY = height / 2;
-  const radius = Math.min(centerX, centerY) * 0.6;
+  const radius = Math.min(centerX, centerY) * 0.7;
 
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.innerHTML = "";
@@ -224,20 +224,32 @@ function renderMindmap(categories) {
     }
   }
 
-  // --- apply positions and draw lines ---
+  // --- apply positions ---
   nodes.forEach(({ x, y, el }) => {
     el.style.left = `${x}px`;
     el.style.top = `${y}px`;
   });
 
+  // --- draw lines with padding ---
+  const linePadding = 20; // stops 20px before node
   nodes.forEach(({ x, y }) => {
+    const dx = x - centerX;
+    const dy = y - centerY;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+
+    const factor = (dist - linePadding) / dist;
+    const x2 = centerX + dx * factor;
+    const y2 = centerY + dy * factor;
+
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
     line.setAttribute("x1", centerX);
     line.setAttribute("y1", centerY);
-    line.setAttribute("x2", x);
-    line.setAttribute("y2", y);
+    line.setAttribute("x2", x2);
+    line.setAttribute("y2", y2);
     line.setAttribute("stroke", "#aaa");
+    line.setAttribute("stroke-opacity", "0.7");
     line.setAttribute("stroke-width", "1");
+
     svg.appendChild(line);
   });
 }
