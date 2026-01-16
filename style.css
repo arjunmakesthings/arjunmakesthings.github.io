@@ -220,6 +220,10 @@ html {
 
   background-color: var(--bg);
   print-color-adjust: exact;
+
+  /* reset base size */
+  font-size: 13px; 
+  
 }
 
 body {
