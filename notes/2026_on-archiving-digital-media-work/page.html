@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta name="description" content="poem." />
+    <meta name="author" content="arjun" />
+    <meta name="keywords" content="poem" />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- only include if code exists: -->
+    <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+    <script
+      src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"
+      defer
+    ></script>
+
+    <title>on archiving digital-media work</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <header>
+      <div class="left-items">
+        <h2>on archiving digital-media work</h2>
+        <h3 id="date">2026</h3>
+      </div>
+      <div class="right-items">
+        <h3>system-documentation</h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <p>
+        since 2021, i've produced a lot of work. most of it was haphazardly
+        organized — and some of it lost — until i developed a meticulous system
+        to archive work. this is that system:
+      </p>
+      <p>
+        work always starts locally, and each engagement usually lasts more than
+        a few months. so, an engagement becomes a folder — /yy-yy_name — i.e:
+        <em>26-27_itp</em>. this allows me to later access my work
+        chronologically.
+      </p>
+      <p>
+        each folder has sub-folders, usually for different projects made during
+        the engagement. they are usually numbered — ./xx_name — i.e:
+        <em>./1_vusearchbar</em>. this, again, allows me to access my work
+        chronologically.
+      </p>
+      <p>
+        sub-folders can be often messy. however, at the end of each project, i
+        try to make time to organize files into one of two folders:
+      </p>
+      <ol>
+        <li>././raw-files</li>
+        <li>././outputs</li>
+        <li>././media</li>
+      </ol>
+      <p>
+        work that i wish to make publicly-viewable has to be archived on my
+        <a href="https://github.com/arjunmakesthings/arjunmakesthings.github.io"
+          >website</a
+        >. each project / note / teaching-activity has a separate folder
+        — ././yyyy/title — i.e: <em>2021_dear-delhi</em>. this contains all
+        media files (converted to .webp from my local 'outputs' folder), a
+        write-up on page.html, and any other files that must be
+        publicly-accessible (.pdfs, .txts, etc.). if code is meant to be shared,
+        a folder called 'code' also exists inside. however, for accessibility, i
+        make sure to make a new github-repository for each project, and redirect
+        people there via the contents on page.html.
+      </p>
+      <p>
+        all local folders (including github-repositories) are also backed up
+        externally on password-protected portable ssds. mac-os is terrible at
+        syncing between different volumes unless you use time-machine (and will
+        often skip contents inside sub-folders, unless you copy-paste the whole
+        thing again). since folders can be big in size, i use a built-in mac-os package
+        called
+        <a
+          href="https://www.geeksforgeeks.org/linux-unix/rsync-command-in-linux-with-examples/"
+          >rsync</a
+        >
+        instead.
+      </p>
+      <p>
+        rsync allows you to sync files and directories between two hosts or
+        machines. it works like so:
+      </p>
+
+      <div class="code-box-container">
+        <pre><code class = "language-zsh">
+rsync -avh /* host-directory */SPACE/* remote-directory */
+</code></pre>
+      </div>
+      <p>
+        using --progress will show you the progress as well. so, an actual
+        script would look like this:
+      </p>
+      <div class="code-box-container">
+        <pre><code class = "language-zsh">
+rsync -avh --progress ~/data/github/ /Volumes/arjuns_itp/github/
+</code></pre>
+      </div>
+      <p>
+        finally, the state of my machine is preserved with biweekly backups to a
+        password-protected 2tb hdd that never leaves the house. for this, i use
+        <a href="https://en.wikipedia.org/wiki/Time_Machine_(macOS)"
+          >time-machine</a
+        >.
+      </p>
+      <p>
+        the passwords are stored locally, and i use an encrypted
+        <a href="https://keepassxc.org">keepass</a>-database for it. in case my
+        machine goes corrupt, the keepass-database also has an encrypted
+        virtual-copy.
+      </p>
+    </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>
