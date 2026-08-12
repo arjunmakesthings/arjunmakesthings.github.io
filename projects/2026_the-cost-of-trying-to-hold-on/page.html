@@ -21,14 +21,15 @@
     ></script>
 
     <!-- only include if code exists: -->
-    <!-- <link rel="stylesheet" href="/prism.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script> -->
+    <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
 
     <!-- only include if p5 sketch exists: -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script> -->
 
     <title>the cost of trying to hold on</title>
   </head>
+
   <body>
     <div id="nav-bar"></div>
 
@@ -37,25 +38,23 @@
         <h2>the cost of trying to hold on</h2>
         <h3 id="date">2026</h3>
       </div>
+
       <div class="right-items">
         <h3>
-          genetic-engineering,<br />
-          at nyu & biotech-without-borders.
+          genetic engineering,<br />
+          at nyu & biotech without borders.
         </h3>
       </div>
     </header>
 
     <div class="text-container">
       <p>
-        <a
-          href="https://en.wikipedia.org/wiki/Mitochondrial_DNA"
-          target="_blank"
-          >mitochondrial-dna</a
-        >
+        mitochondrial-dna<sup><a href="#footnotes">1</a></sup>
         (or mtdna) in human-beings is inherited by a child exclusively from
         their mother. therefore, as a single male child, my mother's mtdna is
         fatefully destined to die with me.
       </p>
+
       <figure>
         <img
           id="white"
@@ -70,6 +69,7 @@
           >
         </figcaption>
       </figure>
+
       <p>
         as an offspring with little to no tangible inheritance, learning about
         this instinctually made me want to preserve this piece of dna, and see
@@ -82,33 +82,45 @@
         <a
           href="https://wiki.hackerspaces.org/Biotech_Without_Borders"
           target="_blank"
-          >biotech-without-borders</a
+          >biotech without borders</a
         >, we addressed this desire & successfully expressed some of my mtdna
-        into e. coli. bacterial cells — a commonly used organism in
+        into e. coli. bacterial cells — a commonly used organism in
         biotech-labs.
       </p>
+
       <p>
-        however, the moment we did so, we killed them. millions of them — living
-        peacefully in small colonies on a petri dish — wiped out by a
-        human-desire to preserve a piece of maternal inheritance. analogous to a
-        world where people increasingly preserve more — data; objects; spaces;
-        genomes — i wonder how many such organisms will bear the price for the
-        human inability to let go.
+        however, the moment we did so, we killed them<sup
+          ><a href="#footnotes">2</a></sup
+        >. millions of them — living peacefully in small colonies on a petri
+        dish — wiped out by a human-desire to preserve a piece of maternal
+        inheritance. analogous to a world where people increasingly preserve
+        more — data; objects; spaces; genomes — i wonder how many such organisms
+        will bear the price for the human inability to let go.
       </p>
+
       <p>
         to present this at the
         <a
           href="https://itp.nyu.edu/shows/spring2026/projects/#12484-the-cost-of-trying-to-hold-on"
           target="_blank"
-          >itp spring show</a
+          >itp-spring-show</a
         >, i designed a small interactive-exhibit that allowed people to view
-        microscopic footage of petri-dishes containing bacteria with different
-        treatments (with & without my dna).
+        microscopic footage of bacterial cells with different
+        treatments (with & without my dna), by pressing petri-dishes.
       </p>
     </div>
 
     <div class="full-width-container">
-      <!-- <iframe src="https://www.youtube-nocookie.com/embed/miXUCO_lH4I?si=zxPbqEjF7-Tc4LmN?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+      
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/miXUCO_lH4I?si=zxPbqEjF7-Tc4LmN?rel=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+     
+
       <figcaption>
         video-demonstration. youtube disallows me from auto-playing this video
         on my website, so you'll, regrettably, have to be redirected to youtube
@@ -116,15 +128,261 @@
       </figcaption>
     </div>
 
+    <div class="full-width-container">
+      <img
+        src="/projects/2026_the-cost-of-trying-to-hold-on/main-exhibit.webp"
+      />
+      <figcaption>main exhibit at the itp-spring-show.</figcaption>
+    </div>
+
+    <div class="split-width-container">
+      <div class="split-width-container-contents">
+        <div class="content">
+          <img
+            src="/projects/2026_the-cost-of-trying-to-hold-on/person-2.webp"
+          />
+        </div>
+        <div class="content">
+          <img
+            src="/projects/2026_the-cost-of-trying-to-hold-on/person-1.webp"
+          />
+        </div>
+      </div>
+      <figcaption>
+        people interacting with the exhibit at the itp-spring-show. photos by
+        jackie (left), and delaney (right).
+      </figcaption>
+    </div>
+
+    <div id="separator"></div>
+
+    <div class="full-width-container">
+      <img src="/projects/2026_the-cost-of-trying-to-hold-on/bacteria.webp" />
+      <figcaption>bacteria petri-dish.</figcaption>
+    </div>
+
+    <div class="full-width-container">
+      <img src="/projects/2026_the-cost-of-trying-to-hold-on/zoomed-in.webp" />
+      <figcaption>controller (petri-dishes) and exhibition-text.</figcaption>
+    </div>
+
     <hr id="separator" />
 
     <div class="text-container">
       <h1>process:</h1>
+
       <p>
-        we extracted my mtdna using cheek swabs in heather-dewey-hagborg's class, purified it, sent it for sequencing, and cleaned it up</p>
-        
-        thereafter, ellen & i sliced two subsections of that dna — from the first start codon, to 
+        we extracted my mtdna using a cheek-swab, purified it, sent it for
+        sequencing, and then cleaned up the sequence as part of
+        heather-dewey-hagborg's class.
       </p>
+
+      <div class="code-box-container">
+        <pre><code class="language-javascript">
+//forward sequence (cleaned):
+AACTATTCTCTGTTCTTTCATGGGGAAGCAGATTTGGGTACCACCCAAGTATTGACTCACCCATCAACAACCGCTATGTATTTCGTACATTACTGCCAGCCACCATGAATATTGTACAGTACCATAAATACTTGACCACCTGTAGTGCATAAAAACCCAATCCACATCAAAACCCCCTCCCCATGCTTACAAGCAAGTACAGCAATCAACCTTCAACTATCACACATCAACTGCAACTCCAAAGCCACCCCTCACCCACTAGGATACCAACAAACCTACCCACCCTTAACAGTACATAGTACATAAAGCCATTTACCGTACATAGCACATTACAGTCAAATCCCTTCTCGTCCCCATGGATGACCCCCCTCAGATAGGGGTCCCATGACCACCATCCTCATAAA</code></pre>
+      </div>
+
+      <p>
+        thereafter, ellen & i sliced two subsections of that dna: one from the
+        beginning until the first stop codon<sup><a href="#footnotes">3</a></sup
+        >, and the other from the last start codon till the end. we also added
+        an expression vector<sup><a href="#footnotes">4</a></sup> & a
+        green-fluorescent-protein to be able to visually track whether the
+        expression was successful or not.
+      </p>
+
+      <p>
+        below is an annotated image of the whole sequence. it starts with the
+        two subsections of my dna, the expression-vector (plasmid) in blue, and
+        the green-fluorescent-protein in green.
+      </p>
+
+      <figure>
+        <img
+          id="white"
+          src="/projects/2026_the-cost-of-trying-to-hold-on/whole-sequence.webp"
+        />
+        <figcaption>annotated sequence with typical markers.</figcaption>
+      </figure>
+
+      <p>
+        then i purified the dna, checked its concentration using gel
+        electrophoresis<sup><a href="#footnotes">5</a></sup
+        >, performed ligation<sup><a href="#footnotes">6</a></sup
+        >, cut the dna at specific points, and finally performed
+        bacterial-transformation<sup><a href="#footnotes">7</a></sup
+        >.
+      </p>
+
+      <figure>
+        <img src="/projects/2026_the-cost-of-trying-to-hold-on/dna-3.webp" />
+        <figcaption>performing gel-electrophoresis.</figcaption>
+      </figure>
+
+      <figure>
+        <div class="split-width-container-contents">
+          <div class="content">
+            <img
+              src="/projects/2026_the-cost-of-trying-to-hold-on/dna-2.webp"
+            />
+          </div>
+
+          <div class="content">
+            <img
+              src="/projects/2026_the-cost-of-trying-to-hold-on/dna-1.webp"
+            />
+          </div>
+        </div>
+
+        <figcaption>
+          slicing bands of dna from the gel-electrophoresis to check for
+          concentration.
+        </figcaption>
+      </figure>
+      <p>
+        finally, i spent time streaking bacterial-colonies onto agar plates to
+        check for growth.
+      </p>
+
+      <figure>
+        <div class="split-width-container-contents">
+          <div class="content">
+            <img
+              src="/projects/2026_the-cost-of-trying-to-hold-on/plate-1.webp"
+            />
+          </div>
+
+          <div class="content">
+            <img
+              src="/projects/2026_the-cost-of-trying-to-hold-on/plate-2.webp"
+            />
+          </div>
+        </div>
+
+        <figcaption>
+          pictures of agar plates with bacterial growth, taken under uv light.
+          left: plasmid (red-fluorescent-protein) + e. coli. (bl. 21); right:
+          plasmid (green-fluorescent-protein + my mitochondrial-dna + pet28a) +
+          e. coli. (bl. 21) + iptg (activator for bacteria to use plasmid).
+        </figcaption>
+      </figure>
+      <p>
+        an in-depth log of this project can be found
+        <a
+          href="https://arjunmakesthings.github.io/itp-blog/bioart-as-biopolitics/ba_final-log"
+          target="_blank"
+          >here</a
+        >.
+      </p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>acknowledgements:</h1>
+      <p>
+        <a href="https://deweyhagborg.com/" target="_blank"
+          >heather dewey hagborg</a
+        >
+        for her fantastic bioart-as-biopolitics class at itp;
+        <a href="https://en.wikipedia.org/wiki/Ellen_Jorgensen" target="_blank"
+          >dr. ellen jorgensen</a
+        >
+        &
+        <a href="https://biotechwithoutborders.org/" target="_blank"
+          >biotech without borders</a
+        >
+        for letting me use their lab; tenni for helping me learn how to use a
+        microscope;
+        <a href="https://www.ccfrost.com/" target="_blank">cody frost</a> for
+        his advice on distributing pressure on the fsrs; 
+        <a href = "https://www.linkedin.com/in/delaney-wong" target = "_blank">delaney wong</a> & <a href = "https://www.linkedin.com/in/jackienam" target = "_blank">jackie nam</a> for the pictures.
+      </p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container" id="footnotes">
+      <blockquote>
+        <ol>
+          <li>
+            human mitochondrial dna was the first significant part of the human
+            genome to be sequenced, and is actively used by ancestry-dna
+            services (such as 23andme). read more on
+            <a
+              href="https://en.wikipedia.org/wiki/Mitochondrial_DNA"
+              target="_blank"
+              >this</a
+            >
+            wikipedia page.
+          </li>
+
+          <li>
+            this is, sadly, still a hypothesis (although verified by dr. ellen
+            jorgensen). to claim this with certainty, i'd have to extract the
+            recombinant dna, send it for sequencing, and verify whether it was
+            actually my dna that killed the bacteria. however, to do so would
+            require funds that i did not have at this time.
+          </li>
+
+          <li>
+            start & stop codons are three-letters long, and tell the ribosome
+            where to begin & end dna-transcription (to make relevant proteins).
+            read more on
+            <a href="https://en.wikipedia.org/wiki/Stop_codon" target="_blank"
+              >this</a
+            >
+            wikipedia page.
+          </li>
+
+          <li>
+            an expression vector is a plasmid (a small circular piece of dna) or
+            a virus designed to transfer (express) a gene to a particular cell.
+            read more on
+            <a
+              href="https://en.wikipedia.org/wiki/Expression_vector"
+              target="_blank"
+              >this</a
+            >
+            wikipedia page.
+          </li>
+
+          <li>
+            gel-electrophoresis is a method to analyse pieces of dna by
+            separating large bands of dna-molecules, in an electrically charged
+            medium. read more on
+            <a
+              href="https://en.wikipedia.org/wiki/Gel_electrophoresis"
+              target="_blank"
+              >this</a
+            >
+            wikipedia page.
+          </li>
+
+          <li>
+            ligation is a step in the transformation process, to join two
+            nucleotides into a single polymeric chain using a ligase. read more
+            on
+            <a
+              href="https://en.wikipedia.org/wiki/Ligation_(molecular_biology)"
+              target="_blank"
+              >this</a
+            >
+            wikipedia page.
+          </li>
+          <li>
+            we heat-shocked the bacteria cells to break open the cell-walls, and
+            then put the dna into the cell. read more on
+            <a
+              href="https://en.wikipedia.org/wiki/Genetic_transformation"
+              target="_blank"
+              >this</a
+            >
+            wikipedia page.
+          </li>
+        </ol>
+      </blockquote>
     </div>
 
     <div id="footer_content"></div>
