@@ -222,8 +222,7 @@ html {
   print-color-adjust: exact;
 
   /* reset base size */
-  font-size: 15px; 
-  
+  font-size: 15px;
 }
 
 body {
@@ -278,7 +277,7 @@ blockquote {
   padding: 1.2em;
 }
 blockquote p {
-  font-size: var(--base-minus-one); 
+  font-size: var(--base-minus-one);
   color: var(--secondary);
   line-height: 1.4em;
 }
@@ -485,7 +484,8 @@ hr {
   display: block;
   height: 2px;
   background-color: var(--tertiary);
-  margin: 0 var(--global_horizontal-margin) calc(var(--base_size) * 2) var(--global_horizontal-margin);
+  margin: 0 var(--global_horizontal-margin) calc(var(--base_size) * 2)
+    var(--global_horizontal-margin);
 }
 #separator {
   margin: calc(var(--base_size) * 2) var(--global_horizontal-margin);
@@ -550,7 +550,9 @@ header .right-items {
 .gallery_item {
   display: flex;
   flex-direction: column;
-  width: calc((100% - (var(--no_of_items) - 1) * var(--gallery-gap)) / var(--no_of_items));
+  width: calc(
+    (100% - (var(--no_of_items) - 1) * var(--gallery-gap)) / var(--no_of_items)
+  );
   box-sizing: border-box; /* box sizing allows you to include padding in the width & height calculation */
   height: 100%;
   text-decoration: none;
@@ -656,4 +658,14 @@ header .right-items {
   width: auto;
   display: block;
   align-items: right;
+}
+
+#not-key {
+  opacity: 60%;
+}
+#not-key h1{
+  font-weight: 400; 
+}
+#not-key:hover {
+  opacity: 100%;
 }
