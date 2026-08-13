@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <!-- change on every page, for seo: -->
+    <meta name="description" content="explain the project in one line." />
+    <meta name="author" content="arjun" />
+    <meta name="keywords" content="tags, tags, longer tag, tags" />
+    <!-- seo end -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script
+      src="/assets/repeated-elements/fetch-nav-bar_and-footer.js"
+      defer
+    ></script>
+
+    <!-- only include if code exists: -->
+    <!-- <link rel="stylesheet" href="/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script> -->
+
+    <!-- only include if p5 sketch exists: -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script> -->
+
+    <title>the definitive list of acceptable typos</title>
+  </head>
+  <body>
+    <div id="nav-bar"></div>
+
+    <header>
+      <div class="left-items">
+        <h2>the definitive list of acceptable typos</h2>
+        <h3 id="date">2026</h3>
+      </div>
+      <div class="right-items">
+        <h3>
+          web, <br />
+          at itp, nyu.
+        </h3>
+      </div>
+    </header>
+
+    <div class="text-container">
+      <p>
+        <a
+          href="https://en.wikipedia.org/wiki/Typographical_error"
+          target="_blank"
+          >typographical-errors</a
+        >
+        or 'typos' are, now, inescapable in digital communication. fingers
+        slide; focus wavers; messages get sent without resolving the red wavy
+        lines underneath incorrectly spelled words. but at what point is a typo
+        just too far off to be considered a typo?
+      </p>
+      <p>
+        <a
+          href="https://arjunmakesthings.github.io/the-definitive-list-of-acceptable-typos/"
+          target="_blank"
+          >this website</a
+        >
+        produces a definitive list of acceptable typos for any given
+        english-word, by considering characters one-position away from the root
+        character on a qwerty-keyboard.
+      </p>
+
+      <figure>
+        <img src="cover.webp" id="white" />
+        <figcaption>output for 'cat'.</figcaption>
+      </figure>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>implementation:</h1>
+      <p>
+        you can think of a keyboard as a 2-dimensional space, with each
+        character in a word having atleast 1 neighbour, and a maximum of 8.
+      </p>
+      <figure>
+        <img
+          src="/projects/2026_the-definitive-list-of-acceptable-typos/neighbours.webp"
+          id="white"
+        />
+        <figcaption>neighbours for the character 's'.</figcaption>
+      </figure>
+      <p>
+        every second, my algorithm tries to generate a typo. to do so, it goes
+        over each character & decides whether to replace it with a neighbour or
+        not. initially, the probability to replace a character is very low.
+        therefore, the typos are more believable.
+      </p>
+      <figure>
+        <img
+          src="/projects/2026_the-definitive-list-of-acceptable-typos/beginning.webp"
+          id="white"
+        />
+        <figcaption>initial typos for the word 'hello'.</figcaption>
+      </figure>
+      <p>
+        however, as time progresses, the probability to change each character
+        grows exponentially. therefore, the typos get wilder (yet acceptable, as
+        they are only one 'hop' away from the character in the original word).
+      </p>
+      <figure>
+        <img
+          src="/projects/2026_the-definitive-list-of-acceptable-typos/end.webp"
+          id="white"
+        />
+        <figcaption>later typos for the word 'hello'.</figcaption>
+      </figure>
+      <p>
+        to make this a 'definitive' list, the algorithm keeps a list of all
+        typos previously produced, and only spits out a typo if it wasn't
+        produced earlier. when it runs out of possible typos, it exits with
+        'fin'.
+      </p>
+      <figure>
+        <img
+          src="/projects/2026_the-definitive-list-of-acceptable-typos/fin.webp"
+          id="white"
+        />
+        <figcaption>
+          'fin' after the program has run out of acceptable typos for 'hello'.
+        </figcaption>
+      </figure>
+      <p>
+        all code is stored in
+        <a
+          href="https://github.com/arjunmakesthings/the-definitive-list-of-acceptable-typos"
+          target="_blank"
+          >this</a
+        >
+        github repository.
+      </p>
+    </div>
+
+    <hr id="separator" />
+
+    <div class="text-container">
+      <h1>acknowledgements:</h1>
+      <p>
+        <a href="https://www.linkedin.com/in/lenincompres/" target="_blank"
+          >lenin compress</a
+        >'s brief of making a random walker in nature-of-code, spring 2026;
+        <a href="https://thecodingtrain.com" target="_blank">daniel shiffman</a>
+        for writing the
+        <a href="https://natureofcode.com/" target="_blank">textbook</a>;
+        <a href="https://ojs.aaai.org/index.php/AIIDE/article/view/21978/21747"
+          >nonsense laboratory</a
+        >
+        by allison parrish, tim szetela & jenny goldstick for the inspiration.
+      </p>
+    </div>
+
+    <div id="footer_content"></div>
+  </body>
+</html>
